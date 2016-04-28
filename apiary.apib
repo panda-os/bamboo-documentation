@@ -11,22 +11,91 @@ The Bamboo Video API is a RESTful API
 # Group Entries
 Media Entries related resources of the **Bamboo Video API**
 
-## Entries Collection [/entry]
+## Entries Collection [/entry?format=json]
+
 ### List all Entries [GET]
+
 + Response 200 (application/json)
 
-        {"data":[{"mediaType":1,"conversionQuality":"4573522","sourceType":"1","searchProviderType":null,"searchProviderId":"","creditUserName":"","creditUrl":"","mediaDate":null,"dataUrl":"https:\/\/cdnapisec.kaltura.com\/p\/33942\/sp\/3394200\/playManifest\/entryId\/1_izramf08\/format\/url\/protocol\/https","flavorParamsIds":"0,301991,487041,487051,487061,487081,487091,487111,823821,827231","plays":707,"views":1286,"lastPlayedAt":1461560407,"width":1920,"height":816,"duration":90,"msDuration":90000,"durationType":"","id":"1_izramf08","name":"Star Wars: Episode VII - The Force Awakens.","description":"A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).","partnerId":33942,"userId":"demo@panda-os.com","creatorId":"demo@panda-os.com","tags":"action","adminTags":"","categories":"PlatformDemo>Action,PlatformDemo>Sci-Fi,PlatformDemo>Featured","categoriesIds":"21672221,21672271,31368441","status":"2","moderationStatus":6,"moderationCount":0,"type":"1","createdAt":1418586923,"updatedAt":1461478356,"rank":0,"totalRank":0,"votes":0,"groupId":null,"partnerData":"","downloadUrl":"https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/raw\/entry_id\/1_izramf08\/version\/0","searchText":"_PAR_ONLY_ _33942_ _MEDIA_TYPE_1|  Star Wars: Episode VII - The Force Awakens. action A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983). ","licenseType":-1,"version":0,"thumbnailUrl":"https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/thumbnail\/entry_id\/1_izramf08\/version\/100111\/acv\/351","accessControlId":33627,"startDate":null,"endDate":null,"referenceId":"","replacingEntryId":"","replacedEntryId":"","replacementStatus":"0","partnerSortValue":0,"conversionProfileId":4573522,"redirectEntryId":"","rootEntryId":"1_izramf08","operationAttributes":[],"entitledUsersEdit":"","entitledUsersPublish":"","info":{}}],"meta":{"total":1}}
+        {
+          "data": [
+            {
+              "mediaType": 1,
+              "conversionQuality": "4573522",
+              "sourceType": "1",
+              "searchProviderType": null,
+              "searchProviderId": "",
+              "creditUserName": "",
+              "creditUrl": "",
+              "mediaDate": null,
+              "dataUrl": "https:\/\/cdnapisec.kaltura.com\/p\/33942\/sp\/3394200\/playManifest\/entryId\/1_izramf08\/format\/url\/protocol\/https",
+              "flavorParamsIds": "0,301991,487041,487051,487061,487081,487091,487111,823821,827231",
+              "plays": 707,
+              "views": 1286,
+              "lastPlayedAt": 1461560407,
+              "width": 1920,
+              "height": 816,
+              "duration": 90,
+              "msDuration": 90000,
+              "durationType": "",
+              "id": "1_izramf08",
+              "name": "Star Wars: Episode VII - The Force Awakens.",
+              "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+              "partnerId": 33942,
+              "userId": "demo@panda-os.com",
+              "creatorId": "demo@panda-os.com",
+              "tags": "action",
+              "adminTags": "",
+              "categories": "PlatformDemo>Action,PlatformDemo>Sci-Fi,PlatformDemo>Featured",
+              "categoriesIds": "21672221,21672271,31368441",
+              "status": "2",
+              "moderationStatus": 6,
+              "moderationCount": 0,
+              "type": "1",
+              "createdAt": 1418586923,
+              "updatedAt": 1461478356,
+              "rank": 0,
+              "totalRank": 0,
+              "votes": 0,
+              "groupId": null,
+              "partnerData": "",
+              "downloadUrl": "https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/raw\/entry_id\/1_izramf08\/version\/0",
+              "searchText": "_PAR_ONLY_ _33942_ _MEDIA_TYPE_1|  Star Wars: Episode VII - The Force Awakens. action A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983). ",
+              "licenseType": -1,
+              "version": 0,
+              "thumbnailUrl": "https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/thumbnail\/entry_id\/1_izramf08\/version\/100111\/acv\/351",
+              "accessControlId": 33627,
+              "startDate": null,
+              "endDate": null,
+              "referenceId": "",
+              "replacingEntryId": "",
+              "replacedEntryId": "",
+              "replacementStatus": "0",
+              "partnerSortValue": 0,
+              "conversionProfileId": 4573522,
+              "redirectEntryId": "",
+              "rootEntryId": "1_izramf08",
+              "operationAttributes": [],
+              "entitledUsersEdit": "",
+              "entitledUsersPublish": "",
+              "info": {}
+            }
+          ],
+          "meta": {
+            "total": 1
+          }
+        }
 
 ### Create an Entry [POST]
 + Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
+        { "title": "Video title" }
 
 + Response 201 (application/json)
 
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+        { "id": 3, "title": "Video title" }
 
-## Entry [/entry/{id}]
+## Entry [/entry/{id}?format=json]
 A single Entry object with all its properties
 
 + Parameters
@@ -39,67 +108,67 @@ A single Entry object with all its properties
 
     + Body
 
-        {
-            "data": {
-                "info": {
-                    "isPrivate":0
-                },
-                "mediaType":1,
-                "conversionQuality":"4573522",
-                "sourceType":"1",
-                "searchProviderType":null,
-                "searchProviderId":"",
-                "creditUserName":"",
-                "creditUrl":"",
-                "mediaDate":null,
-                "dataUrl":"https:\/\/cdnapisec.kaltura.com\/p\/33942\/sp\/3394200\/playManifest\/entryId\/1_izramf08\/format\/url\/protocol\/https",
-                "flavorParamsIds":"0,301991,487041,487051,487061,487081,487091,487111,823821,827231",
-                "plays":707,
-                "views":1286,
-                "lastPlayedAt":1461560407,
-                "width":1920,
-                "height":816,
-                "duration":90,
-                "msDuration":90000,
-                "durationType":"",
-                "id":"1_izramf08",
-                "name":"Star Wars: Episode VII - The Force Awakens.",
-                "description":"A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
-                "partnerId":33942,
-                "userId":"demo@panda-os.com",
-                "creatorId":"demo@panda-os.com",
-                "tags":"action",
-                "adminTags":"",
-                "categories":"PlatformDemo>Action,PlatformDemo>Sci-Fi,PlatformDemo>Featured",
-                "categoriesIds":"21672221,21672271,31368441",
-                "status":"2","moderationStatus":6,
-                "moderationCount":0,
-                "type":"1",
-                "createdAt":1418586923,
-                "updatedAt":1461478356,
-                "rank":0,
-                "totalRank":0,
-                "votes":0,
-                "groupId":null,
-                "partnerData":"",
-                "downloadUrl":"https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/raw\/entry_id\/1_izramf08\/version\/0",
-                "searchText":"_PAR_ONLY_ _33942_ _MEDIA_TYPE_1|  Star Wars: Episode VII - The Force Awakens. action A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983). ","licenseType":-1,"version":0,"thumbnailUrl":"https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/thumbnail\/entry_id\/1_izramf08\/version\/100111\/acv\/351",
-                "accessControlId":33627,
-                "startDate":null,
-                "endDate":null,
-                "referenceId":"",
-                "replacingEntryId":"",
-                "replacedEntryId":"",
-                "replacementStatus":"0",
-                "partnerSortValue":0,
-                "conversionProfileId":4573522,
-                "redirectEntryId":"",
-                "rootEntryId":"1_izramf08",
-                "operationAttributes":[],
-                "entitledUsersEdit":"",
-                "entitledUsersPublish":""
+            {
+                "data": {
+                    "info": {
+                        "isPrivate":0
+                    },
+                    "mediaType":1,
+                    "conversionQuality":"4573522",
+                    "sourceType":"1",
+                    "searchProviderType":null,
+                    "searchProviderId":"",
+                    "creditUserName":"",
+                    "creditUrl":"",
+                    "mediaDate":null,
+                    "dataUrl":"https:\/\/cdnapisec.kaltura.com\/p\/33942\/sp\/3394200\/playManifest\/entryId\/1_izramf08\/format\/url\/protocol\/https",
+                    "flavorParamsIds":"0,301991,487041,487051,487061,487081,487091,487111,823821,827231",
+                    "plays":707,
+                    "views":1286,
+                    "lastPlayedAt":1461560407,
+                    "width":1920,
+                    "height":816,
+                    "duration":90,
+                    "msDuration":90000,
+                    "durationType":"",
+                    "id":"1_izramf08",
+                    "name":"Star Wars: Episode VII - The Force Awakens.",
+                    "description":"A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+                    "partnerId":33942,
+                    "userId":"demo@panda-os.com",
+                    "creatorId":"demo@panda-os.com",
+                    "tags":"action",
+                    "adminTags":"",
+                    "categories":"PlatformDemo>Action,PlatformDemo>Sci-Fi,PlatformDemo>Featured",
+                    "categoriesIds":"21672221,21672271,31368441",
+                    "status":"2","moderationStatus":6,
+                    "moderationCount":0,
+                    "type":"1",
+                    "createdAt":1418586923,
+                    "updatedAt":1461478356,
+                    "rank":0,
+                    "totalRank":0,
+                    "votes":0,
+                    "groupId":null,
+                    "partnerData":"",
+                    "downloadUrl":"https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/raw\/entry_id\/1_izramf08\/version\/0",
+                    "searchText":"_PAR_ONLY_ _33942_ _MEDIA_TYPE_1|  Star Wars: Episode VII - The Force Awakens. action A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983). ","licenseType":-1,"version":0,"thumbnailUrl":"https:\/\/cdnsecakmi.kaltura.com\/p\/33942\/sp\/3394200\/thumbnail\/entry_id\/1_izramf08\/version\/100111\/acv\/351",
+                    "accessControlId":33627,
+                    "startDate":null,
+                    "endDate":null,
+                    "referenceId":"",
+                    "replacingEntryId":"",
+                    "replacedEntryId":"",
+                    "replacementStatus":"0",
+                    "partnerSortValue":0,
+                    "conversionProfileId":4573522,
+                    "redirectEntryId":"",
+                    "rootEntryId":"1_izramf08",
+                    "operationAttributes":[],
+                    "entitledUsersEdit":"",
+                    "entitledUsersPublish":""
+                }
             }
-        }
 
 ### Update an Entry [PUT]
 + Response 200 (application/json)
@@ -531,6 +600,8 @@ Creates a new playlist object
               }
             }
 
+# Group Authentication
+
 ## Token [/token?format=json]
 
 ### Authenticate User [POST]
@@ -578,3 +649,18 @@ Logout user is used to logout the current user and remove its cookie
 
         [
         ]
+
+## Session [/session?format=json]
+
+### Session [GET]
+
+Gets the current session token
+
++ Request (application/json;charset=UTF-8)
+
+
++ Response 200 (application/json)
+
+        {
+        "session":"djJ8MjEwODEwMXyQ9oMxnuBNxmCalO_JCq2sK3iW5XMla2tbjil6bKhYXoS0KG9GUdvCSl8EeZ66_3-vL7I1191LDfifcAmgnGb-9HgYQdhoHYx1odNJL0s91EK94Zw6v-a1dpnBTm1SXYr9QKe1apcWYPVe11BLDWU1ejvFo8HcJr0DKPw952pOaZtGbtwTmct9mO6Iuvv7ubk="
+        }
