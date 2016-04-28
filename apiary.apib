@@ -110,6 +110,70 @@ A single Entry object with all its properties
 
 # Group Playlists
 
+## Playlists Collection [/playlist?format=json]
+### List all Playlists [GET]
++ Response 200 (application/json)
+
+
+             {
+                        "data": [
+                            {
+                                "playlistContent": "0_47jdjigc,0_c70ju1m8,0_gabh8kjk",
+                                "filters": [],
+                                "totalResults": null,
+                                "playlistType": 3,
+                                "plays": 0,
+                                "views": 0,
+                                "duration": 0,
+                                "executeUrl": "k_pl_0_name=New Playlist&k_pl_0_url=http%3A%2F%2Fvideo.panda-os.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D102%26subp_id%3D0%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_4hyb965m",
+                                "id": "0_4hyb965m",
+                                "name": "New Playlist",
+                                "description": "",
+                                "partnerId": 102,
+                                "userId": "demo@panda-os.com",
+                                "creatorId": "demo@panda-os.com",
+                                "tags": "",
+                                "adminTags": "",
+                                "categories": "LiveChannels",
+                                "categoriesIds": "196",
+                                "status": "2",
+                                "moderationStatus": 6,
+                                "moderationCount": 0,
+                                "type": "5",
+                                "createdAt": 1461067064,
+                                "updatedAt": 1461067161,
+                                "rank": 0,
+                                "totalRank": 0,
+                                "votes": 0,
+                                "groupId": null,
+                                "partnerData": "",
+                                "downloadUrl": "http:\/\/static.panda-os.com\/p\/102\/sp\/0\/raw\/entry_id\/0_4hyb965m\/version\/100002",
+                                "searchText": "_PAR_ONLY_ _102_ _MEDIA_TYPE_3|  New Playlist ",
+                                "licenseType": null,
+                                "version": 100002,
+                                "thumbnailUrl": "http:\/\/static.panda-os.com\/p\/102\/sp\/0\/thumbnail\/entry_id\/0_4hyb965m\/version\/0",
+                                "accessControlId": 3,
+                                "startDate": null,
+                                "endDate": null,
+                                "referenceId": "",
+                                "replacingEntryId": "",
+                                "replacedEntryId": "",
+                                "replacementStatus": "0",
+                                "partnerSortValue": 0,
+                                "conversionProfileId": null,
+                                "redirectEntryId": "",
+                                "rootEntryId": "0_4hyb965m",
+                                "operationAttributes": [],
+                                "entitledUsersEdit": "",
+                                "entitledUsersPublish": ""
+                            }
+                        ],
+                        "meta":
+                        {
+                            "total": 1
+                        }
+                    }
+
 ## Playlist Entries [/playlist/{playlistId}/entries?format=json]
 
 ### Lists Playlist Entries [GET]
@@ -119,15 +183,15 @@ Lists all entries in a given playlist
     + playlistId (string) - ID of the playlist to retrieve
 
 + Request (application/json;charset=UTF-8)
-    
+
         {
-    
+
         }
 
 + Response 200 (application/json)
 
     + Headers
-    
+
             connection:keep-alive
             access-control-allow-credentials:true
             access-control-allow-headers:Keep-Alive,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Authorization,X-Bamboo-Token,Event-Id,X-Requested-With
@@ -135,7 +199,7 @@ Lists all entries in a given playlist
             access-control-allow-origin:*
 
     + Body
-    
+
             {
                 "data": [
                 {
@@ -405,7 +469,7 @@ Creates a new playlist object
 
 + Response 200 (application/json)
     + Headers
-    
+
             connection:keep-alive
             access-control-allow-credentials:true
             access-control-allow-headers:Keep-Alive,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Authorization,X-Bamboo-Token,Event-Id,X-Requested-With
@@ -413,7 +477,7 @@ Creates a new playlist object
             access-control-allow-origin:*
 
     + Body
-    
+
             {
               "data": {
                 "playlistContent": "1_izramf08,1_0h9c8icp,1_rbkwmmpw,1_pvmxqv1u,1_11nv3doz",
@@ -466,7 +530,7 @@ Creates a new playlist object
                 "entitledUsersPublish": ""
               }
             }
-            
+
 ## Token [/token?format=json]
 
 ### Authenticate User [POST]
@@ -481,25 +545,25 @@ password and account id
             "id": "demo@panda-os.com",
             "password": "123456"
         }
-            
+
 + Response 200 (application/json)
 
         {
             "accountId": "54632ceb6803fabe223fbc75",
             "token": "token=="
         }
-        
-+ Response 401 (application/json) 
+
++ Response 401 (application/json)
     + Headers
-    
+
             X-Bamboo-Message: Login failed, please check your Email and Password
-        
+
     + Body
-    
+
             {
                 "data": []
             }
-        
+
 ### Logout User [DELETE]
 
 Logout user is used to logout the current user and remove its cookie
@@ -509,8 +573,8 @@ Logout user is used to logout the current user and remove its cookie
         {
             "id": 0
         }
-        
-+ Response 200 (application/json) 
+
++ Response 200 (application/json)
 
         [
         ]
