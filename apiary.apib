@@ -243,6 +243,88 @@ A single Entry object with all its properties
                         }
                     }
 
+### Create a Playlist [POST]
+
+Creates a new playlist object
+
++ Request (application/json;charset=UTF-8)
+
+        {
+            "accessControlId": "33627",
+            "adminTags": "",
+            "categories": "PlatformDemo",
+            "description": "",
+            "name": "Leon",
+            "playlistContent": "1_izramf08,1_0h9c8icp,1_rbkwmmpw,1_pvmxqv1u,1_11nv3doz",
+            "tags": "",
+            "userId": "demo@panda-os.com"
+        }
+
++ Response 200 (application/json)
+    + Headers
+
+            connection:keep-alive
+            access-control-allow-credentials:true
+            access-control-allow-headers:Keep-Alive,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Authorization,X-Bamboo-Token,Event-Id,X-Requested-With
+            access-control-allow-methods:GET, POST, DELETE, PUT, OPTIONS, INDEX
+            access-control-allow-origin:*
+
+    + Body
+
+            {
+              "data": {
+                "playlistContent": "1_izramf08,1_0h9c8icp,1_rbkwmmpw,1_pvmxqv1u,1_11nv3doz",
+                "filters": [],
+                "totalResults": null,
+                "playlistType": 3,
+                "plays": 0,
+                "views": 0,
+                "duration": 0,
+                "executeUrl": "k_pl_0_name=Leon&k_pl_0_url=https%3A%2F%2Fwww.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D33942%26subp_id%3D0%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D1_gu07ygn9",
+                "id": "1_gu07ygn9",
+                "name": "Leon",
+                "description": "",
+                "partnerId": 33942,
+                "userId": "demo@panda-os.com",
+                "creatorId": "demo@panda-os.com",
+                "tags": "",
+                "adminTags": "",
+                "categories": "PlatformDemo",
+                "categoriesIds": "21672211",
+                "status": "2",
+                "moderationStatus": 6,
+                "moderationCount": 0,
+                "type": "5",
+                "createdAt": 1461587868,
+                "updatedAt": 1461587869,
+                "rank": 0,
+                "totalRank": 0,
+                "votes": 0,
+                "groupId": null,
+                "partnerData": "",
+                "downloadUrl": "https://cdnsecakmi.kaltura.com/p/33942/sp/0/raw/entry_id/1_gu07ygn9/version/100001",
+                "searchText": "_PAR_ONLY_ _33942_ _MEDIA_TYPE_3|  Leon ",
+                "licenseType": null,
+                "version": 100001,
+                "thumbnailUrl": "https://cdnsecakmi.kaltura.com/p/33942/sp/0/thumbnail/entry_id/1_gu07ygn9/version/0",
+                "accessControlId": 33627,
+                "startDate": null,
+                "endDate": null,
+                "referenceId": "",
+                "replacingEntryId": "",
+                "replacedEntryId": "",
+                "replacementStatus": "0",
+                "partnerSortValue": 0,
+                "conversionProfileId": null,
+                "redirectEntryId": "",
+                "rootEntryId": "1_gu07ygn9",
+                "operationAttributes": [],
+                "entitledUsersEdit": "",
+                "entitledUsersPublish": ""
+              }
+            }
+
+
 ## Playlist Entries [/playlist/{playlistId}/entries?format=json]
 
 ### Lists Playlist Entries [GET]
@@ -517,88 +599,6 @@ Lists all entries in a given playlist
               }
             }
 
-## Playlist [/playlist?format=json]
-
-### Creates a Playlist [POST]
-
-Creates a new playlist object
-
-+ Request (application/json;charset=UTF-8)
-
-        {
-            "accessControlId": "33627",
-            "adminTags": "",
-            "categories": "PlatformDemo",
-            "description": "",
-            "name": "Leon",
-            "playlistContent": "1_izramf08,1_0h9c8icp,1_rbkwmmpw,1_pvmxqv1u,1_11nv3doz",
-            "tags": "",
-            "userId": "demo@panda-os.com"
-        }
-
-+ Response 200 (application/json)
-    + Headers
-
-            connection:keep-alive
-            access-control-allow-credentials:true
-            access-control-allow-headers:Keep-Alive,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Authorization,X-Bamboo-Token,Event-Id,X-Requested-With
-            access-control-allow-methods:GET, POST, DELETE, PUT, OPTIONS, INDEX
-            access-control-allow-origin:*
-
-    + Body
-
-            {
-              "data": {
-                "playlistContent": "1_izramf08,1_0h9c8icp,1_rbkwmmpw,1_pvmxqv1u,1_11nv3doz",
-                "filters": [],
-                "totalResults": null,
-                "playlistType": 3,
-                "plays": 0,
-                "views": 0,
-                "duration": 0,
-                "executeUrl": "k_pl_0_name=Leon&k_pl_0_url=https%3A%2F%2Fwww.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D33942%26subp_id%3D0%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D1_gu07ygn9",
-                "id": "1_gu07ygn9",
-                "name": "Leon",
-                "description": "",
-                "partnerId": 33942,
-                "userId": "demo@panda-os.com",
-                "creatorId": "demo@panda-os.com",
-                "tags": "",
-                "adminTags": "",
-                "categories": "PlatformDemo",
-                "categoriesIds": "21672211",
-                "status": "2",
-                "moderationStatus": 6,
-                "moderationCount": 0,
-                "type": "5",
-                "createdAt": 1461587868,
-                "updatedAt": 1461587869,
-                "rank": 0,
-                "totalRank": 0,
-                "votes": 0,
-                "groupId": null,
-                "partnerData": "",
-                "downloadUrl": "https://cdnsecakmi.kaltura.com/p/33942/sp/0/raw/entry_id/1_gu07ygn9/version/100001",
-                "searchText": "_PAR_ONLY_ _33942_ _MEDIA_TYPE_3|  Leon ",
-                "licenseType": null,
-                "version": 100001,
-                "thumbnailUrl": "https://cdnsecakmi.kaltura.com/p/33942/sp/0/thumbnail/entry_id/1_gu07ygn9/version/0",
-                "accessControlId": 33627,
-                "startDate": null,
-                "endDate": null,
-                "referenceId": "",
-                "replacingEntryId": "",
-                "replacedEntryId": "",
-                "replacementStatus": "0",
-                "partnerSortValue": 0,
-                "conversionProfileId": null,
-                "redirectEntryId": "",
-                "rootEntryId": "1_gu07ygn9",
-                "operationAttributes": [],
-                "entitledUsersEdit": "",
-                "entitledUsersPublish": ""
-              }
-            }
 
 # Group Authentication
 
