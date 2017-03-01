@@ -18,49 +18,49 @@ Users of the **Bamboo Video API**
 + Response 200 (application/json)
 
         
-{
-  "data": [
-    {
-      "instance": "123435434",
-      "role": "viewerRole",
-      "info": {
-        
-      },
-      "_id": {
-        "$id": "123435434"
-      },
-      "id": "demoapi@bamboo-video.com",
-      "email": "demoapi@bamboo-video.com",
-      "phone": null,
-      "dateOfBirth": null,
-      "country": null,
-      "area": null,
-      "city": null,
-      "state": null,
-      "zip": null,
-      "description": null,
-      "firstName": "Demo",
-      "lastName": "API",
-      "gender": 1,
-      "createdAt": 1466181293,
-      "status": 1,
-      "fullName": "Demo API",
-      "accounts": [
         {
-          "instanceId": "123435434",
-          "role": "viewerRole"
+          "data": [
+            {
+              "instance": "123435434",
+              "role": "viewerRole",
+              "info": {
+                
+              },
+              "_id": {
+                "$id": "123435434"
+              },
+              "id": "demoapi@bamboo-video.com",
+              "email": "demoapi@bamboo-video.com",
+              "phone": null,
+              "dateOfBirth": null,
+              "country": null,
+              "area": null,
+              "city": null,
+              "state": null,
+              "zip": null,
+              "description": null,
+              "firstName": "Demo",
+              "lastName": "API",
+              "gender": 1,
+              "createdAt": 1466181293,
+              "status": 1,
+              "fullName": "Demo API",
+              "accounts": [
+                {
+                  "instanceId": "123435434",
+                  "role": "viewerRole"
+                }
+              ],
+              "passwordExpiredDate": "",
+              "type": 3,
+              "updatedAt": 1482258445,
+              "isOnline": false
+            }
+          ],
+          "meta": {
+            "total": 1
+          }
         }
-      ],
-      "passwordExpiredDate": "",
-      "type": 3,
-      "updatedAt": 1482258445,
-      "isOnline": false
-    }
-  ],
-  "meta": {
-    "total": 1
-  }
-}
 
 ### Create a User [POST]
 + Request (application/json)
@@ -85,44 +85,44 @@ A single User object with all its properties
     + Body
 
             
-{
-  "data": {
-    "instance": "123231313",
-    "role": "viewerRole",
-    "info": {
-      
-    },
-    "_id": {
-      "$id": "123231313"
-    },
-    "id": "demoapi@bamboo-video.com",
-    "email": "demoapi@bamboo-video.com",
-    "phone": null,
-    "dateOfBirth": null,
-    "country": null,
-    "area": null,
-    "city": null,
-    "state": null,
-    "zip": null,
-    "description": null,
-    "firstName": "Demo",
-    "lastName": "API",
-    "gender": 1,
-    "createdAt": 1466181293,
-    "status": 1,
-    "fullName": "Demo API",
-    "accounts": [
-      {
-        "instanceId": "123231313",
-        "role": "viewerRole"
-      }
-    ],
-    "passwordExpiredDate": "",
-    "type": 3,
-    "updatedAt": 1482258445,
-    "isOnline": false
-  }
-}
+            {
+              "data": {
+                "instance": "123231313",
+                "role": "viewerRole",
+                "info": {
+                  
+                },
+                "_id": {
+                  "$id": "123231313"
+                },
+                "id": "demoapi@bamboo-video.com",
+                "email": "demoapi@bamboo-video.com",
+                "phone": null,
+                "dateOfBirth": null,
+                "country": null,
+                "area": null,
+                "city": null,
+                "state": null,
+                "zip": null,
+                "description": null,
+                "firstName": "Demo",
+                "lastName": "API",
+                "gender": 1,
+                "createdAt": 1466181293,
+                "status": 1,
+                "fullName": "Demo API",
+                "accounts": [
+                  {
+                    "instanceId": "123231313",
+                    "role": "viewerRole"
+                  }
+                ],
+                "passwordExpiredDate": "",
+                "type": 3,
+                "updatedAt": 1482258445,
+                "isOnline": false
+              }
+            }
 
 ### Update a User [PUT]
 + Response 200 (application/json)
