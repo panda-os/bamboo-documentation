@@ -128,7 +128,7 @@ A single User object with all its properties
 + Response 200 (application/json)
 
 
-### Remove an User [DELETE]
+### Remove a User [DELETE]
 + Response 204
 
 # Group Entries
@@ -786,4 +786,66 @@ Gets the current session token
 
         {
         "session":"djJ8MjEwODEwMXyQ9oMxnuBNxmCalO_JCq2sK3iW5XMla2tbjil6bKhYXoS0KG9GUdvCSl8EeZ66_3-vL7I1191LDfifcAmgnGb-9HgYQdhoHYx1odNJL0s91EK94Zw6v-a1dpnBTm1SXYr9QKe1apcWYPVe11BLDWU1ejvFo8HcJr0DKPw952pOaZtGbtwTmct9mO6Iuvv7ubk="
+        }
+        
+# Group Purchases
+
+## Purchasing [/user/0/purchase?format=json]
+
+### List all Purchases [GET]
+
+Retrieves the current user's purchases
+
++ Request (application/json;charset=UTF-8)
+
+
++ Response 200 (application/json)
+
+        [
+            {
+              "type": 1,
+              "objectId": "<ENTRY_ID>",
+              "service": 2
+            }
+        ]
+
+### Add a Purchase [POST]
+
+Finallizes a purchase for a user
+
++ Request (application/json;charset=UTF-8)
+
+        {
+            "type": 1,
+            "objectId": "<ENTRY_ID>",
+            "service": 2,
+            "price": "<ENTRY_PRICE>",
+            "info": {
+                "<INFO_KEY>":"<INFO_VALUE>"
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "result": true
+        }
+
+## Validation [/user/0/purchase/{objectId}?format=json]
+A single User object with all its properties
+
++ Parameters
+    + objectId (required, string, `1231315151`) ... string `id` MongoId of the purchased object to perform action with.
+    
+### Validate Purchase [GET]
+
+Performs a validation process to check if the user has purchased an object with the given ID
+
++ Request (application/json;charset=UTF-8)
+
+
++ Response 200 (application/json)
+
+        {
+            "result": true
         }
