@@ -141,8 +141,10 @@ Media Entries related resources of the **Bamboo Video API**
 
 ### List all Entries [GET]
 #### The filter and pager parameters are optional.
-They should be sent as json encoded strings.
-Example: [http://demo.bamboo-video.com/api/entry?format=json&pager={"pageSize":10,"pageIndex":2}]
+- They should be sent as json encoded strings.
+- Examples: 
+    - http://demo.bamboo-video.com/api/entry?format=json&pager={"pageSize":10,"pageIndex":2}
+    - http://demo.bamboo-video.com/api/entry?format=json&filter={"categoriesMatchAnd":"Bamboo>Action"}
 + Response 200 (application/json)
 
         {
