@@ -140,7 +140,9 @@ Media Entries related resources of the **Bamboo Video API**
     + pager (FilterPager,optional) - A [FilterPager](#reference/Filters%20and%20Pagers) object
 
 ### List all Entries [GET]
-
+#### The filter and pager parameters are optional.
+They should be sent as json encoded strings.
+Example: [/entry?format=json&pager={"pageSize":10,"pageIndex"2}]
 + Response 200 (application/json)
 
         {
