@@ -65,11 +65,11 @@ Users of the **Bamboo Video API**
 ### Create a User [POST]
 + Request (application/json)
 
-        { "email": "demoapi@bamboo-video.com" }
+        {"new":1,"firstName":"roni+test","lastName":"Test","id":"roni+test@test.com","info":{},"email":"test@test.com","phone":"123455678","gender":"1","role":"viewerRole","status":"1","password":"123456"}
 
 + Response 201 (application/json)
 
-        { "id": "123155113123", "title": "demoapi@bamboo-video.com" }
+        {"data":{"role":"viewerRole","info":{},"_id":{"$id":"5a04cfbd6986fb1d044bda63"},"id":"roni+test@test.com","email":"roni+test@test.com","phone":"123455678","dateOfBirth":null,"country":null,"area":null,"city":null,"state":null,"zip":null,"description":null,"firstName":"roni+test","lastName":"Test","gender":1,"createdAt":1510264764,"status":1,"fullName":"roni+test Test","type":3,"updatedAt":null}}
 
 ## User [/user/{id}?format=json]
 A single User object with all its properties
@@ -306,6 +306,140 @@ A single Entry object with all its properties
 
 ### Remove an Entry [DELETE]
 + Response 204
+
+
+# Group Categories
+Categories related resources of the **Bamboo Video API**
+
+## Categories Collection [/category?format=json&filter={filter}&pager={pager}]
++ Parameters
+    + filter (CategoryFilter,optional) - A [CategoryFilter](#reference/Filters%20and%20Pagers) object
+    + pager (FilterPager,optional) - A [FilterPager](#reference/Filters%20and%20Pagers) object
+
+### List all Categories [GET]
+#### The filter and pager parameters are optional.
+- They should be sent as json encoded strings.
+- Examples: 
+    - http://demo.bamboo-video.com/api/category?format=json&pager={"pageSize":10,"pageIndex":1}
+    - http://demo.bamboo-video.com/api/entry?format=json&filter={}
++ Response 200 (application/json)
+
+        {
+          "data": [
+                    {
+              "id": 10815,
+              "parentId": 10814,
+              "depth": 1,
+              "partnerId": 102,
+              "name": "Featured",
+              "fullName": "Bamboo>Featured",
+              "fullIds": "10814>10815",
+              "entriesCount": 8,
+              "createdAt": 1469966990,
+              "updatedAt": 1501605367,
+              "description": null,
+              "tags": null,
+              "appearInList": 1,
+              "privacy": 1,
+              "inheritanceType": 2,
+              "userJoinPolicy": 3,
+              "defaultPermissionLevel": 3,
+              "owner": "",
+              "directEntriesCount": 8,
+              "referenceId": null,
+              "contributionPolicy": 1,
+              "membersCount": 0,
+              "pendingMembersCount": 0,
+              "privacyContext": null,
+              "privacyContexts": "",
+              "status": 2,
+              "inheritedParentId": null,
+              "partnerSortValue": 0,
+              "partnerData": null,
+              "defaultOrderBy": null,
+              "directSubCategoriesCount": 0,
+              "moderation": 0,
+              "pendingEntriesCount": null,
+              "isAggregationCategory": 0,
+              "aggregationCategories": "",
+              "relatedObjects": null
+            }
+          ],
+          "meta": {
+            "total": 1
+          }
+        }
+
+### Create an Category [POST]
++ Request (application/json)
+
+        { "name": "Category title" }
+
++ Response 201 (application/json)
+
+        { "id": 3, "name": "Category title" }
+
+## Category [/category/{id}?format=json]
+A single Category object with all its properties
+
++ Parameters
+    + id (required string, `12345`) ... string `id` of the Category to perform action with. Has example value.
+
+### Retrieve an Category [GET]
++ Response 200 (application/json)
+
+    + Header
+
+    + Body
+
+            {
+                "data": {
+                      "id": 10815,
+                      "parentId": 10814,
+                      "depth": 1,
+                      "partnerId": 102,
+                      "name": "Featured",
+                      "fullName": "Bamboo>Featured",
+                      "fullIds": "10814>10815",
+                      "entriesCount": 8,
+                      "createdAt": 1469966990,
+                      "updatedAt": 1501605367,
+                      "description": null,
+                      "tags": null,
+                      "appearInList": 1,
+                      "privacy": 1,
+                      "inheritanceType": 2,
+                      "userJoinPolicy": 3,
+                      "defaultPermissionLevel": 3,
+                      "owner": "",
+                      "directEntriesCount": 8,
+                      "referenceId": null,
+                      "contributionPolicy": 1,
+                      "membersCount": 0,
+                      "pendingMembersCount": 0,
+                      "privacyContext": null,
+                      "privacyContexts": "",
+                      "status": 2,
+                      "inheritedParentId": null,
+                      "partnerSortValue": 0,
+                      "partnerData": null,
+                      "defaultOrderBy": null,
+                      "directSubCategoriesCount": 0,
+                      "moderation": 0,
+                      "pendingEntriesCount": null,
+                      "isAggregationCategory": 0,
+                      "aggregationCategories": "",
+                      "relatedObjects": null
+                    }
+            }
+
+### Update an Category [PUT]
++ Response 200 (application/json)
+
+
+### Remove an Category [DELETE]
++ Response 204
+
 
 # Group Playlists
 
