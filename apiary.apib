@@ -8,6 +8,1464 @@ This is the Bamboo API, please email support@panda-os.com for any questions.
 # bamboo-video
 The Bamboo Video API is a RESTful API
 
+# Data Structures
+
+##config (object)
++ config (object)
++ landingpages {
+          mobileFlavorId: 1,
+          "promotionalCategory": "Promotional",
+          "promotionalPlaylistTag": "promotional",
+          "bannerImage": false
+        },
+        "modules": {
+          "custom": {
+            "highcharts-ng": 1,
+            "ui.sortable.multiselection": 1
+          },
+          "core": {
+            "pvpadmin": 1,
+            "common": 1,
+            "gallery": 1,
+            "entry": 1,
+            "admin": 1,
+            "upload": 1,
+            "user": 1,
+            "live": 0,
+            "faq": 1,
+            "comments": 1,
+            "dashboard": 1,
+            "mymedia": 1,
+            "embed": 1,
+            "player": 1,
+            "playlist": 1,
+            "channels": 0,
+            "freetrial": 1,
+            "categories": 1,
+            "datingil": 0,
+            "events": 0,
+            "adserver": 0,
+            "analytics": 1,
+            "widget": 1,
+            "landingpages": 1,
+            "editor": 1,
+            "football": 0
+          },
+          "thirdParty": {
+            "jkuri.gallery": 1,
+            "angularStats": 0,
+            "ngCropper": 1,
+            "ui.utils": 1,
+            "angular.filter": 1,
+            "ui-select2": 1,
+            "ui.select": 1,
+            "ngSanitize": 1,
+            "ui.bootstrap": 1,
+            "ui.bootstrap.datetimepicker": 1,
+            "ui.scrollfix": 1,
+            "ui.slider": 1,
+            "pascalprecht.translate": 1,
+            "slugifier": 1,
+            "ngTable": 1,
+            "cgPrompt": 1,
+            "hmTouchevents": 1,
+            "angulartics": 1,
+            "angulartics.google.analytics": 1,
+            "angulartics.piwik": 1,
+            "angularResizable": 1,
+            "facebook": 1,
+            "addthis": 1,
+            "ngtimeago": 1,
+            "xeditable": 1,
+            "ui.sortable": 1,
+            "ngCsv": 1,
+            "angularSpectrumColorpicker": 1,
+            "ui.tree": 1,
+            "daterangepicker": 1,
+            "ngProgress": 1,
+            "ngJoyRide": 1,
+            "ngDragDrop": 1,
+            "ngWebSocket": 1,
+            "angular-carousel-3d": 1,
+            "react": 1,
+            "mega-menu": 1
+          }
+        },
+        "dependencies": {
+          "additional": Array[3][
+            "vendor/Highcharts-4.1.7/js/highcharts.min.js",
+            "vendor/highcharts-ng/highcharts-ng.js",
+            "vendor/countUp/countUp.js"
+          ],
+          "global": Array[56][
+            "vendor/detect-mobile-browser-master/detect-browser.js",
+            "vendor/ngGallery/src/js/ngGallery.js",
+            "vendor/angular-animate/angular-animate.min.js",
+            "vendor/angular-touch/angular-touch.min.js",
+            "vendor/angular-sanitize/angular-sanitize.min.js",
+            "vendor/angular-filter/angular-filter.min.js",
+            "vendor/angular-route/angular-route.min.js",
+            "vendor/angular-dragdrop/angular-dragdrop.min.js",
+            "vendor/angular-websocket/angular-websocket.min.js",
+            "vendor/ui-modules/ui-router.min.js",
+            "vendor/ui-modules/ui-bootstrap-tpls-1.3.2.js",
+            "vendor/ui-modules/datetime-picker.js",
+            "vendor/ui-modules/datetime-picker.tpls.js",
+            "vendor/lodash/lodash.min.js",
+            "vendor/restangular/restangular.min.js",
+            "vendor/jsoneditor/asset/jsonlint/jsonlint.min.js",
+            "vendor/chart.js/Chart.min.js",
+            "vendor/csv/ng-csv.min.js",
+            "vendor/hammer.js/hammer.min.js",
+            "vendor/twitter/bootstrap/js/bootstrap.min.js",
+            "vendor/spectrum/spectrum.min.js",
+            "vendor/angular-cropper/ngCropper.all.js",
+            "vendor/angular-addthis/angular-addthis.js",
+            "vendor/angular-slugify/angular-slugify.js",
+            "vendor/angular-prompt/angular-prompt.js",
+            "vendor/angular-daterangepicker/angular-daterangepicker.js",
+            "vendor/angular-daterangepicker/moment-timezone.js",
+            "vendor/angular-resizeable/angular-resizeable.js",
+            "vendor/angular-ui-tree/angular-ui-tree.js",
+            "vendor/angular-hammer/angular-hammer.js",
+            "vendor/angulartics/src/angulartics.js",
+            "vendor/angulartics/src/angulartics-ga.js",
+            "vendor/angulartics/src/angulartics-piwik.js",
+            "vendor/pascalprecht-angular-translate/panda-angular-translate.js",
+            "vendor/select2/select2.min.js",
+            "vendor/ui-modules/ui-utils.js",
+            "vendor/ui-modules/select.js",
+            "vendor/ui-modules/select2.js",
+            "vendor/ui-modules/ui-slider.js",
+            "vendor/ui-modules/ui.sortable.multiselection.js",
+            "vendor/ui-modules/sortable.js",
+            "vendor/angularjs-slider/dist/rzslider.min.js",
+            "vendor/ui-calendar/calendar.js",
+            "vendor/ng-table/ng-table.js",
+            "vendor/facebook-login/angular-facebook.js",
+            "vendor/ngtimeago/ngtimeago.js",
+            "vendor/jquery-hoverdir/jquery.hoverdir.js",
+            "vendor/xeditable/js/xeditable.min.js",
+            "vendor/jsoneditor/jsoneditor.js",
+            "vendor/spectrum/angular-spectrum-colorpicker.js",
+            "vendor/react/react.min.js",
+            "vendor/react/react-dom.min.js",
+            "vendor/react-virtualized/react-virtualized.min.js",
+            "vendor/react-bootstrap/react-bootstrap.min.js",
+            "vendor/ng-react/ng-react.js",
+            "vendor/angular-mega-menu/angular-mega-menu.js"
+          ]
+        },
+        "analytics": {
+          "reportWidget": false,
+          "altEnvironment": true,
+          "altAnnouncment": false,
+          "reports": {
+            "showCorruptedLevel": "partial"
+          },
+          "google": {
+            "trackingId": "UA-36034144-3",
+            "apiTrackingId": "UA-36034144-8"
+          },
+          "panda": {
+            "url": "http://piwik.panda-os.com",
+            "token": "57fa55357816eb87b709f15065808a4e",
+            "cache-expiry": 10,
+            "siteId": 1,
+            "lastMinutes": 1
+          }
+        },
+        "debug": {
+          "logLevel": 7
+        },
+        "general": {
+          "rtl": "false",
+          "defaultLanguage": "en",
+          "timezoneOffset": 0,
+          "timezoneString": "utc",
+          "debugEnabled": "false",
+          "minifyModulesCss": true,
+          "siteDescription": "Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming."
+        },
+        "cache": {
+          "enabled": true,
+          "expiration": 600
+        },
+        "contact": {
+          "uiTitle": "Contact Us",
+          "uiDescription": "Please fill this form and we will get back to you shortly",
+          "uiMessage": "Thank you for contacting us."
+        },
+        "locale": Array[0][
+
+        ],
+        "translation": {
+          "languages": Array[6][
+            {
+              "language": "en",
+              "name": "English",
+              "flag": "us",
+              "orientation": "ltr",
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "language": "pt",
+              "name": "Portuguese",
+              "flag": "pt",
+              "orientation": "ltr",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "language": "fr",
+              "name": "French",
+              "flag": "fr",
+              "orientation": "ltr",
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "language": "es",
+              "name": "Spanish",
+              "flag": "es",
+              "orientation": "ltr",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            },
+            {
+              "language": "de",
+              "name": "German",
+              "flag": "de",
+              "orientation": "ltr",
+              "arrayOrder": 4,
+              "arrayId": "__4"
+            },
+            {
+              "language": "he",
+              "name": "Hebrew",
+              "flag": "il",
+              "orientation": "rtl",
+              "arrayOrder": 5,
+              "arrayId": "__5"
+            }
+          ]
+        },
+        "kaltura": {
+          "serviceUrl": "https://video.panda-os.com/",
+          "statsUrl": "https://videostats.panda-os.com/api_v3/index.php",
+          "cdnUrl": "http://static.panda-os.com",
+          "partnerId": "102"
+        },
+        "tags": {
+          "limitTagsToRootCategory": true
+        },
+        "application": {
+          "resourceUrlWhitelist": Array[3][
+            "self",
+            "http://*.bamboo-video.com/**",
+            "http://*.panda-os.com/**"
+          ],
+          "title": "Bamboo - Panda Video Platform",
+          "description": "Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming.",
+          "rootCategory": "Bamboo",
+          "enableDelete": false,
+          "showSplash": true,
+          "relatedCategory": "Featured",
+          "showUserInstances": true,
+          "showDefaultLogin": true,
+          "showInstanceInformationInHeader": false,
+          "showUserboxInstanceInformation": false,
+          "dateFormat": "shortDate",
+          "socialMedia": Array[0][
+
+          ],
+          "userMenuDropdown": {
+            "name": true,
+            "image": true
+          },
+          "jsBaseUrl": "www.bamboo-video.com",
+          "cdnApiUrl": "https://cdnapi.bamboo-video.com",
+          "bambooCdnUrl": "https://cdn.bamboo-video.com",
+          "displayInstanceType": true,
+          "announcement": false,
+          "redirectToHomeWhenLogin": false,
+          "registerPopup": {
+            "enabled": false,
+            "timeout": 60000,
+            "nagTimeout": 60000
+          },
+          "configCustomParams": Array[0][
+
+          ]
+        },
+        "drm": {
+          "enabled": false,
+          "drmServiceUrl": "https://widevine-dash.ezdrm.com/proxy?pX=8C4D80&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
+          "drmServiceUrlPlayready": "https://playready.ezdrm.com/cency/preauth.aspx?pX=4F3EA0&format=playready&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
+          "drmServiceUrlFairplay": "https://fps.ezdrm.com/api/licenses/38fffe9a-5e4c-4e2b-9471-251549ec1eda?format=fairplay&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
+          "drmFairplayCertificatePath": "https://api.bamboo-video.com/api/fps/charlton.cer"
+        },
+        "authentication": {
+          "enabled": true,
+          "demoCredentials": {
+            "email": "demo@panda-os.com",
+            "password": "123456"
+          },
+          "roleNames": {
+            "viewerRole": "Viewer",
+            "contributorRole": "Contributor",
+            "managerRole": "Manager",
+            "adminRole": "Administrator"
+          },
+          "guestUser": "Guest",
+          "smsMethod": false,
+          "passwordExpired": false
+        },
+        "branding": {
+          "logoUrl": "https://s3cdn.panda-os.com/upload/20161227/58625bcf53083.png",
+          "faviconUrl": "/favicon.ico",
+          "poweredBy": {
+            "logoUrl": "img/panda-logo.png",
+            "linkUrl": "http://www.panda-os.com",
+            "linkTitle": "PandaOS Open-Source Solutions",
+            "linkText": "Powered By:"
+          },
+          "customCss": "custom.css",
+          "siteName": "Bamboo - Panda Video Platform",
+          "successPageBgUrl": "/app/modules/panda/img/intro_bg.jpg"
+        },
+        "player": {
+          "customMenuTemplates": Array[1][
+            "default"
+          ],
+          "playerUrl": "//static.panda-os.com/html5/html5lib/v2.55/mwEmbedLoader.php",
+          "beaconUrl": "//api.bamboo-video.com/api/drm/beacon",
+          "uiconfId": "11601700",
+          "debug": false,
+          "autoPlay": true,
+          "flashvars": {
+            "hlsjs": {
+              "options": {
+                "enableWebVTT": true,
+                "maxBufferHole": 8,
+                "maxSeekHole": 8
+              },
+              "plugin": true
+            },
+            "chapters": {
+              "plugin": true
+            },
+            "kAnalony": {
+              "plugin": false
+            },
+            "chaptersEdit": {
+              "plugin": true,
+              "editPropId": "panda-chapterProp",
+              "editTimelineId": "panda-chapterTimeline",
+              "tags": "chaptering",
+              "requiresJQuery": true
+            },
+            "adCuepointsEdit": {
+              "plugin": true,
+              "editPropId": "panda-adCuepointProp",
+              "editTimelineId": "panda-adCuepointTimeline",
+              "tags": "adcuepoints",
+              "requiresJQuery": true
+            },
+            "sourceSelector": {
+              "plugin": "true",
+              "switchOnResize": "false",
+              "simpleFormat": "true",
+              "displayMode": "sizebitrate"
+            },
+            "scrubber": {
+              "plugin": true,
+              "thumbWidth": 100,
+              "thumbSlicesUrl": "/api/entry/{mediaProxy.entry.id}/thumbnail/?width=100&slices=100&sprite=true"
+            },
+            "loadingSpinner": {
+              "color": "rgb(255,255,255)",
+              "lines": "20",
+              "width": "10",
+              "radius": "30",
+              "lineLength": "0",
+              "speed": "1",
+              "shadow": "true",
+              "trail": "50"
+            },
+            "bambooChapters": {
+              "plugin": "true",
+              "iframeHTML5Js": "//www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.js",
+              "iframeHTML5Css": "//www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.css",
+              "enableSearch": "false",
+              "cuePointType": Array[1][
+                {
+                  "main": "annotation.Annotation",
+                  "sub": Array[1][
+                    0
+                  ],
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                }
+              ]
+            },
+            "IframeCustomPluginCss1": "/css/panda-player.css",
+            "uiVars": Array[2][
+              {
+                "key": "mediaProxy.preferedFlavorBR",
+                "value": "1600",
+                "overrideFlashvar": true,
+                "arrayOrder": 0,
+                "arrayId": "__0"
+              },
+              {
+                "key": "KalturaSupport_ForceUserAgent",
+                "value": "Bamboo-Player",
+                "overrideFlashvar": true,
+                "arrayOrder": 1,
+                "arrayId": "__1"
+              }
+            ],
+            "LeadWithHLSOnFlash": false,
+            "LeadWithHLSOnJs": true,
+            "video360": {
+              "plugin": "true"
+            },
+            "related": {
+              "parent": "controlsContainer",
+              "align": "right",
+              "displayOnPlaybackDone": true,
+              "sendContextWithPlaylist": true,
+              "entryList": null,
+              "playlistId": "0_fkm10x3k",
+              "clickUrl": "",
+              "autoContinueTime": "10",
+              "autoContinueEnabled": true,
+              "storeSession": true,
+              "order": "200"
+            }
+          },
+          "playerConfig": {
+            "mw": {
+              "KalturaSupport_ForceUserAgent": "Bamboo-Player",
+              "Kaltura.LeadWithHTML5": true,
+              "Kaltura.UseAppleAdaptive": false,
+              "Kaltura.UseManifestUrls": true,
+              "EmbedPlayer.EnableIpadHTMLControls": true,
+              "EmbedPlayer.UseFlashOnAndroid": false,
+              "Kaltura.LoadScriptForVideoTags": true,
+              "Kaltura.AllowIframeRemoteService": false,
+              "Kaltura.EnableEmbedUiConfJs": false,
+              "Mw.XmlProxyUrl": "//video.panda-os.com/html5/html5lib/v2.18.2/simplePhpXMLProxy.php"
+            }
+          },
+          "noPreviewImageUrl": "//via.placeholder.com/350x200?text=No%20Preview%20Available%20:(",
+          "mediaConvertingImageUrl": "//via.placeholder.com/350x200?text=Your%20Media%20Is%20Converting",
+          "uploadErrorImageUrl": "//via.placeholder.com/350x200?text=An%20error%20Occured%20while%20uploading%20:("
+        },
+        "bitmovin": {
+          "enable": false,
+          "playerUrl": "https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7/bitmovinplayer.js",
+          "playerKey": "c2662d78-c43c-4877-82ee-e79fd4b6afa2",
+          "statsPluginUrl": "https://www.bamboo-video.com/app/modules/player/js/bitdashBambooAnalytics.js",
+          "skin": {
+            "screenLogoUrl": "https://www.panda-os.com/",
+            "screenLogoImage": "https://static.panda-os.com/panda-square-logo.png"
+          },
+          "playback": {
+            "autoplay": false
+          }
+        },
+        "navigation": {
+          "showRegisterLink": true,
+          "userMenuPictureSide": false,
+          "enableMyProfile": true,
+          "menuLinks": Array[4][
+            {
+              "title": "Media Management",
+              "icon": "film",
+              "route": "root.mymedia.media",
+              "loggedIn": false,
+              "role": "contributorRole",
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "title": "Manage Users",
+              "icon": "list",
+              "route": "root.admin.users",
+              "loggedIn": true,
+              "role": "adminRole",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "title": "My Profile",
+              "icon": "user",
+              "route": "root.user.profile",
+              "loggedIn": true,
+              "role": "viewerRole",
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "title": "Settings",
+              "icon": "cog",
+              "route": "root.pvpadmin.configs",
+              "loggedIn": true,
+              "role": "adminRole",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            }
+          ],
+          "homeRoute": "root.home",
+          "headerItems": {
+            "0": {
+              "title": "Categories",
+              "icon": "th-large",
+              "megamenu": true,
+              "includes": "root.gallery",
+              "parentCategoryId": "10814",
+              "showThumbnail": true,
+              "params": {
+                "categoryName": "Categories"
+              },
+              "side": "left",
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            "1": {
+              "tplSrc": "search-header-directive-template.html",
+              "module": "common",
+              "locationPrefix": "views/templates/",
+              "class": "hidden-xs",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            "3": {
+              "title": "PandaOS Website",
+              "link": "http://www.panda-os.com",
+              "icon": "info-sign",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            },
+            "4": {
+              "title": "Media Management",
+              "route": "root.mymedia.media",
+              "icon": "film",
+              "arrayOrder": 4,
+              "arrayId": "__4"
+            }
+          }
+        },
+        "search": {
+          "searchForUserRole": null,
+          "showEntryGallery": true,
+          "showUserGallery": true,
+          "galleryEntryOptions": Array[0][
+
+          ],
+          "galleryUsersOptions": Array[0][
+
+          ]
+        },
+        "playPage": {
+          "customMenuEnabled": false,
+          "enablePaymentService": false,
+          "checkValidation": false,
+          "showChannelsGuide": false,
+          "displayDeletedUserContent": false,
+          "playPageContainerEnabled": false,
+          "playPageRelatedEnabled": true,
+          "widgets": Array[2][
+            {
+              "directiveName": "gallery-tabs",
+              "name": "galleryTabs",
+              "module": "gallery",
+              "enabled": true,
+              "order": 1,
+              "directiveAttributes": {
+                "widget-config": "galleryTabs"
+              },
+              "config": {
+                "class": "",
+                "liClass": {
+                  "xs": 6
+                }
+              },
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "directiveName": "category-carousel",
+              "name": "categoryCarousel",
+              "module": "gallery",
+              "type": "carousel",
+              "enabled": true,
+              "order": 2,
+              "directiveAttributes": {
+                "options": "categoryCarousel.options"
+              },
+              "config": {
+                "class": "",
+                "galleryType": "",
+                "subCategory": "",
+                "liClass": {
+                  "xs": 6
+                }
+              },
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            }
+          ]
+        },
+        "pvpadmin": {
+          "enableInstanceCreation": true
+        },
+        "gallery": {
+          "defaultThumbnailTemplate": {
+            "module": "gallery",
+            "tplSrc": "views/templates/default-thumbnail.html"
+          },
+          "showPlayPageCategories": true,
+          "thumbnailRotation": true,
+          "thumbnailSize": {
+            "width": 480,
+            "height": 320
+          },
+          "thumbnailSizeRightBar": {
+            "width": 480,
+            "height": 300
+          },
+          "playerSize": {
+            "width": 800,
+            "height": 600
+          },
+          "tabs": {
+            "enableCategoryGallery": false,
+            "enableCategoryInOneCarousel": true,
+            "enableFacebookComments": false,
+            "comments": {
+              "enable": true,
+              "name": "Comments"
+            },
+            "galleries": {
+              "enable": true,
+              "name": "Galleries"
+            }
+          },
+          "categorygallery": {
+            "pageSize": 1,
+            "PlaylistGalleryOptions": Array[0][
+
+            ]
+          }
+        },
+        "mymedia": {
+          "singleCategory": false,
+          "categoryFormEnabled": false,
+          "customHeaderModule": "mymedia",
+          "customHeader": "/views/directives/my-media-header/default-my-media-header-template.html",
+          "mediaTypeIn": false,
+          "autoSelect": true,
+          "useReact": true,
+          "showReferenceId": false,
+          "itemType": "default",
+          "uploader": false,
+          "reviewEnabled": false,
+          "thumbnailGenerator": true,
+          "pageSizes": Array[3][
+            20,
+            50,
+            100
+          ],
+          "categoryManagementSupport": true,
+          "checkCategoryAncestors": true,
+          "uiconf": "11601700",
+          "entryTitleClickRoute": "root.gallery.playentry({id: entry.id})",
+          "entryTitleClickRouteName": "root.gallery.playentry",
+          "saveasEnabled": false,
+          "tabs": Array[4][
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "edit",
+              "order": 1,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "tplSrc": "editing.html",
+              "name": "Editing",
+              "tabRoute": "editing",
+              "order": 2,
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "tplSrc": "embed.html",
+              "name": "Embed",
+              "tabRoute": "embed",
+              "order": 3,
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "tplSrc": "chapters.html",
+              "name": "Chapters",
+              "tabRoute": "chapters",
+              "order": 4,
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            }
+          ]
+        },
+        "embed": {
+          "maxUserPlayers": 10,
+          "defaultEmbedSize": {
+            "width": 500,
+            "height": 320
+          },
+          "defaultPlaylistEmbedSize": {
+            "width": 1000,
+            "height": 420
+          },
+          "newPlayerUiConf": "11601525",
+          "tabs": Array[4][
+            "general",
+            "styling",
+            "callToAction",
+            "monetization"
+          ],
+          "defaultPlayerConfig": {
+            "height": "395",
+            "width": "560",
+            "swfUrl": "/flash/kdp3/v3.9.8/kdp3.swf",
+            "swfUrlVersion": "3.9.8",
+            "version": "161",
+            "name": "New Player",
+            "tags": "html5studio,player",
+            "html5Url": "/html5/html5lib/v2.55.1/mwEmbedLoader.php",
+            "creationMode": 2,
+            "configFilePath": "configs/xml/kdp.xml",
+            "config": {
+              "plugins": {
+                "loadingSpinner": {
+                  "plugin": true,
+                  "enabled": true
+                },
+                "topBarContainer": {
+                  "plugin": true
+                },
+                "controlBarContainer": {
+                  "plugin": true,
+                  "hover": true
+                },
+                "theme": {
+                  "applyToLargePlayButton": true
+                },
+                "scrubber": {
+                  "plugin": true
+                },
+                "largePlayBtn": {
+                  "plugin": true
+                },
+                "playHead": {
+                  "plugin": true
+                },
+                "playPauseBtn": {
+                  "plugin": true
+                },
+                "volumeControl": {
+                  "plugin": true
+                },
+                "durationLabel": {
+                  "plugin": true
+                },
+                "currentTimeLabel": {
+                  "plugin": true
+                },
+                "keyboardShortcuts": {
+                  "plugin": true
+                },
+                "liveCore": {
+                  "plugin": true
+                },
+                "liveStatus": {
+                  "plugin": true
+                },
+                "liveBackBtn": {
+                  "plugin": true
+                },
+                "fullScreenBtn": {
+                  "plugin": true
+                },
+                "skipBtn": {
+                  "plugin": true
+                },
+                "watermark": {
+                  "cssClass": "topRight"
+                },
+                "sourceSelector": {
+                  "enabled": true,
+                  "plugin": true,
+                  "switchOnResize": true,
+                  "simpleFormat": true,
+                  "displayMode": "size"
+                }
+              },
+              "uiVars": Array[4][
+                {
+                  "key": "autoPlay",
+                  "value": false,
+                  "overrideFlashvar": false,
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "key": "autoMute",
+                  "value": false,
+                  "overrideFlashvar": false,
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                },
+                {
+                  "key": "enableTooltips",
+                  "value": false,
+                  "overrideFlashvar": false,
+                  "arrayOrder": 2,
+                  "arrayId": "__2"
+                },
+                {
+                  "key": "mediaProxy.preferedFlavorBR",
+                  "value": "1600",
+                  "overrideFlashvar": true,
+                  "arrayOrder": 3,
+                  "arrayId": "__3"
+                }
+              ],
+              "layout": {
+                "skin": "kdark"
+              }
+            }
+          },
+          "postMessage": false,
+          "targetOrigin": "*"
+        },
+        "myplaylists": {
+          "showEPGGeneratedPlaylists": false,
+          "ownVideosOnly": false,
+          "showReferenceId": false,
+          "tabs": Array[2][
+            {
+              "tplSrc": "playlists-videos.html",
+              "name": "Videos",
+              "tabRoute": "videos",
+              "order": 1,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "edit",
+              "order": 2,
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            }
+          ]
+        },
+        "entry": {
+          "linkToPlayPage": false,
+          "privateAsDefault": false,
+          "priceInput": true,
+          "countUsedViews": false,
+          "enablePrivacyOption": true,
+          "profileId": 1633,
+          "showPackageField": false,
+          "showPartnerSortValue": false,
+          "enableEntryCategories": true,
+          "enableEntryTags": true,
+          "subscribeButton": {
+            "buttonLink": "root.user.register",
+            "addRedirectUrl": true,
+            "buttonCaption": "Register Now",
+            "type": "route"
+          },
+          "downloadFlavor": 0,
+          "showRating": true
+        },
+        "editor": {
+          "previewServerUrl": "https://vod.panda-os.com"
+        },
+        "layout": {
+          "headerCustomClass": false,
+          "containerCustomClass": "container",
+          "defaultLayout": "layout.html"
+        },
+        "upload": {
+          "dropBoxAppKey": false,
+          "uploadOptions": {
+            "uploadFromDesktop": true,
+            "uploadFromURL": true,
+            "uploadFromDropBox": false
+          },
+          "allowSetEntryCategories": true,
+          "simultaneousUploads": 1,
+          "chunkSize": 2097152,
+          "hasUploadWidget": true,
+          "removeExtension": false,
+          "uploaderListTemplate": {
+            "module": "upload",
+            "tpl": "entry-edit-directive-template.html",
+            "options": Array[0][
+
+            ]
+          }
+        },
+        "comments": {
+          "entryCommentsCountProfileId": "",
+          "showPrivateCommentsConfig": true,
+          "commentsPrivate": false,
+          "sort": "-createdAt",
+          "sortReplies": "-createdAt",
+          "pageSize": 25
+        },
+        "clipping": {
+          "ffmpegClipping": false
+        },
+        "user": {
+          "profilePictureSize": {
+            "width": 200,
+            "height": 200
+          },
+          "coverPhotoSize": {
+            "width": 800,
+            "height": 450
+          },
+          "showAdditionalInfo": false,
+          "metadataProfileIdCredentials": "",
+          "metadataProfileIdAdditionalInfo": "",
+          "usersPageSize": 100,
+          "usersMetadataPageSize": 100,
+          "ksExpiry": 86400,
+          "requireUserId": false,
+          "requirePhone": false,
+          "defaultImageUrl": "img/default_user.jpg",
+          "profileModules": {
+            "purchases": true,
+            "followers": true,
+            "subscribers": true,
+            "entries": true,
+            "coverPhoto": true
+          },
+          "tabs": Array[2][
+            {
+              "tplSrc": "description.html",
+              "name": "Description",
+              "tabRoute": "description",
+              "order": 1,
+              "arrayId": "description",
+              "arrayOrder": 0
+            },
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "basic-info",
+              "order": 2,
+              "arrayId": "basicInfo",
+              "arrayOrder": 1
+            }
+          ],
+          "extendedPermissions": Array[1][
+            "contributorManager"
+          ]
+        },
+        "userManagement": {
+          "tabs": Array[1][
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "basic-info",
+              "order": 1,
+              "arrayId": "basicInfo",
+              "arrayOrder": 0
+            }
+          ]
+        },
+        "profile": {
+          "showUserEmbedCode": false
+        },
+        "social": {
+          "shareButtonsSize": "big",
+          "facebook": {
+            "applicationId": false,
+            "showVideoTags": true,
+            "uiconfId": "11619785",
+            "liveUiconfId": "11619784",
+            "locale": "en_US"
+          },
+          "twitter": false,
+          "addthisId": "ra-548ee9751344953e"
+        },
+        "faq": Array[0][
+
+        ],
+        "live": {
+          "conversionProfileId": 7534932,
+          "pleaseWaitStreamName": "pandaloop",
+          "appName": "pandaLive",
+          "mediaTypeIn": "7,201,201,203,204",
+          "maxBandwidth": "0",
+          "videoWidth": "640",
+          "videoHeight": "480",
+          "videoQuality": "0",
+          "videoBandwidth": "75000",
+          "videoFrameRate": "30",
+          "maxQuality": "60",
+          "chunkInterval": 3000,
+          "isLiveCacheExpiry": 10,
+          "isLiveInterval": 10000,
+          "wowzaRtmpServer": "rtmp://stream.panda-os.com",
+          "wowzaHttpServer": "http://streamcdn.panda-os.com",
+          "wowzaCdnServer": "http://streamcdn.panda-os.com",
+          "autoSelect": true,
+          "enableVod": "true",
+          "categoryManagementSupport": true,
+          "showEntryIsLiveIndicators": false,
+          "enableLiveViewersCount": false,
+          "showReferenceId": false,
+          "hlsStreamSuffix": "",
+          "hlsStreamPrefix": "",
+          "hdsStreamSuffix": "",
+          "hdsStreamPrefix": "",
+          "enableWebcam": true,
+          "tabs": Array[3][
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "edit",
+              "order": 1,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "tplSrc": "stream.html",
+              "name": "Stream Info",
+              "tabRoute": "stream",
+              "order": 2,
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "tplSrc": "embed.html",
+              "name": "Embed",
+              "tabRoute": "embed",
+              "order": 3,
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            }
+          ]
+        },
+        "livelowlatency": {
+          "workPath": "/opt/live/frames",
+          "highQualityScale": "-1:180",
+          "lowQualityScale": "-1:100",
+          "highQualityQuality": "4",
+          "lowQualityQuality": "8",
+          "highQualityFramerate": "8",
+          "lowQualityFramerate": "3"
+        },
+        "intercom": {
+          "appId": "hsq16tj9"
+        },
+        "settingsTabs": {
+          "0": {
+            "tplSrc": "analytics.html",
+            "name": "Analytics",
+            "tabRoute": "analytics",
+            "order": 10,
+            "icon": "signal",
+            "active": true,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "analytics",
+            "arrayOrder": 0
+          },
+          "1": {
+            "tplSrc": "info-settings.html",
+            "name": "Info & Settings",
+            "tabRoute": "info-settings",
+            "icon": "info-sign",
+            "order": 20,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "infoSettings",
+            "arrayOrder": 1
+          },
+          "2": {
+            "tplSrc": "accounts.html",
+            "name": "Sub-Accounts",
+            "tabRoute": "accounts",
+            "icon": "file",
+            "order": 25,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "accounts",
+            "arrayOrder": 2
+          },
+          "3": {
+            "tplSrc": "advanced-settings.html",
+            "name": "Advanced Settings",
+            "tabRoute": "advanced-settings",
+            "icon": "sunglasses",
+            "order": 30,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "advancedSettings",
+            "arrayOrder": 3
+          },
+          "5": {
+            "tplSrc": "dropfolders.html",
+            "name": "Drop Folder",
+            "tabRoute": "dropfolder",
+            "icon": "hdd",
+            "order": 45,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "dropfolder",
+            "arrayOrder": 5
+          },
+          "6": {
+            "tplSrc": "hosts.html",
+            "name": "Hosts",
+            "tabRoute": "hosts",
+            "icon": "globe",
+            "order": 50,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "hosts",
+            "arrayOrder": 6
+          },
+          "7": {
+            "tplSrc": "video-settings.html",
+            "name": "Video Settings",
+            "tabRoute": "video-settings",
+            "order": 60,
+            "icon": "facetime-video",
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "videoSettings",
+            "arrayOrder": 7
+          },
+          "8": {
+            "tplSrc": "custom-css.html",
+            "name": "Custom CSS",
+            "tabRoute": "custom-css",
+            "icon": "wrench",
+            "order": 70,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "customCss",
+            "arrayOrder": 8
+          },
+          "9": {
+            "tplSrc": "api-keys.html",
+            "name": "API Keys",
+            "tabRoute": "api-keys",
+            "icon": "briefcase",
+            "order": 80,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "apiKeys",
+            "arrayOrder": 9
+          },
+          "10": {
+            "tplSrc": "children.html",
+            "name": "Children",
+            "tabRoute": "children",
+            "icon": "leaf",
+            "order": 90,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "children",
+            "arrayOrder": 10
+          },
+          "11": {
+            "tplSrc": "packages.html",
+            "name": "Packages",
+            "tabRoute": "packages",
+            "icon": "gift",
+            "order": 100,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "packages",
+            "arrayOrder": 11
+          }
+        },
+        "tutorial": {
+          "enabled": false,
+          "config": {
+            "root-home": {
+              "enabled": true,
+              "id": 1,
+              "steps": Array[10][
+                {
+                  "type": "location_change",
+                  "path": "/",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "type": "title",
+                  "heading": "Welcome to Bamboo",
+                  "text": "<div class='row'><div id='title-text' class='col-md-12'><span class='main-text'>Welcome to <strong>Your New Bamboo Site</strong></span><br><span>( This demo will walk you through the features of the Bamboo Video Platform. )</span><br/><br/><span class='small'><em>Please click Next to continue.</em></span></div></div>",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                },
+                {
+                  "type": "element",
+                  "selector": "#home-carousel",
+                  "heading": "Featured Content",
+                  "text": "Featured content is displayed here. You have full control over which content to display in this carousel. Please click Next to continue.",
+                  "placement": "bottom",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 2,
+                  "arrayId": "__2"
+                },
+                {
+                  "type": "element",
+                  "selector": ".gallery-row [gallery-carousel]:eq(0)",
+                  "heading": "Dynamic Galleries",
+                  "text": "These are our galleries. They can be comprised of Categories, Playlist items, or by any other criteria such as Videos belonging to a specific person or channel. Editing these galleries is possible via the Media Management screen.",
+                  "placement": "top",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 3,
+                  "arrayId": "__3"
+                },
+                {
+                  "type": "element",
+                  "selector": "#left-side-menu",
+                  "heading": "Dynamic Navigation Menu",
+                  "text": "The Bamboo Navigation Menu is a dynamic menu that can include links to internal or external pages, and is completely configurable.",
+                  "curtainClass": "lowZIndex",
+                  "placement": "bottom",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 4,
+                  "arrayId": "__4"
+                },
+                {
+                  "type": "element",
+                  "selector": "#right-side-menu",
+                  "heading": "Dynamic Widgets",
+                  "text": "The Navigation menu can include dynamic widgets such as the User Menu.",
+                  "placement": "bottom",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 5,
+                  "arrayId": "__5"
+                },
+                {
+                  "type": "function",
+                  "fn": "openUserBox",
+                  "arrayOrder": 6,
+                  "arrayId": "__6"
+                },
+                {
+                  "type": "element",
+                  "selector": "[common-userbox]",
+                  "heading": "The User Menu",
+                  "text": "This menu is easily customizable and can include various links and widgets.",
+                  "placement": "left",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "advanceOn": {
+                    "element": "[common-userbox] a[ui-sref='root.mymedia.media']",
+                    "event": "click"
+                  },
+                  "arrayOrder": 7,
+                  "arrayId": "__7"
+                },
+                {
+                  "type": "element",
+                  "selector": "[common-userbox] a[ui-sref='root.mymedia.media'] > span",
+                  "heading": "Discover Bamboo Media Management",
+                  "text": "Click on the Media Management link to continue. You will be required to provide your credentials and log-in.",
+                  "placement": "left",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "advanceOn": {
+                    "element": "[common-userbox] a[ui-sref='root.mymedia.media']",
+                    "event": "click"
+                  },
+                  "arrayOrder": 8,
+                  "arrayId": "__8"
+                },
+                {
+                  "type": "function",
+                  "fn": "openMyMedia",
+                  "arrayOrder": 9,
+                  "arrayId": "__9"
+                }
+              ]
+            },
+            "root-user-login": {
+              "enabled": false,
+              "id": 2,
+              "steps": Array[1][
+                {
+                  "type": "element",
+                  "selector": "#login-page form[name=loginForm]",
+                  "heading": "Login to your Bamboo Site",
+                  "text": "You can login to your site using the credentials provided for you. Facebook and Twitter login are also included and are easy to set-up!",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "placement": "top",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                }
+              ]
+            },
+            "root-mymedia-media": {
+              "enabled": true,
+              "id": 3,
+              "steps": Array[5][
+                {
+                  "type": "title",
+                  "heading": "Media Management",
+                  "text": "<div class='row'><div id='title-text' class='col-md-12'><span class='main-text'>Welcome to <strong>Bamboo Media Management</strong><br/>Click next to watch the Media Management tutorial video.</span></div></div>",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "type": "title",
+                  "heading": "Media Management Tutorial",
+                  "class": "video",
+                  "text": "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='//video.panda-os.com/p/102/sp/10200/embedIframeJs/uiconf_id/11603174/partner_id/102?iframeembed=true&amp;playerId=kaltura_player_1427725083&amp;entry_id=0_y9ltzcn9' allowfullscreen='' webkitallowfullscreen='' mozallowfullscreen='' frameborder='0' itemprop='video' itemscope='' itemtype='//schema.org/VideoObject'></iframe></div>",
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                },
+                {
+                  "type": "function",
+                  "fn": "openUserBox",
+                  "arrayOrder": 2,
+                  "arrayId": "__2"
+                },
+                {
+                  "type": "element",
+                  "selector": "[common-userbox]",
+                  "heading": "Discover Bamboo User Management",
+                  "text": "Click on the Manage Users link to continue.",
+                  "placement": "left",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "advanceOn": {
+                    "element": "[common-userbox] a[ui-sref='root.admin.users']",
+                    "event": "click"
+                  },
+                  "arrayOrder": 3,
+                  "arrayId": "__3"
+                },
+                {
+                  "type": "function",
+                  "fn": "openUserManagement",
+                  "arrayOrder": 4,
+                  "arrayId": "__4"
+                }
+              ]
+            },
+            "root-admin-users": {
+              "enabled": true,
+              "id": 4,
+              "steps": Array[2][
+                {
+                  "type": "title",
+                  "heading": "User Management",
+                  "text": "<div class='row'><div id='title-text' class='col-md-12'><span class='main-text'>Welcome to <strong>Bamboo User Management</strong><br/>Click next to watch the User Management tutorial video.</span></div></div>",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "type": "title",
+                  "heading": "User Management Tutorial",
+                  "class": "video",
+                  "text": "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='//video.panda-os.com/p/102/sp/10200/embedIframeJs/uiconf_id/11603174/partner_id/102?iframeembed=true&playerId=kaltura_player_1427723901&entry_id=0_03p9cynt' allowfullscreen='' webkitallowfullscreen='' mozallowfullscreen='' frameborder='0' itemprop='video' itemscope='' itemtype='//schema.org/VideoObject'></iframe></div>",
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                }
+              ]
+            }
+          }
+        },
+        "trial": {
+          "instanceLifetimeDays": 30,
+          "entryId": false,
+          "defaultVideoUrl": "//video.panda-os.com/p/102/sp/10200/embedIframeJs/uiconf_id/11603174/partner_id/102?iframeembed=true&playerId=kaltura_player_11603174&entry_id=0_jpx5zyty",
+          "enableInstanceColorPicker": false,
+          "instanceDomain": "bamboo-video.com"
+        },
+        "purchases": {
+          "affiliate": false,
+          "mediaTypeIn": false,
+          "defaultService": 5,
+          "services": Array[3][
+            5,
+            2,
+            3
+          ],
+          "upgradeLink": false,
+          "paypal": {
+            "sandBox": true,
+            "payNowButton": true,
+            "merchantId": "56EJUS986TVWQ",
+            "enableEntryPurchase": false
+          },
+          "braintree": {
+            "merchantId": "cpkgcmq55v6h22qt",
+            "publicKey": "h7pcnkfjczcmh6tn",
+            "masterMerchantAccountId": "pandaos"
+          }
+        },
+        "hls": {
+          "enable": true
+        },
+        "stubForCommas": Array[0][
+
+        ],
+        "home": {
+          "featuredCategory": "Featured",
+          "categories": Array[6][
+            "Action",
+            "Animated",
+            "Sci-Fi",
+            "Comedy",
+            "Drama",
+            "Channels"
+          ]
+        }
+
 # Group Users
 Users of the **Bamboo Video API**
 
@@ -1081,4 +2539,3587 @@ Performs a validation process to check if the user has purchased an object with 
 
         {
             "result": true
+        }
+
+# Group Instance Configuration
+
+## Get Instance Config [/config/?format=json]
+
+### List Configurations [GET]
+
+Retrieves the current instance configuration
+
++ Request (application/json;charset=UTF-8)
+
++ Response 200 (application/json)
+
+        {
+        "config": {
+        "landingpages": {
+          "mobileFlavorId": 1,
+          "promotionalCategory": "Promotional",
+          "promotionalPlaylistTag": "promotional",
+          "bannerImage": false
+        },
+        "modules": {
+          "custom": {
+            "highcharts-ng": 1,
+            "ui.sortable.multiselection": 1
+          },
+          "core": {
+            "pvpadmin": 1,
+            "common": 1,
+            "gallery": 1,
+            "entry": 1,
+            "admin": 1,
+            "upload": 1,
+            "user": 1,
+            "live": 0,
+            "faq": 1,
+            "comments": 1,
+            "dashboard": 1,
+            "mymedia": 1,
+            "embed": 1,
+            "player": 1,
+            "playlist": 1,
+            "channels": 0,
+            "freetrial": 1,
+            "categories": 1,
+            "datingil": 0,
+            "events": 0,
+            "adserver": 0,
+            "analytics": 1,
+            "widget": 1,
+            "landingpages": 1,
+            "editor": 1,
+            "football": 0
+          },
+          "thirdParty": {
+            "jkuri.gallery": 1,
+            "angularStats": 0,
+            "ngCropper": 1,
+            "ui.utils": 1,
+            "angular.filter": 1,
+            "ui-select2": 1,
+            "ui.select": 1,
+            "ngSanitize": 1,
+            "ui.bootstrap": 1,
+            "ui.bootstrap.datetimepicker": 1,
+            "ui.scrollfix": 1,
+            "ui.slider": 1,
+            "pascalprecht.translate": 1,
+            "slugifier": 1,
+            "ngTable": 1,
+            "cgPrompt": 1,
+            "hmTouchevents": 1,
+            "angulartics": 1,
+            "angulartics.google.analytics": 1,
+            "angulartics.piwik": 1,
+            "angularResizable": 1,
+            "facebook": 1,
+            "addthis": 1,
+            "ngtimeago": 1,
+            "xeditable": 1,
+            "ui.sortable": 1,
+            "ngCsv": 1,
+            "angularSpectrumColorpicker": 1,
+            "ui.tree": 1,
+            "daterangepicker": 1,
+            "ngProgress": 1,
+            "ngJoyRide": 1,
+            "ngDragDrop": 1,
+            "ngWebSocket": 1,
+            "angular-carousel-3d": 1,
+            "react": 1,
+            "mega-menu": 1
+          }
+        },
+        "dependencies": {
+          "additional": Array[3][
+            "vendor/Highcharts-4.1.7/js/highcharts.min.js",
+            "vendor/highcharts-ng/highcharts-ng.js",
+            "vendor/countUp/countUp.js"
+          ],
+          "global": Array[56][
+            "vendor/detect-mobile-browser-master/detect-browser.js",
+            "vendor/ngGallery/src/js/ngGallery.js",
+            "vendor/angular-animate/angular-animate.min.js",
+            "vendor/angular-touch/angular-touch.min.js",
+            "vendor/angular-sanitize/angular-sanitize.min.js",
+            "vendor/angular-filter/angular-filter.min.js",
+            "vendor/angular-route/angular-route.min.js",
+            "vendor/angular-dragdrop/angular-dragdrop.min.js",
+            "vendor/angular-websocket/angular-websocket.min.js",
+            "vendor/ui-modules/ui-router.min.js",
+            "vendor/ui-modules/ui-bootstrap-tpls-1.3.2.js",
+            "vendor/ui-modules/datetime-picker.js",
+            "vendor/ui-modules/datetime-picker.tpls.js",
+            "vendor/lodash/lodash.min.js",
+            "vendor/restangular/restangular.min.js",
+            "vendor/jsoneditor/asset/jsonlint/jsonlint.min.js",
+            "vendor/chart.js/Chart.min.js",
+            "vendor/csv/ng-csv.min.js",
+            "vendor/hammer.js/hammer.min.js",
+            "vendor/twitter/bootstrap/js/bootstrap.min.js",
+            "vendor/spectrum/spectrum.min.js",
+            "vendor/angular-cropper/ngCropper.all.js",
+            "vendor/angular-addthis/angular-addthis.js",
+            "vendor/angular-slugify/angular-slugify.js",
+            "vendor/angular-prompt/angular-prompt.js",
+            "vendor/angular-daterangepicker/angular-daterangepicker.js",
+            "vendor/angular-daterangepicker/moment-timezone.js",
+            "vendor/angular-resizeable/angular-resizeable.js",
+            "vendor/angular-ui-tree/angular-ui-tree.js",
+            "vendor/angular-hammer/angular-hammer.js",
+            "vendor/angulartics/src/angulartics.js",
+            "vendor/angulartics/src/angulartics-ga.js",
+            "vendor/angulartics/src/angulartics-piwik.js",
+            "vendor/pascalprecht-angular-translate/panda-angular-translate.js",
+            "vendor/select2/select2.min.js",
+            "vendor/ui-modules/ui-utils.js",
+            "vendor/ui-modules/select.js",
+            "vendor/ui-modules/select2.js",
+            "vendor/ui-modules/ui-slider.js",
+            "vendor/ui-modules/ui.sortable.multiselection.js",
+            "vendor/ui-modules/sortable.js",
+            "vendor/angularjs-slider/dist/rzslider.min.js",
+            "vendor/ui-calendar/calendar.js",
+            "vendor/ng-table/ng-table.js",
+            "vendor/facebook-login/angular-facebook.js",
+            "vendor/ngtimeago/ngtimeago.js",
+            "vendor/jquery-hoverdir/jquery.hoverdir.js",
+            "vendor/xeditable/js/xeditable.min.js",
+            "vendor/jsoneditor/jsoneditor.js",
+            "vendor/spectrum/angular-spectrum-colorpicker.js",
+            "vendor/react/react.min.js",
+            "vendor/react/react-dom.min.js",
+            "vendor/react-virtualized/react-virtualized.min.js",
+            "vendor/react-bootstrap/react-bootstrap.min.js",
+            "vendor/ng-react/ng-react.js",
+            "vendor/angular-mega-menu/angular-mega-menu.js"
+          ]
+        },
+        "analytics": {
+          "reportWidget": false,
+          "altEnvironment": true,
+          "altAnnouncment": false,
+          "reports": {
+            "showCorruptedLevel": "partial"
+          },
+          "google": {
+            "trackingId": "UA-36034144-3",
+            "apiTrackingId": "UA-36034144-8"
+          },
+          "panda": {
+            "url": "http://piwik.panda-os.com",
+            "token": "57fa55357816eb87b709f15065808a4e",
+            "cache-expiry": 10,
+            "siteId": 1,
+            "lastMinutes": 1
+          }
+        },
+        "debug": {
+          "logLevel": 7
+        },
+        "general": {
+          "rtl": "false",
+          "defaultLanguage": "en",
+          "timezoneOffset": 0,
+          "timezoneString": "utc",
+          "debugEnabled": "false",
+          "minifyModulesCss": true,
+          "siteDescription": "Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming."
+        },
+        "cache": {
+          "enabled": true,
+          "expiration": 600
+        },
+        "contact": {
+          "uiTitle": "Contact Us",
+          "uiDescription": "Please fill this form and we will get back to you shortly",
+          "uiMessage": "Thank you for contacting us."
+        },
+        "locale": Array[0][
+
+        ],
+        "translation": {
+          "languages": Array[6][
+            {
+              "language": "en",
+              "name": "English",
+              "flag": "us",
+              "orientation": "ltr",
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "language": "pt",
+              "name": "Portuguese",
+              "flag": "pt",
+              "orientation": "ltr",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "language": "fr",
+              "name": "French",
+              "flag": "fr",
+              "orientation": "ltr",
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "language": "es",
+              "name": "Spanish",
+              "flag": "es",
+              "orientation": "ltr",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            },
+            {
+              "language": "de",
+              "name": "German",
+              "flag": "de",
+              "orientation": "ltr",
+              "arrayOrder": 4,
+              "arrayId": "__4"
+            },
+            {
+              "language": "he",
+              "name": "Hebrew",
+              "flag": "il",
+              "orientation": "rtl",
+              "arrayOrder": 5,
+              "arrayId": "__5"
+            }
+          ]
+        },
+        "kaltura": {
+          "serviceUrl": "https://video.panda-os.com/",
+          "statsUrl": "https://videostats.panda-os.com/api_v3/index.php",
+          "cdnUrl": "http://static.panda-os.com",
+          "partnerId": "102"
+        },
+        "tags": {
+          "limitTagsToRootCategory": true
+        },
+        "application": {
+          "resourceUrlWhitelist": Array[3][
+            "self",
+            "http://*.bamboo-video.com/**",
+            "http://*.panda-os.com/**"
+          ],
+          "title": "Bamboo - Panda Video Platform",
+          "description": "Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming.",
+          "rootCategory": "Bamboo",
+          "enableDelete": false,
+          "showSplash": true,
+          "relatedCategory": "Featured",
+          "showUserInstances": true,
+          "showDefaultLogin": true,
+          "showInstanceInformationInHeader": false,
+          "showUserboxInstanceInformation": false,
+          "dateFormat": "shortDate",
+          "socialMedia": Array[0][
+
+          ],
+          "userMenuDropdown": {
+            "name": true,
+            "image": true
+          },
+          "jsBaseUrl": "www.bamboo-video.com",
+          "cdnApiUrl": "https://cdnapi.bamboo-video.com",
+          "bambooCdnUrl": "https://cdn.bamboo-video.com",
+          "displayInstanceType": true,
+          "announcement": false,
+          "redirectToHomeWhenLogin": false,
+          "registerPopup": {
+            "enabled": false,
+            "timeout": 60000,
+            "nagTimeout": 60000
+          },
+          "configCustomParams": Array[0][
+
+          ]
+        },
+        "drm": {
+          "enabled": false,
+          "drmServiceUrl": "https://widevine-dash.ezdrm.com/proxy?pX=8C4D80&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
+          "drmServiceUrlPlayready": "https://playready.ezdrm.com/cency/preauth.aspx?pX=4F3EA0&format=playready&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
+          "drmServiceUrlFairplay": "https://fps.ezdrm.com/api/licenses/38fffe9a-5e4c-4e2b-9471-251549ec1eda?format=fairplay&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
+          "drmFairplayCertificatePath": "https://api.bamboo-video.com/api/fps/charlton.cer"
+        },
+        "authentication": {
+          "enabled": true,
+          "demoCredentials": {
+            "email": "demo@panda-os.com",
+            "password": "123456"
+          },
+          "roleNames": {
+            "viewerRole": "Viewer",
+            "contributorRole": "Contributor",
+            "managerRole": "Manager",
+            "adminRole": "Administrator"
+          },
+          "guestUser": "Guest",
+          "smsMethod": false,
+          "passwordExpired": false
+        },
+        "branding": {
+          "logoUrl": "https://s3cdn.panda-os.com/upload/20161227/58625bcf53083.png",
+          "faviconUrl": "/favicon.ico",
+          "poweredBy": {
+            "logoUrl": "img/panda-logo.png",
+            "linkUrl": "http://www.panda-os.com",
+            "linkTitle": "PandaOS Open-Source Solutions",
+            "linkText": "Powered By:"
+          },
+          "customCss": "custom.css",
+          "siteName": "Bamboo - Panda Video Platform",
+          "successPageBgUrl": "/app/modules/panda/img/intro_bg.jpg"
+        },
+        "player": {
+          "customMenuTemplates": Array[1][
+            "default"
+          ],
+          "playerUrl": "//static.panda-os.com/html5/html5lib/v2.55/mwEmbedLoader.php",
+          "beaconUrl": "//api.bamboo-video.com/api/drm/beacon",
+          "uiconfId": "11601700",
+          "debug": false,
+          "autoPlay": true,
+          "flashvars": {
+            "hlsjs": {
+              "options": {
+                "enableWebVTT": true,
+                "maxBufferHole": 8,
+                "maxSeekHole": 8
+              },
+              "plugin": true
+            },
+            "chapters": {
+              "plugin": true
+            },
+            "kAnalony": {
+              "plugin": false
+            },
+            "chaptersEdit": {
+              "plugin": true,
+              "editPropId": "panda-chapterProp",
+              "editTimelineId": "panda-chapterTimeline",
+              "tags": "chaptering",
+              "requiresJQuery": true
+            },
+            "adCuepointsEdit": {
+              "plugin": true,
+              "editPropId": "panda-adCuepointProp",
+              "editTimelineId": "panda-adCuepointTimeline",
+              "tags": "adcuepoints",
+              "requiresJQuery": true
+            },
+            "sourceSelector": {
+              "plugin": "true",
+              "switchOnResize": "false",
+              "simpleFormat": "true",
+              "displayMode": "sizebitrate"
+            },
+            "scrubber": {
+              "plugin": true,
+              "thumbWidth": 100,
+              "thumbSlicesUrl": "/api/entry/{mediaProxy.entry.id}/thumbnail/?width=100&slices=100&sprite=true"
+            },
+            "loadingSpinner": {
+              "color": "rgb(255,255,255)",
+              "lines": "20",
+              "width": "10",
+              "radius": "30",
+              "lineLength": "0",
+              "speed": "1",
+              "shadow": "true",
+              "trail": "50"
+            },
+            "bambooChapters": {
+              "plugin": "true",
+              "iframeHTML5Js": "//www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.js",
+              "iframeHTML5Css": "//www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.css",
+              "enableSearch": "false",
+              "cuePointType": Array[1][
+                {
+                  "main": "annotation.Annotation",
+                  "sub": Array[1][
+                    0
+                  ],
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                }
+              ]
+            },
+            "IframeCustomPluginCss1": "/css/panda-player.css",
+            "uiVars": Array[2][
+              {
+                "key": "mediaProxy.preferedFlavorBR",
+                "value": "1600",
+                "overrideFlashvar": true,
+                "arrayOrder": 0,
+                "arrayId": "__0"
+              },
+              {
+                "key": "KalturaSupport_ForceUserAgent",
+                "value": "Bamboo-Player",
+                "overrideFlashvar": true,
+                "arrayOrder": 1,
+                "arrayId": "__1"
+              }
+            ],
+            "LeadWithHLSOnFlash": false,
+            "LeadWithHLSOnJs": true,
+            "video360": {
+              "plugin": "true"
+            },
+            "related": {
+              "parent": "controlsContainer",
+              "align": "right",
+              "displayOnPlaybackDone": true,
+              "sendContextWithPlaylist": true,
+              "entryList": null,
+              "playlistId": "0_fkm10x3k",
+              "clickUrl": "",
+              "autoContinueTime": "10",
+              "autoContinueEnabled": true,
+              "storeSession": true,
+              "order": "200"
+            }
+          },
+          "playerConfig": {
+            "mw": {
+              "KalturaSupport_ForceUserAgent": "Bamboo-Player",
+              "Kaltura.LeadWithHTML5": true,
+              "Kaltura.UseAppleAdaptive": false,
+              "Kaltura.UseManifestUrls": true,
+              "EmbedPlayer.EnableIpadHTMLControls": true,
+              "EmbedPlayer.UseFlashOnAndroid": false,
+              "Kaltura.LoadScriptForVideoTags": true,
+              "Kaltura.AllowIframeRemoteService": false,
+              "Kaltura.EnableEmbedUiConfJs": false,
+              "Mw.XmlProxyUrl": "//video.panda-os.com/html5/html5lib/v2.18.2/simplePhpXMLProxy.php"
+            }
+          },
+          "noPreviewImageUrl": "//via.placeholder.com/350x200?text=No%20Preview%20Available%20:(",
+          "mediaConvertingImageUrl": "//via.placeholder.com/350x200?text=Your%20Media%20Is%20Converting",
+          "uploadErrorImageUrl": "//via.placeholder.com/350x200?text=An%20error%20Occured%20while%20uploading%20:("
+        },
+        "bitmovin": {
+          "enable": false,
+          "playerUrl": "https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7/bitmovinplayer.js",
+          "playerKey": "c2662d78-c43c-4877-82ee-e79fd4b6afa2",
+          "statsPluginUrl": "https://www.bamboo-video.com/app/modules/player/js/bitdashBambooAnalytics.js",
+          "skin": {
+            "screenLogoUrl": "https://www.panda-os.com/",
+            "screenLogoImage": "https://static.panda-os.com/panda-square-logo.png"
+          },
+          "playback": {
+            "autoplay": false
+          }
+        },
+        "navigation": {
+          "showRegisterLink": true,
+          "userMenuPictureSide": false,
+          "enableMyProfile": true,
+          "menuLinks": Array[4][
+            {
+              "title": "Media Management",
+              "icon": "film",
+              "route": "root.mymedia.media",
+              "loggedIn": false,
+              "role": "contributorRole",
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "title": "Manage Users",
+              "icon": "list",
+              "route": "root.admin.users",
+              "loggedIn": true,
+              "role": "adminRole",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "title": "My Profile",
+              "icon": "user",
+              "route": "root.user.profile",
+              "loggedIn": true,
+              "role": "viewerRole",
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "title": "Settings",
+              "icon": "cog",
+              "route": "root.pvpadmin.configs",
+              "loggedIn": true,
+              "role": "adminRole",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            }
+          ],
+          "homeRoute": "root.home",
+          "headerItems": {
+            "0": {
+              "title": "Categories",
+              "icon": "th-large",
+              "megamenu": true,
+              "includes": "root.gallery",
+              "parentCategoryId": "10814",
+              "showThumbnail": true,
+              "params": {
+                "categoryName": "Categories"
+              },
+              "side": "left",
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            "1": {
+              "tplSrc": "search-header-directive-template.html",
+              "module": "common",
+              "locationPrefix": "views/templates/",
+              "class": "hidden-xs",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            "3": {
+              "title": "PandaOS Website",
+              "link": "http://www.panda-os.com",
+              "icon": "info-sign",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            },
+            "4": {
+              "title": "Media Management",
+              "route": "root.mymedia.media",
+              "icon": "film",
+              "arrayOrder": 4,
+              "arrayId": "__4"
+            }
+          }
+        },
+        "search": {
+          "searchForUserRole": null,
+          "showEntryGallery": true,
+          "showUserGallery": true,
+          "galleryEntryOptions": Array[0][
+
+          ],
+          "galleryUsersOptions": Array[0][
+
+          ]
+        },
+        "playPage": {
+          "customMenuEnabled": false,
+          "enablePaymentService": false,
+          "checkValidation": false,
+          "showChannelsGuide": false,
+          "displayDeletedUserContent": false,
+          "playPageContainerEnabled": false,
+          "playPageRelatedEnabled": true,
+          "widgets": Array[2][
+            {
+              "directiveName": "gallery-tabs",
+              "name": "galleryTabs",
+              "module": "gallery",
+              "enabled": true,
+              "order": 1,
+              "directiveAttributes": {
+                "widget-config": "galleryTabs"
+              },
+              "config": {
+                "class": "",
+                "liClass": {
+                  "xs": 6
+                }
+              },
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "directiveName": "category-carousel",
+              "name": "categoryCarousel",
+              "module": "gallery",
+              "type": "carousel",
+              "enabled": true,
+              "order": 2,
+              "directiveAttributes": {
+                "options": "categoryCarousel.options"
+              },
+              "config": {
+                "class": "",
+                "galleryType": "",
+                "subCategory": "",
+                "liClass": {
+                  "xs": 6
+                }
+              },
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            }
+          ]
+        },
+        "pvpadmin": {
+          "enableInstanceCreation": true
+        },
+        "gallery": {
+          "defaultThumbnailTemplate": {
+            "module": "gallery",
+            "tplSrc": "views/templates/default-thumbnail.html"
+          },
+          "showPlayPageCategories": true,
+          "thumbnailRotation": true,
+          "thumbnailSize": {
+            "width": 480,
+            "height": 320
+          },
+          "thumbnailSizeRightBar": {
+            "width": 480,
+            "height": 300
+          },
+          "playerSize": {
+            "width": 800,
+            "height": 600
+          },
+          "tabs": {
+            "enableCategoryGallery": false,
+            "enableCategoryInOneCarousel": true,
+            "enableFacebookComments": false,
+            "comments": {
+              "enable": true,
+              "name": "Comments"
+            },
+            "galleries": {
+              "enable": true,
+              "name": "Galleries"
+            }
+          },
+          "categorygallery": {
+            "pageSize": 1,
+            "PlaylistGalleryOptions": Array[0][
+
+            ]
+          }
+        },
+        "mymedia": {
+          "singleCategory": false,
+          "categoryFormEnabled": false,
+          "customHeaderModule": "mymedia",
+          "customHeader": "/views/directives/my-media-header/default-my-media-header-template.html",
+          "mediaTypeIn": false,
+          "autoSelect": true,
+          "useReact": true,
+          "showReferenceId": false,
+          "itemType": "default",
+          "uploader": false,
+          "reviewEnabled": false,
+          "thumbnailGenerator": true,
+          "pageSizes": Array[3][
+            20,
+            50,
+            100
+          ],
+          "categoryManagementSupport": true,
+          "checkCategoryAncestors": true,
+          "uiconf": "11601700",
+          "entryTitleClickRoute": "root.gallery.playentry({id: entry.id})",
+          "entryTitleClickRouteName": "root.gallery.playentry",
+          "saveasEnabled": false,
+          "tabs": Array[4][
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "edit",
+              "order": 1,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "tplSrc": "editing.html",
+              "name": "Editing",
+              "tabRoute": "editing",
+              "order": 2,
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "tplSrc": "embed.html",
+              "name": "Embed",
+              "tabRoute": "embed",
+              "order": 3,
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "tplSrc": "chapters.html",
+              "name": "Chapters",
+              "tabRoute": "chapters",
+              "order": 4,
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            }
+          ]
+        },
+        "embed": {
+          "maxUserPlayers": 10,
+          "defaultEmbedSize": {
+            "width": 500,
+            "height": 320
+          },
+          "defaultPlaylistEmbedSize": {
+            "width": 1000,
+            "height": 420
+          },
+          "newPlayerUiConf": "11601525",
+          "tabs": Array[4][
+            "general",
+            "styling",
+            "callToAction",
+            "monetization"
+          ],
+          "defaultPlayerConfig": {
+            "height": "395",
+            "width": "560",
+            "swfUrl": "/flash/kdp3/v3.9.8/kdp3.swf",
+            "swfUrlVersion": "3.9.8",
+            "version": "161",
+            "name": "New Player",
+            "tags": "html5studio,player",
+            "html5Url": "/html5/html5lib/v2.55.1/mwEmbedLoader.php",
+            "creationMode": 2,
+            "configFilePath": "configs/xml/kdp.xml",
+            "config": {
+              "plugins": {
+                "loadingSpinner": {
+                  "plugin": true,
+                  "enabled": true
+                },
+                "topBarContainer": {
+                  "plugin": true
+                },
+                "controlBarContainer": {
+                  "plugin": true,
+                  "hover": true
+                },
+                "theme": {
+                  "applyToLargePlayButton": true
+                },
+                "scrubber": {
+                  "plugin": true
+                },
+                "largePlayBtn": {
+                  "plugin": true
+                },
+                "playHead": {
+                  "plugin": true
+                },
+                "playPauseBtn": {
+                  "plugin": true
+                },
+                "volumeControl": {
+                  "plugin": true
+                },
+                "durationLabel": {
+                  "plugin": true
+                },
+                "currentTimeLabel": {
+                  "plugin": true
+                },
+                "keyboardShortcuts": {
+                  "plugin": true
+                },
+                "liveCore": {
+                  "plugin": true
+                },
+                "liveStatus": {
+                  "plugin": true
+                },
+                "liveBackBtn": {
+                  "plugin": true
+                },
+                "fullScreenBtn": {
+                  "plugin": true
+                },
+                "skipBtn": {
+                  "plugin": true
+                },
+                "watermark": {
+                  "cssClass": "topRight"
+                },
+                "sourceSelector": {
+                  "enabled": true,
+                  "plugin": true,
+                  "switchOnResize": true,
+                  "simpleFormat": true,
+                  "displayMode": "size"
+                }
+              },
+              "uiVars": Array[4][
+                {
+                  "key": "autoPlay",
+                  "value": false,
+                  "overrideFlashvar": false,
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "key": "autoMute",
+                  "value": false,
+                  "overrideFlashvar": false,
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                },
+                {
+                  "key": "enableTooltips",
+                  "value": false,
+                  "overrideFlashvar": false,
+                  "arrayOrder": 2,
+                  "arrayId": "__2"
+                },
+                {
+                  "key": "mediaProxy.preferedFlavorBR",
+                  "value": "1600",
+                  "overrideFlashvar": true,
+                  "arrayOrder": 3,
+                  "arrayId": "__3"
+                }
+              ],
+              "layout": {
+                "skin": "kdark"
+              }
+            }
+          },
+          "postMessage": false,
+          "targetOrigin": "*"
+        },
+        "myplaylists": {
+          "showEPGGeneratedPlaylists": false,
+          "ownVideosOnly": false,
+          "showReferenceId": false,
+          "tabs": Array[2][
+            {
+              "tplSrc": "playlists-videos.html",
+              "name": "Videos",
+              "tabRoute": "videos",
+              "order": 1,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "edit",
+              "order": 2,
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            }
+          ]
+        },
+        "entry": {
+          "linkToPlayPage": false,
+          "privateAsDefault": false,
+          "priceInput": true,
+          "countUsedViews": false,
+          "enablePrivacyOption": true,
+          "profileId": 1633,
+          "showPackageField": false,
+          "showPartnerSortValue": false,
+          "enableEntryCategories": true,
+          "enableEntryTags": true,
+          "subscribeButton": {
+            "buttonLink": "root.user.register",
+            "addRedirectUrl": true,
+            "buttonCaption": "Register Now",
+            "type": "route"
+          },
+          "downloadFlavor": 0,
+          "showRating": true
+        },
+        "editor": {
+          "previewServerUrl": "https://vod.panda-os.com"
+        },
+        "layout": {
+          "headerCustomClass": false,
+          "containerCustomClass": "container",
+          "defaultLayout": "layout.html"
+        },
+        "upload": {
+          "dropBoxAppKey": false,
+          "uploadOptions": {
+            "uploadFromDesktop": true,
+            "uploadFromURL": true,
+            "uploadFromDropBox": false
+          },
+          "allowSetEntryCategories": true,
+          "simultaneousUploads": 1,
+          "chunkSize": 2097152,
+          "hasUploadWidget": true,
+          "removeExtension": false,
+          "uploaderListTemplate": {
+            "module": "upload",
+            "tpl": "entry-edit-directive-template.html",
+            "options": Array[0][
+
+            ]
+          }
+        },
+        "comments": {
+          "entryCommentsCountProfileId": "",
+          "showPrivateCommentsConfig": true,
+          "commentsPrivate": false,
+          "sort": "-createdAt",
+          "sortReplies": "-createdAt",
+          "pageSize": 25
+        },
+        "clipping": {
+          "ffmpegClipping": false
+        },
+        "user": {
+          "profilePictureSize": {
+            "width": 200,
+            "height": 200
+          },
+          "coverPhotoSize": {
+            "width": 800,
+            "height": 450
+          },
+          "showAdditionalInfo": false,
+          "metadataProfileIdCredentials": "",
+          "metadataProfileIdAdditionalInfo": "",
+          "usersPageSize": 100,
+          "usersMetadataPageSize": 100,
+          "ksExpiry": 86400,
+          "requireUserId": false,
+          "requirePhone": false,
+          "defaultImageUrl": "img/default_user.jpg",
+          "profileModules": {
+            "purchases": true,
+            "followers": true,
+            "subscribers": true,
+            "entries": true,
+            "coverPhoto": true
+          },
+          "tabs": Array[2][
+            {
+              "tplSrc": "description.html",
+              "name": "Description",
+              "tabRoute": "description",
+              "order": 1,
+              "arrayId": "description",
+              "arrayOrder": 0
+            },
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "basic-info",
+              "order": 2,
+              "arrayId": "basicInfo",
+              "arrayOrder": 1
+            }
+          ],
+          "extendedPermissions": Array[1][
+            "contributorManager"
+          ]
+        },
+        "userManagement": {
+          "tabs": Array[1][
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "basic-info",
+              "order": 1,
+              "arrayId": "basicInfo",
+              "arrayOrder": 0
+            }
+          ]
+        },
+        "profile": {
+          "showUserEmbedCode": false
+        },
+        "social": {
+          "shareButtonsSize": "big",
+          "facebook": {
+            "applicationId": false,
+            "showVideoTags": true,
+            "uiconfId": "11619785",
+            "liveUiconfId": "11619784",
+            "locale": "en_US"
+          },
+          "twitter": false,
+          "addthisId": "ra-548ee9751344953e"
+        },
+        "faq": Array[0][
+
+        ],
+        "live": {
+          "conversionProfileId": 7534932,
+          "pleaseWaitStreamName": "pandaloop",
+          "appName": "pandaLive",
+          "mediaTypeIn": "7,201,201,203,204",
+          "maxBandwidth": "0",
+          "videoWidth": "640",
+          "videoHeight": "480",
+          "videoQuality": "0",
+          "videoBandwidth": "75000",
+          "videoFrameRate": "30",
+          "maxQuality": "60",
+          "chunkInterval": 3000,
+          "isLiveCacheExpiry": 10,
+          "isLiveInterval": 10000,
+          "wowzaRtmpServer": "rtmp://stream.panda-os.com",
+          "wowzaHttpServer": "http://streamcdn.panda-os.com",
+          "wowzaCdnServer": "http://streamcdn.panda-os.com",
+          "autoSelect": true,
+          "enableVod": "true",
+          "categoryManagementSupport": true,
+          "showEntryIsLiveIndicators": false,
+          "enableLiveViewersCount": false,
+          "showReferenceId": false,
+          "hlsStreamSuffix": "",
+          "hlsStreamPrefix": "",
+          "hdsStreamSuffix": "",
+          "hdsStreamPrefix": "",
+          "enableWebcam": true,
+          "tabs": Array[3][
+            {
+              "tplSrc": "basic-info.html",
+              "name": "Basic Info",
+              "tabRoute": "edit",
+              "order": 1,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "tplSrc": "stream.html",
+              "name": "Stream Info",
+              "tabRoute": "stream",
+              "order": 2,
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "tplSrc": "embed.html",
+              "name": "Embed",
+              "tabRoute": "embed",
+              "order": 3,
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            }
+          ]
+        },
+        "livelowlatency": {
+          "workPath": "/opt/live/frames",
+          "highQualityScale": "-1:180",
+          "lowQualityScale": "-1:100",
+          "highQualityQuality": "4",
+          "lowQualityQuality": "8",
+          "highQualityFramerate": "8",
+          "lowQualityFramerate": "3"
+        },
+        "intercom": {
+          "appId": "hsq16tj9"
+        },
+        "settingsTabs": {
+          "0": {
+            "tplSrc": "analytics.html",
+            "name": "Analytics",
+            "tabRoute": "analytics",
+            "order": 10,
+            "icon": "signal",
+            "active": true,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "analytics",
+            "arrayOrder": 0
+          },
+          "1": {
+            "tplSrc": "info-settings.html",
+            "name": "Info & Settings",
+            "tabRoute": "info-settings",
+            "icon": "info-sign",
+            "order": 20,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "infoSettings",
+            "arrayOrder": 1
+          },
+          "2": {
+            "tplSrc": "accounts.html",
+            "name": "Sub-Accounts",
+            "tabRoute": "accounts",
+            "icon": "file",
+            "order": 25,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "accounts",
+            "arrayOrder": 2
+          },
+          "3": {
+            "tplSrc": "advanced-settings.html",
+            "name": "Advanced Settings",
+            "tabRoute": "advanced-settings",
+            "icon": "sunglasses",
+            "order": 30,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "advancedSettings",
+            "arrayOrder": 3
+          },
+          "5": {
+            "tplSrc": "dropfolders.html",
+            "name": "Drop Folder",
+            "tabRoute": "dropfolder",
+            "icon": "hdd",
+            "order": 45,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "dropfolder",
+            "arrayOrder": 5
+          },
+          "6": {
+            "tplSrc": "hosts.html",
+            "name": "Hosts",
+            "tabRoute": "hosts",
+            "icon": "globe",
+            "order": 50,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "hosts",
+            "arrayOrder": 6
+          },
+          "7": {
+            "tplSrc": "video-settings.html",
+            "name": "Video Settings",
+            "tabRoute": "video-settings",
+            "order": 60,
+            "icon": "facetime-video",
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "videoSettings",
+            "arrayOrder": 7
+          },
+          "8": {
+            "tplSrc": "custom-css.html",
+            "name": "Custom CSS",
+            "tabRoute": "custom-css",
+            "icon": "wrench",
+            "order": 70,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "customCss",
+            "arrayOrder": 8
+          },
+          "9": {
+            "tplSrc": "api-keys.html",
+            "name": "API Keys",
+            "tabRoute": "api-keys",
+            "icon": "briefcase",
+            "order": 80,
+            "active": false,
+            "disabled": false,
+            "role": "adminRole",
+            "arrayId": "apiKeys",
+            "arrayOrder": 9
+          },
+          "10": {
+            "tplSrc": "children.html",
+            "name": "Children",
+            "tabRoute": "children",
+            "icon": "leaf",
+            "order": 90,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "children",
+            "arrayOrder": 10
+          },
+          "11": {
+            "tplSrc": "packages.html",
+            "name": "Packages",
+            "tabRoute": "packages",
+            "icon": "gift",
+            "order": 100,
+            "active": false,
+            "disabled": false,
+            "role": "rootRole",
+            "arrayId": "packages",
+            "arrayOrder": 11
+          }
+        },
+        "tutorial": {
+          "enabled": false,
+          "config": {
+            "root-home": {
+              "enabled": true,
+              "id": 1,
+              "steps": Array[10][
+                {
+                  "type": "location_change",
+                  "path": "/",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "type": "title",
+                  "heading": "Welcome to Bamboo",
+                  "text": "<div class='row'><div id='title-text' class='col-md-12'><span class='main-text'>Welcome to <strong>Your New Bamboo Site</strong></span><br><span>( This demo will walk you through the features of the Bamboo Video Platform. )</span><br/><br/><span class='small'><em>Please click Next to continue.</em></span></div></div>",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                },
+                {
+                  "type": "element",
+                  "selector": "#home-carousel",
+                  "heading": "Featured Content",
+                  "text": "Featured content is displayed here. You have full control over which content to display in this carousel. Please click Next to continue.",
+                  "placement": "bottom",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 2,
+                  "arrayId": "__2"
+                },
+                {
+                  "type": "element",
+                  "selector": ".gallery-row [gallery-carousel]:eq(0)",
+                  "heading": "Dynamic Galleries",
+                  "text": "These are our galleries. They can be comprised of Categories, Playlist items, or by any other criteria such as Videos belonging to a specific person or channel. Editing these galleries is possible via the Media Management screen.",
+                  "placement": "top",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 3,
+                  "arrayId": "__3"
+                },
+                {
+                  "type": "element",
+                  "selector": "#left-side-menu",
+                  "heading": "Dynamic Navigation Menu",
+                  "text": "The Bamboo Navigation Menu is a dynamic menu that can include links to internal or external pages, and is completely configurable.",
+                  "curtainClass": "lowZIndex",
+                  "placement": "bottom",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 4,
+                  "arrayId": "__4"
+                },
+                {
+                  "type": "element",
+                  "selector": "#right-side-menu",
+                  "heading": "Dynamic Widgets",
+                  "text": "The Navigation menu can include dynamic widgets such as the User Menu.",
+                  "placement": "bottom",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "arrayOrder": 5,
+                  "arrayId": "__5"
+                },
+                {
+                  "type": "function",
+                  "fn": "openUserBox",
+                  "arrayOrder": 6,
+                  "arrayId": "__6"
+                },
+                {
+                  "type": "element",
+                  "selector": "[common-userbox]",
+                  "heading": "The User Menu",
+                  "text": "This menu is easily customizable and can include various links and widgets.",
+                  "placement": "left",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "advanceOn": {
+                    "element": "[common-userbox] a[ui-sref='root.mymedia.media']",
+                    "event": "click"
+                  },
+                  "arrayOrder": 7,
+                  "arrayId": "__7"
+                },
+                {
+                  "type": "element",
+                  "selector": "[common-userbox] a[ui-sref='root.mymedia.media'] > span",
+                  "heading": "Discover Bamboo Media Management",
+                  "text": "Click on the Media Management link to continue. You will be required to provide your credentials and log-in.",
+                  "placement": "left",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "advanceOn": {
+                    "element": "[common-userbox] a[ui-sref='root.mymedia.media']",
+                    "event": "click"
+                  },
+                  "arrayOrder": 8,
+                  "arrayId": "__8"
+                },
+                {
+                  "type": "function",
+                  "fn": "openMyMedia",
+                  "arrayOrder": 9,
+                  "arrayId": "__9"
+                }
+              ]
+            },
+            "root-user-login": {
+              "enabled": false,
+              "id": 2,
+              "steps": Array[1][
+                {
+                  "type": "element",
+                  "selector": "#login-page form[name=loginForm]",
+                  "heading": "Login to your Bamboo Site",
+                  "text": "You can login to your site using the credentials provided for you. Facebook and Twitter login are also included and are easy to set-up!",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "placement": "top",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                }
+              ]
+            },
+            "root-mymedia-media": {
+              "enabled": true,
+              "id": 3,
+              "steps": Array[5][
+                {
+                  "type": "title",
+                  "heading": "Media Management",
+                  "text": "<div class='row'><div id='title-text' class='col-md-12'><span class='main-text'>Welcome to <strong>Bamboo Media Management</strong><br/>Click next to watch the Media Management tutorial video.</span></div></div>",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "type": "title",
+                  "heading": "Media Management Tutorial",
+                  "class": "video",
+                  "text": "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='//video.panda-os.com/p/102/sp/10200/embedIframeJs/uiconf_id/11603174/partner_id/102?iframeembed=true&amp;playerId=kaltura_player_1427725083&amp;entry_id=0_y9ltzcn9' allowfullscreen='' webkitallowfullscreen='' mozallowfullscreen='' frameborder='0' itemprop='video' itemscope='' itemtype='//schema.org/VideoObject'></iframe></div>",
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                },
+                {
+                  "type": "function",
+                  "fn": "openUserBox",
+                  "arrayOrder": 2,
+                  "arrayId": "__2"
+                },
+                {
+                  "type": "element",
+                  "selector": "[common-userbox]",
+                  "heading": "Discover Bamboo User Management",
+                  "text": "Click on the Manage Users link to continue.",
+                  "placement": "left",
+                  "curtainClass": "lowZIndex",
+                  "scroll": true,
+                  "attachToBody": true,
+                  "advanceOn": {
+                    "element": "[common-userbox] a[ui-sref='root.admin.users']",
+                    "event": "click"
+                  },
+                  "arrayOrder": 3,
+                  "arrayId": "__3"
+                },
+                {
+                  "type": "function",
+                  "fn": "openUserManagement",
+                  "arrayOrder": 4,
+                  "arrayId": "__4"
+                }
+              ]
+            },
+            "root-admin-users": {
+              "enabled": true,
+              "id": 4,
+              "steps": Array[2][
+                {
+                  "type": "title",
+                  "heading": "User Management",
+                  "text": "<div class='row'><div id='title-text' class='col-md-12'><span class='main-text'>Welcome to <strong>Bamboo User Management</strong><br/>Click next to watch the User Management tutorial video.</span></div></div>",
+                  "curtainClass": "randomClass",
+                  "arrayOrder": 0,
+                  "arrayId": "__0"
+                },
+                {
+                  "type": "title",
+                  "heading": "User Management Tutorial",
+                  "class": "video",
+                  "text": "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='//video.panda-os.com/p/102/sp/10200/embedIframeJs/uiconf_id/11603174/partner_id/102?iframeembed=true&playerId=kaltura_player_1427723901&entry_id=0_03p9cynt' allowfullscreen='' webkitallowfullscreen='' mozallowfullscreen='' frameborder='0' itemprop='video' itemscope='' itemtype='//schema.org/VideoObject'></iframe></div>",
+                  "arrayOrder": 1,
+                  "arrayId": "__1"
+                }
+              ]
+            }
+          }
+        },
+        "trial": {
+          "instanceLifetimeDays": 30,
+          "entryId": false,
+          "defaultVideoUrl": "//video.panda-os.com/p/102/sp/10200/embedIframeJs/uiconf_id/11603174/partner_id/102?iframeembed=true&playerId=kaltura_player_11603174&entry_id=0_jpx5zyty",
+          "enableInstanceColorPicker": false,
+          "instanceDomain": "bamboo-video.com"
+        },
+        "purchases": {
+          "affiliate": false,
+          "mediaTypeIn": false,
+          "defaultService": 5,
+          "services": Array[3][
+            5,
+            2,
+            3
+          ],
+          "upgradeLink": false,
+          "paypal": {
+            "sandBox": true,
+            "payNowButton": true,
+            "merchantId": "56EJUS986TVWQ",
+            "enableEntryPurchase": false
+          },
+          "braintree": {
+            "merchantId": "cpkgcmq55v6h22qt",
+            "publicKey": "h7pcnkfjczcmh6tn",
+            "masterMerchantAccountId": "pandaos"
+          }
+        },
+        "hls": {
+          "enable": true
+        },
+        "stubForCommas": Array[0][
+
+        ],
+        "home": {
+          "featuredCategory": "Featured",
+          "categories": Array[6][
+            "Action",
+            "Animated",
+            "Sci-Fi",
+            "Comedy",
+            "Drama",
+            "Channels"
+          ]
+        },
+        "mobile": {
+          "primaryColor": "#93C62C",
+          "secondaryColor": "#5A5B5B",
+          "primaryHighlightColor": "#FFFFFF",
+          "secondaryHighlightColor": "#FFFFFF",
+          "backgroundColor": "#5A5B5B",
+          "analytics": {
+            "google": {
+              "trackingId": "UA-105167166-1"
+            }
+          },
+          "player": {
+            "adTagUrl": "http://ads.aerserv.com/as/?plc=1000741&cb=&ip=&make=&model=&os=&osv=&type=&ua=&url=&coppa=&vpw=&vph=&vpaid=&age=&yob=&gender="
+          }
+        },
+        "children": Array[1][
+          {
+            "instanceId": "5922a6d16986fb32aa3da01c",
+            "arrayOrder": 0,
+            "arrayId": "__0"
+          }
+        ],
+        "inlineCSS": "body[data-route=\"root.widget.freetrial\"] {background-image: none}\n body {\n    background-image: url(//www.panda-os.com/wp-content/themes/retouch/images/bamboo-white-green-background.jpg);\n    background-position: center;\n    background-attachment: fixed;\nbackground-size: cover;\n}\n\n.container {\nbackground-color: rgba(255,255,255,0.7)\n}\n\n.splash-preloader-bgcolor {\nbackground: none;\n}\n.spinner-bounce>div {\nbackground-color: #4C9937;\n}\n@media (max-width: 970px) {\n.container {\npadding-left: 0; padding-right: 0;\nwidth: auto;\n}}\n\n\n@media (min-width: 1400px) {\n.container {\npadding-left: 15; padding-right: 15;\n    width: 1370px;\n}}",
+        "routes": {"See Routes Section for More info": 1}
+        "currentInstanceId": "5463212312ceb6803fabe223fbc75",
+        "currentInstanceName": "Bamboo Video Demo",
+        "type": 4,
+        "status": 1,
+        "userKs": "djJ8MTAyfFeqm1312OmO13b1m231t3e8LPPedEHelKbueiL11YB7pcj2KCfyFB7Sw6ZD4z2NANkIZnoxkuMr4UtaH2Z_zbz0A7U_EH927ohgnRpxcdrRnEhgd5ZnboZsBF9HTRSIP6O7dP2Jga6UA3H7b9K_Z2CmDX5p-So0f0=",
+        "currentUser": null,
+        "country": "IL"
+        }
+        }
+
+
+## Mobile Configuration [/configmobile?format=json]
+
+### List all mobile configuration [GET]
+
+Mobile configuration
+
++ Request (application/json;charset=UTF-8)
+
++ Response 200 (application/json)
+
+        {
+          "paidSubscriptionRequired": false,
+          "loginWithUdid": true,
+          "loginRequired": false,
+          "enableSearch": false,
+          "primaryColor": "#00264A",
+          "secondaryColor": "#11A5EF",
+          "primaryHighlightColor": "#FFFFFF",
+          "secondaryHighlightColor": "#C4C4C4",
+          "backgroundColor": "#FFFFFF",
+          "showChannelTitles": true,
+          "nativePlayer": true,
+          "poweredBy": true,
+          "analytics": {
+            "google": {
+              "trackingId": "UA-104377292-1"
+            }
+          },
+          "player": {
+            "videoGravity": "stretch"
+          },
+          "supportUrl": "sport1int@gmail.com",
+          "loginInfoText": "For help with login please contact sport1int@gmail.com",
+          "forgotPasswordUrl": "https://www.sport1int.co.il/החשבון-שלי/lost-password/?contentOnly=1",
+          "firstTimePage": {
+            "type": "webview",
+            "displayMode": "modal",
+            "value": "http://www.sport1int.co.il/ברוכים-הבאים-מובייל/?contentOnly=1",
+            "label": "Welcome"
+          },
+          "navMenu": [
+            {
+              "type": "gallery",
+              "category": "",
+              "endpoint": "entry",
+              "filter": {
+                "mediaTypeIn": "1,201",
+                "categoriesIdsMatchOr": "11696,15829",
+                "orderBy": "+startDate"
+              },
+              "liveFirst": true,
+              "showMediaType": true,
+              "mediaTypeTitles": {
+                "entry": "Recorded Stream",
+                "live": "Live Stream"
+              },
+              "label": "Main",
+              "value": "",
+              "hideTitle": true,
+              "orientation": [
+                "portrait",
+                "landscape"
+              ],
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "type": "webview",
+              "label": "About Our Service",
+              "value": "http://sport1.panda-os.com/אודות-השרות-2/?contentOnly=1",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "type": "webview",
+              "label": "Contact Us",
+              "value": "http://sport1.panda-os.com/צור-קשר/?contentOnly=1",
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "type": "webview",
+              "label": "Terms & Privacy Policy",
+              "value": "http://sport1.panda-os.com/תנאי-שירות-2/?contentOnly=1",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            }
+          ],
+          "navMenuAndroid": [
+            {
+              "type": "gallery",
+              "category": "",
+              "endpoint": "entry",
+              "filter": {
+                "mediaTypeIn": "1,201",
+                "categoriesIdsMatchOr": "11696,15829",
+                "orderBy": "+startDate"
+              },
+              "liveFirst": true,
+              "showMediaType": true,
+              "mediaTypeTitles": {
+                "entry": "Recorded Stream",
+                "live": "Live Stream"
+              },
+              "label": "Main",
+              "value": "",
+              "hideTitle": true,
+              "arrayOrder": 0,
+              "arrayId": "__0"
+            },
+            {
+              "type": "webview",
+              "label": "About Our Service",
+              "value": "http://sport1.panda-os.com/אודות-השרות/?contentOnly=1",
+              "arrayOrder": 1,
+              "arrayId": "__1"
+            },
+            {
+              "type": "webview",
+              "label": "Contact Us",
+              "value": "http://sport1.panda-os.com/צור-קשר/?contentOnly=1",
+              "arrayOrder": 2,
+              "arrayId": "__2"
+            },
+            {
+              "type": "webview",
+              "label": "Terms & Privacy Policy",
+              "value": "http://sport1.panda-os.com/תנאי-שירות/?contentOnly=1",
+              "arrayOrder": 3,
+              "arrayId": "__3"
+            }
+          ]
+        }
+
+## Get Routes [/configroutes?format=json]
+
+### List all Routes [GET]
+
+Lists all of the current instance routes
+
++ Request (application/json;charset=UTF-8)
+
++ Response 200 (application/json)
+
+        {
+          "landingpages": Array[0][
+
+          ],
+          "analytics": {
+            "root-analytics": {
+              "name": "root.analytics",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-analytics-dashboard": {
+              "url": "/analytics/dashboard",
+              "requiredRole": "viewerRole",
+              "pageTitle": "Dashboard",
+              "progressDelay": true,
+              "name": "root.analytics.dashboard",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/dashboard.html",
+                  "controller": "DashboardController"
+                }
+              },
+              "dependencies": Array[6][
+                "analytics/directives/CountUpDirective.js",
+                "analytics/controllers/DashboardController.js",
+                "analytics/directives/DashboardWidgetDirective.js",
+                "analytics/directives/DashboardGraphDirective.js",
+                "analytics/services/DashboardService.js",
+                "//www.gstatic.com/charts/loader.js"
+              ]
+            },
+            "root-analytics-report": {
+              "url": "/analytics/report/:action/{id:[0-9a-zA-Z_-]+}",
+              "requiredRole": "adminRole",
+              "pageTitle": "Edit Report",
+              "progressDelay": true,
+              "name": "root.analytics.report",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/add-report.html",
+                  "controller": "ReportIndexController"
+                }
+              },
+              "params": {
+                "action": {
+                  "value": "edit"
+                },
+                "id": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "dependencies": Array[7][
+                "analytics/controllers/ReportIndexController.js",
+                "analytics/services/AdReportsService.js",
+                "pvpadmin/services/ConfigsService.js",
+                "analytics/services/DashboardService.js",
+                "analytics/filters/DimensionToNameFilter.js",
+                "analytics/directives/ReportWidgetDirective.js",
+                "analytics/filters/MetricToNameFilter.js"
+              ]
+            },
+            "root-analytics-reports": {
+              "url": "/analytics/reports",
+              "requiredRole": "viewerRole",
+              "pageTitle": "Reports",
+              "name": "root.analytics.reports",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/reports.html",
+                  "controller": "ReportsListController"
+                }
+              },
+              "dependencies": Array[4][
+                "analytics/controllers/ReportsListController.js",
+                "analytics/directives/AdReportsTableDirective.js",
+                "analytics/directives/ReportWidgetDirective.js",
+                "analytics/services/AdReportsService.js"
+              ]
+            },
+            "root-analytics-stats": {
+              "url": "/analytics/stats/:id",
+              "name": "root.analytics.stats",
+              "pageTitle": "Stats",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/stats.html",
+                  "controller": "StatsIndexController"
+                }
+              },
+              "params": {
+                "id": {
+                  "value": null,
+                  "squash": true
+                },
+                "name": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "dependencies": Array[3][
+                "analytics/controllers/StatsIndexController.js",
+                "analytics/services/AdReportsService.js",
+                "analytics/directives/AdStatsDirective.js"
+              ]
+            },
+            "root-analytics-storage": {
+              "url": "/analytics/storage",
+              "pageTitle": "Analytics - Storage usage",
+              "name": "root.analytics.view",
+              "requiredRole": "adminRole",
+              "views": {
+                "main": {
+                  "templateUrl": "storage.html",
+                  "controller": "StorageController"
+                }
+              },
+              "dependencies": Array[10][
+                "analytics/controllers/StorageController.js",
+                "channels/directives/DateRangeDirective.js",
+                "channels/directives/GeneralSelectDirective.js",
+                "channels/directives/AnalyticsTableDirective.js",
+                "channels/services/AnalyticsService.js",
+                "common/services/DateService.js",
+                "channels/controllers/ChannelsIndexController.js",
+                "channels/services/MosaicService.js",
+                "channels/services/EPGService.js",
+                "channels/services/UiSortableService.js"
+              ]
+            }
+          },
+          "common": {
+            "root": {
+              "name": "root",
+              "views": {
+                "root": {
+                  "templateUrl": "layout-container.html",
+                  "module": "common",
+                  "controller": "CommonController"
+                }
+              },
+              "loadUglify": true,
+              "dependencies": Array[86][
+                "common/filters/CommonStringCutFilter.js",
+                "common/filters/OrderObjectBy.js",
+                "common/filters/StringArrayFilter.js",
+                "common/filters/SecondsToTimeFilter.js",
+                "common/filters/CapitalizedFilter.js",
+                "common/filters/StringReplaceFilter.js",
+                "common/filters/NumberMultiplierFilter.js",
+                "common/filters/NumberForRepeat.js",
+                "common/filters/GetKeyFilter.js",
+                "common/services/GlobalService.js",
+                "common/services/PurchaseService.js",
+                "common/services/PackagesService.js",
+                "common/services/BroadcastService.js",
+                "common/services/CategoryService.js",
+                "common/services/ObjectInterface.js",
+                "common/services/AuthService.js",
+                "common/services/IdentityService.js",
+                "common/services/ModalService.js",
+                "common/services/TranslationService.js",
+                "common/services/EnumService.js",
+                "common/services/ReactService.js",
+                "common/directives/FacebookLikeDirective.js",
+                "common/directives/CommonHeaderNavigationDirective.js",
+                "common/directives/CommonAccordionNavigationDirective.js",
+                "common/directives/CommonUserboxDirective.js",
+                "common/directives/SelectTranslationDirective.js",
+                "common/directives/ResizeDirective.js",
+                "common/directives/ResizeNavigationItemsDirective.js",
+                "common/directives/CommonSpinnerDirective.js",
+                "common/directives/SearchbarDirective.js",
+                "common/directives/ContactUsButtonDirective.js",
+                "common/directives/PremiumButtonDirective.js",
+                "common/directives/HeaderSearchDirective.js",
+                "common/directives/TimestampFormatDirective.js",
+                "common/directives/CustomNumberInputDirective.js",
+                "common/controllers/CommonController.js",
+                "common/js/expanding-search-bar/uisearch.js",
+                "common/js/expanding-search-bar/modernizr.custom.min.js",
+                "common/js/expanding-search-bar/classie.js",
+                "common/js/currency.js",
+                "common/services/NavigationGuardFactory.js",
+                "channels/services/ChannelsService.js",
+                "channels/services/EPGService.js",
+                "channels/services/MosaicService.js",
+                "entry/services/EntryService.js",
+                "mymedia/services/MyMediaService.js",
+                "mymedia/services/MyMediaInterfaceService.js",
+                "gallery/services/PseudoLiveService.js",
+                "gallery/services/GalleryService.js",
+                "gallery/services/CarouselService.js",
+                "user/services/UserService.js",
+                "analytics/services/AnalyticsService.js",
+                "widget/services/WidgetService.js",
+                "user/directives/UserRegistrationFormDirective.js",
+                "user/directives/UserPasswordVerifyDirective.js",
+                "user/directives/UserLoginFormDirective.js",
+                "user/directives/UserForgotPasswordDirective.js",
+                "user/directives/UserSocialMediaLoginDirective.js",
+                "freetrial/services/FreetrialService.js",
+                "freetrial/controllers/FreetrialIndexController.js",
+                "freetrial/directives/FreetrialRegisterFormDirective.js",
+                "freetrial/directives/FreetrialUpgradeFormDirective.js",
+                "freetrial/directives/FreetrialRegisterActionButtonDirective.js",
+                "panda/directives/ContactDirective.js",
+                "upload/lib/angular-flow/flow.js",
+                "upload/lib/angular-flow/angular-flow.js",
+                "upload/lib/angular-flow/provider.js",
+                "upload/services/UploadService.js",
+                "upload/directives/UploadWidgetDirective.js",
+                "upload/directives/UploadItemButtonsDirective.js",
+                "upload/directives/UploaderListDirective.js",
+                "upload/directives/UploaderProgressItemDirective.js",
+                "upload/directives/UploaderOverallProgressDirective.js",
+                "user/js/country.js",
+                "user/js/region.js",
+                "user/js/state.js",
+                "playlist/services/PlaylistService.js",
+                "user/directives/cropperDirective.js",
+                "user/directives/iconsDirective.js",
+                "embed/services/EmbedService.js",
+                "common/services/InstancesService.js",
+                "events/services/NewsFeedService.js",
+                "events/services/EventsService.js",
+                "events/directives/NewsFeedBarDirective.js",
+                "live/services/LiveService.js",
+                "channels/services/UiSortableService.js"
+              ]
+            },
+            "root-common": {
+              "name": "root.common",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                },
+                "sidebar": {
+                  "templateUrl": "sidebar.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-common-TOS": {
+              "name": "root.common.TOS",
+              "url": "/terms",
+              "views": {
+                "main": {
+                  "templateUrl": "term-of-service-bamboo.html",
+                  "controller": "TermOfServiceController"
+                }
+              },
+              "dependencies": Array[1][
+                "common/controllers/TermOfServiceController.js"
+              ]
+            },
+            "root-common-searchpage": {
+              "name": "root.common.searchpage",
+              "progressDelay": true,
+              "url": "/search-page/:text",
+              "views": {
+                "main": {
+                  "templateUrl": "search-page.html",
+                  "controller": "SearchPageController"
+                }
+              },
+              "dependencies": Array[14][
+                "common/controllers/SearchPageController.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/UsersCarouselDirective.js",
+                "common/directives/UsersAdvancedSearchPageDirective.js",
+                "events/services/EventsService.js",
+                "gallery/directives/UsersGalleryDirective.js",
+                "user/filters/EducationFilter.js",
+                "user/filters/RelationshipFilter.js",
+                "user/filters/RelationshipStatusFilter.js",
+                "user/filters/InterestedInGenderFilter.js",
+                "user/filters/WorkFieldFilter.js",
+                "user/filters/GenderFilter.js",
+                "user/js/city.js"
+              ]
+            }
+          },
+          "gallery": {
+            "root-gallery": {
+              "name": "root.gallery",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "GalleryIndexController"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                },
+                "sidebar": {
+                  "templateUrl": "sidebar.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[13][
+                "common/directives/PaymentGatewayDirective.js",
+                "gallery/controllers/GalleryIndexController.js",
+                "channels/services/UiSortableService.js",
+                "favorites/services/UserFavoritesService.js",
+                "favorites/directives/UserFavoritesStarDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "favorites/directives/FavoritesCarouselDirective.js",
+                "gallery/directives/GalleryDirective.js",
+                "gallery/services/PlayerConfigService.js",
+                "gallery/directives/PlaylistDirective.js",
+                "review/services/ReviewService.js"
+              ]
+            },
+            "root-gallery-view": {
+              "url": "/gallery/{categoryName}/{categoryId}",
+              "pageTitle": "Panda Gallery",
+              "name": "root.gallery.view",
+              "progressDelay": true,
+              "views": {
+                "left-sidebar": {
+                  "templateUrl": "templates/left-sidebar.html"
+                },
+                "main": {
+                  "templateUrl": "templates/gallery.html"
+                }
+              }
+            },
+            "root-gallery-multi": {
+              "url": "/gallery/multi/{categoryName}/{categoryId}",
+              "pageTitle": "Panda Gallery",
+              "name": "root.gallery.multi",
+              "progressDelay": true,
+              "views": {
+                "left-sidebar": {
+                  "templateUrl": "templates/left-sidebar.html"
+                },
+                "main": {
+                  "templateUrl": "templates/multi.html",
+                  "module": "gallery",
+                  "controller": "GalleryMultiController"
+                }
+              },
+              "dependencies": Array[3][
+                "gallery/controllers/GalleryMultiController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js"
+              ]
+            },
+            "root-gallery-playentry": {
+              "url": "/play/{id:[0-9a-zA-Z_]+}",
+              "pageTitle": "Panda Video Platform Play",
+              "name": "root.gallery.playentry",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/play.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlayController"
+                }
+              },
+              "dependencies": Array[17][
+                "gallery/controllers/GalleryPlayController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "channels/directives/ChannelsGuideDirective.js",
+                "common/directives/ResizeDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryTabsDirective.js",
+                "gallery/directives/PlayGalleriesDirective.js",
+                "gallery/directives/PlayCommentsDirective.js",
+                "gallery/directives/PlayUserFavoritesDirective.js",
+                "gallery/directives/GalleryTabsCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "entry/directives/EntryRatingDirective.js"
+              ]
+            },
+            "root-gallery-playlist": {
+              "url": "/playlist/{id:[0-9a-zA-Z_]+}",
+              "pageTitle": "Panda Video Platform Play",
+              "name": "root.gallery.playlist",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/playlist-page.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlaylistController"
+                }
+              },
+              "dependencies": Array[16][
+                "gallery/controllers/GalleryPlaylistController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "common/directives/ResizeDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryTabsDirective.js",
+                "gallery/directives/PlayGalleriesDirective.js",
+                "gallery/directives/PlayCommentsDirective.js",
+                "gallery/directives/PlayUserFavoritesDirective.js",
+                "gallery/directives/GalleryTabsCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "entry/directives/EntryRatingDirective.js"
+              ]
+            },
+            "root-gallery-play": {
+              "url": "/play/{categoryName}/{name}/{id:[0-9a-zA-Z_]+}/:search",
+              "pageTitle": "Panda Video Platform Play",
+              "name": "root.gallery.play",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/play.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlayController"
+                }
+              },
+              "params": {
+                "search": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "dependencies": Array[17][
+                "gallery/controllers/GalleryPlayController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "channels/directives/ChannelsGuideDirective.js",
+                "common/directives/ResizeDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryTabsDirective.js",
+                "gallery/directives/PlayGalleriesDirective.js",
+                "gallery/directives/PlayCommentsDirective.js",
+                "gallery/directives/PlayUserFavoritesDirective.js",
+                "gallery/directives/GalleryTabsCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "entry/directives/EntryRatingDirective.js"
+              ]
+            },
+            "root-gallery-playchannels": {
+              "url": "/channel/{categoryName}/{name}/{id:[0-9a-zA-Z_]+}/:search",
+              "pageTitle": "Panda Video Platform Play",
+              "name": "root.gallery.playchannels",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/play-channels.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlayController"
+                }
+              },
+              "params": {
+                "categoryName": {
+                  "value": null,
+                  "squash": false
+                },
+                "name": {
+                  "value": null,
+                  "squash": false
+                },
+                "id": {
+                  "value": null,
+                  "squash": false
+                },
+                "search": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "dependencies": Array[17][
+                "gallery/controllers/GalleryPlayController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "channels/directives/ChannelsGuideDirective.js",
+                "common/directives/ResizeDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryTabsDirective.js",
+                "gallery/directives/PlayGalleriesDirective.js",
+                "gallery/directives/PlayCommentsDirective.js",
+                "gallery/directives/PlayUserFavoritesDirective.js",
+                "gallery/directives/GalleryTabsCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "entry/directives/EntryRatingDirective.js"
+              ]
+            },
+            "root-gallery-live": {
+              "url": "/live/{name}/{id:[0-9a-zA-Z_]+}",
+              "pageTitle": "Panda Video Platform Live Stream",
+              "progressDelay": true,
+              "name": "root.gallery.live",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/live.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlayController"
+                }
+              },
+              "dependencies": Array[16][
+                "gallery/controllers/GalleryPlayController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "common/directives/ResizeDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryTabsDirective.js",
+                "gallery/directives/PlayGalleriesDirective.js",
+                "gallery/directives/PlayCommentsDirective.js",
+                "gallery/directives/PlayUserFavoritesDirective.js",
+                "gallery/directives/GalleryTabsCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "entry/directives/EntryRatingDirective.js"
+              ]
+            },
+            "root-gallery-embed": {
+              "layout": "layout-embed.html",
+              "name": "root.gallery.embed",
+              "loginRoute": "root.user.embedAccess.login",
+              "views": {
+                "header@root": {
+                  "templateUrl": "header-empty.html",
+                  "module": "common"
+                },
+                "main": {
+                  "templateUrl": "templates/embed.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlayController"
+                }
+              },
+              "dependencies": Array[3][
+                "gallery/controllers/GalleryPlayController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js"
+              ]
+            },
+            "root-gallery-embed-user": {
+              "url": "/embed/:userId/user/:playerId",
+              "pageTitle": "Artist embed",
+              "name": "root.gallery.embed.user",
+              "loginRoute": "root.user.embedAccess.login",
+              "progressDelay": true,
+              "params": {
+                "playerId": {
+                  "value": null,
+                  "squash": true
+                },
+                "userId": {
+                  "value": null,
+                  "squash": true
+                }
+              }
+            },
+            "root-gallery-embed-entry": {
+              "url": "/embed-player/{categoryName}/{name}/{id:[0-9a-zA-Z_]+}/:playerId",
+              "pageTitle": "Panda Video Platform Play",
+              "name": "root.gallery.embed.entry",
+              "loginRoute": "root.user.embedAccess.login",
+              "progressDelay": true,
+              "params": {
+                "playerId": {
+                  "value": null,
+                  "squash": true
+                }
+              }
+            },
+            "root-home": {
+              "url": "/",
+              "pageTitle": "Bamboo Video Platform",
+              "name": "root.home",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common",
+                  "controller": "CommonController"
+                },
+                "content": {
+                  "templateUrl": "templates/home.html",
+                  "controller": "GalleryHomeController"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[4][
+                "gallery/controllers/GalleryHomeController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/services/GalleryService.js",
+                "gallery/directives/GalleryCarouselDirective.js"
+              ]
+            }
+          },
+          "admin": {
+            "root-admin": {
+              "name": "root.admin",
+              "layout": "layout.html",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "AdminIndexController",
+                  "module": "admin"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[1][
+                "admin/controllers/AdminIndexController.js"
+              ]
+            },
+            "root-admin-users": {
+              "name": "root.admin.users",
+              "progressDelay": true,
+              "requiredRole": "adminRole",
+              "url": "/admin/users",
+              "views": {
+                "main": {
+                  "templateUrl": "users.html",
+                  "controller": "AdminUsersController",
+                  "module": "admin"
+                }
+              },
+              "dependencies": Array[10][
+                "admin/controllers/AdminUsersController.js",
+                "admin/directives/AdminUsersListDirective.js",
+                "user/directives/UserPasswordVerifyDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "admin/directives/AdminUserEditFormDirective.js",
+                "mymedia/directives/MediaListDirective.js",
+                "admin/directives/userPurchaseEntryDirective.js",
+                "channels/services/UiSortableService.js",
+                "playlist/services/PlaylistService.js",
+                "user/directives/affiliateEditFormDirective.js"
+              ]
+            },
+            "root-admin-reports": {
+              "url": "/admin/reports",
+              "name": "root.admin.reports",
+              "requiredRole": "adminRole",
+              "layout": "layout.html",
+              "views": {
+                "main": {
+                  "templateUrl": "reports.html",
+                  "controller": "AdminReportsController",
+                  "module": "admin"
+                }
+              },
+              "dependencies": Array[1][
+                "admin/controllers/AdminReportsController.js"
+              ]
+            }
+          },
+          "freetrial": {
+            "root-freetrial": {
+              "name": "root.freetrial",
+              "pageTitle": "Bamboo Free Trial",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              }
+            },
+            "root-freetrial-register": {
+              "name": "root.freetrial.register",
+              "url": "/trial",
+              "pageTitle": "Bamboo Free Trial",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/main.html",
+                  "controller": "FreetrialIndexController"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-freetrial-registerSuccess": {
+              "name": "root.freetrial.registerSuccess",
+              "url": "/trial/success",
+              "pageTitle": "Bamboo Free Trial Success",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/success.html",
+                  "controller": "FreetrialIndexController"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-freetrial-instance": {
+              "name": "root.freetrial.instance",
+              "url": "/trial/:ks",
+              "pageTitle": "Bamboo instance",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/instance.html",
+                  "controller": "FreetrialInstanceController"
+                }
+              },
+              "dependencies": Array[6][
+                "freetrial/directives/FreetrialInstanceCreationFormDirective.js",
+                "entry/directives/EntryThumbnailUploadDirective.js",
+                "freetrial/controllers/FreetrialInstanceController.js",
+                "freetrial/directives/ColorSelectorDirective.js",
+                "freetrial/directives/ThemeSelectorDirective.js",
+                "user/directives/UserPasswordVerifyDirective.js"
+              ]
+            },
+            "root-freetrial-upgrade": {
+              "name": "root.freetrial.upgrade",
+              "url": "/upgrade",
+              "pageTitle": "Bamboo Premium Subscription",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/upgrade.html",
+                  "controller": "FreetrialUpgradeController"
+                }
+              },
+              "dependencies": Array[1][
+                "freetrial/controllers/FreetrialUpgradeController.js"
+              ]
+            },
+            "root-freetrial-upgradeSuccess": {
+              "name": "root.freetrial.upgradeSuccess",
+              "url": "/upgrade/success",
+              "pageTitle": "Bamboo Premium Subscription Success",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/upgrade-success.html",
+                  "controller": "FreetrialUpgradeController"
+                }
+              },
+              "dependencies": Array[1][
+                "freetrial/controllers/FreetrialUpgradeController.js"
+              ]
+            },
+            "root-freetrial-upgradeFail": {
+              "name": "root.freetrial.upgradeFail",
+              "url": "/upgrade/fail",
+              "pageTitle": "Bamboo Premium Subscription Failed",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/upgrade-fail.html",
+                  "controller": "FreetrialUpgradeController"
+                }
+              },
+              "dependencies": Array[1][
+                "freetrial/controllers/FreetrialUpgradeController.js"
+              ]
+            }
+          },
+          "upload": {
+            "root-upload": {
+              "name": "root.upload",
+              "url": "/upload",
+              "requiredRole": "contributorRole",
+              "pageTitle": "Bamboo Upload",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "UploadIndexController",
+                  "module": "upload"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                },
+                "sidebar": {
+                  "templateUrl": "sidebar.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[6][
+                "admin/controllers/AdminIndexController.js",
+                "upload/controllers/UploadIndexController.js",
+                "upload/directives/UploaderBoxDirective.js",
+                "entry/directives/EntryThumbnailUploadDirective.js",
+                "entry/directives/EntryEditDirective.js",
+                "entry/directives/CustomFormDirective.js"
+              ]
+            }
+          },
+          "editor": {
+            "root-editor": {
+              "name": "root.editor",
+              "layout": "layout.html",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "EditorIndexController"
+                }
+              },
+              "dependencies": Array[9][
+                "channels/directives/AllContentDirective.js",
+                "entry/services/ThumbnailService.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "channels/services/UiSortableService.js",
+                "gallery/services/PlayerConfigService.js",
+                "entry/directives/EntryEditDirective.js",
+                "editor/controllers/EditorIndexController.js",
+                "review/services/EditorService.js",
+                "gallery/directives/GalleryPlayerDirective.js"
+              ]
+            },
+            "root-editor-edit": {
+              "requiredRole": "contributorRole",
+              "url": "/editor/:entryId",
+              "pageTitle": "Bamboo Video Editor",
+              "name": "root.editor.edit",
+              "params": {
+                "entryId": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "views": {
+                "main": {
+                  "templateUrl": "templates/main.html"
+                }
+              }
+            }
+          },
+          "review": {
+            "root-review": {
+              "name": "root.review",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "ReviewIndexController"
+                }
+              },
+              "dependencies": Array[7][
+                "gallery/services/PlayerConfigService.js",
+                "review/controllers/ReviewIndexController.js",
+                "review/services/ReviewService.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "review/directives/DrawOnCanvasDirective.js",
+                "common/directives/CheckboxTreeDirective.js",
+                "review/directives/ClipEdit.js"
+              ]
+            },
+            "root-review-view": {
+              "requiredRole": "viewerRole",
+              "url": "/review/:entryId",
+              "pageTitle": "Review",
+              "name": "root.review.view",
+              "views": {
+                "left-sidebar": {
+                  "templateUrl": "templates/left-sidebar.html"
+                },
+                "main": {
+                  "templateUrl": "templates/main.html"
+                },
+                "right-sidebar": {
+                  "templateUrl": "templates/right-sidebar.html"
+                }
+              }
+            }
+          },
+          "monitor": {
+            "root-monitor": {
+              "name": "root.monitor",
+              "requiredRole": "adminRole",
+              "url": "/monitor",
+              "pageTitle": "monitor",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "MonitorIndexController",
+                  "module": "monitor"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[3][
+                "monitor/controllers/MonitorIndexController.js",
+                "common/services/DateService.js",
+                "common/services/GlobalService.js"
+              ]
+            }
+          },
+          "live": {
+            "root-live": {
+              "name": "root.live",
+              "requiredRole": "contributorRole",
+              "layout": "layout.html",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "module": "mymedia",
+                  "controller": "MymediaIndexController"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[12][
+                "upload/directives/UploaderBoxDirective.js",
+                "entry/directives/CustomFormDirective.js",
+                "entry/directives/EntryEditDirective.js",
+                "mymedia/controllers/MymediaIndexController.js",
+                "gallery/services/PlayerConfigService.js",
+                "common/filters/DynamicPickerFilter.js",
+                "mymedia/directives/MediaListDirective.js",
+                "mymedia/directives/MyMediaHeaderDirective.js",
+                "mymedia/directives/MediaItemDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "channels/services/UiSortableService.js",
+                "review/services/ReviewService.js"
+              ]
+            },
+            "root-live-stream": {
+              "name": "root.live.stream",
+              "url": "/my-live/{id:[0-9a-zA-Z_-]+}/:tab",
+              "requiredRole": "contributorRole",
+              "views": {
+                "main-section": {
+                  "controller": "MymediaMediaController",
+                  "module": "mymedia",
+                  "templateUrl": "main-section/my-media.html"
+                },
+                "edit-section": {
+                  "controller": "MymediaEditIndexController",
+                  "module": "mymedia",
+                  "templateUrl": "edit-section/edit-media.html"
+                }
+              },
+              "params": {
+                "id": {
+                  "value": null,
+                  "squash": true
+                },
+                "tab": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "progressDelay": true,
+              "dependencies": Array[18][
+                "entry/directives/EntryThumbnailGeneratorDirective.js",
+                "entry/directives/EntryThumbnailUploadDirective.js",
+                "entry/directives/ImageEntryUploadDirective.js",
+                "entry/services/ThumbnailService.js",
+                "mymedia/controllers/MymediaEditIndexController.js",
+                "mymedia/controllers/MymediaMediaController.js",
+                "mymedia/directives/MediaInfoDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "player/directives/PlayersListDirective.js",
+                "player/directives/PlayerEditFormDirective.js",
+                "common/filters/PlayersTagsFilter.js",
+                "categories/directives/ManageCategoriesDirective.js",
+                "mymedia/controllers/MymediaCategoriesController.js",
+                "live/directives/embedSrc.js",
+                "playlist/services/PlaylistService.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "live/directives/LiveKRecordWidgetDirective.js",
+                "categories/directives/categoryFormDirective.js"
+              ]
+            },
+            "root-live-streamembed": {
+              "layout": "layout-embed.html",
+              "loginRoute": "root.user.embedAccess.login",
+              "name": "root.live.streamembed",
+              "views": {
+                "content@root": {
+                  "module": "live",
+                  "controller": "LiveStreamembedController",
+                  "templateUrl": "templates/partials/live-widget-embed.html"
+                }
+              },
+              "url": "/streamembed/{entryId:[0-9a-zA-Z_]+}",
+              "requiredRole": "contributorRole",
+              "dependencies": Array[7][
+                "comments/directives/CommentsDirective.js",
+                "live/controllers/LiveStreamembedController.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "live/directives/LiveWebmediaWidgetDirective.js",
+                "live/directives/embedSrc.js",
+                "live/directives/LiveKRecordWidgetDirective.js"
+              ]
+            }
+          },
+          "user": {
+            "root-user": {
+              "name": "root.user",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "UserIndexController",
+                  "module": "user"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[1][
+                "user/controllers/UserIndexController.js"
+              ]
+            },
+            "root-user-favorites": {
+              "name": "root.user.favorites",
+              "progressDelay": true,
+              "requiredRole": "viewerRole",
+              "url": "/favorites",
+              "views": {
+                "main": {
+                  "templateUrl": "favorites-page.html",
+                  "controller": "SearchPageController",
+                  "module": "common"
+                },
+                "sidebar@root": {
+                  "templateUrl": "news-feed-bar.html",
+                  "module": "events"
+                }
+              },
+              "dependencies": Array[5][
+                "common/directives/FavoritesUsersPageDirective.js",
+                "events/services/EventsService.js",
+                "common/controllers/SearchPageController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/UsersGalleryDirective.js"
+              ]
+            },
+            "root-user-activationLogin": {
+              "url": "/activation-login",
+              "pageTitle": "Activation Login",
+              "name": "root.user.activationLogin",
+              "requiredRole": "viewerRole",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/activation-code-login.html"
+                }
+              },
+              "dependencies": Array[1][
+                "user/directives/activationCodeLoginDirective.js"
+              ]
+            },
+            "root-user-login": {
+              "url": "/login?redirectTo&loginType&accessRedirect",
+              "pageTitle": "Video Management",
+              "layout": "layout.html",
+              "name": "root.user.login",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/login.html"
+                }
+              },
+              "dependencies": Array[2][
+                "user/directives/UserLoginFormDirective.js",
+                "user/directives/UserSocialMediaLoginDirective.js"
+              ]
+            },
+            "root-user-embedAccess": {
+              "pageTitle": "Video Management",
+              "layout": "layout-embed.html",
+              "name": "root.user.embedAccess",
+              "views": {
+                "header@root": {
+                  "templateUrl": "header-empty.html",
+                  "module": "common"
+                },
+                "main": {
+                  "templateUrl": "templates/embed-access.html",
+                  "controller": "userEmbedAccessController"
+                }
+              },
+              "dependencies": Array[3][
+                "user/controllers/userEmbedAccessController.js",
+                "user/directives/UserLoginFormDirective.js",
+                "user/directives/UserSocialMediaLoginDirective.js"
+              ]
+            },
+            "root-user-embedAccess-login": {
+              "url": "/login-embed?redirectTo&loginType&accessRedirect",
+              "pageTitle": "Video Management",
+              "name": "root.user.embedAccess.login",
+              "views": {
+                "access": {
+                  "templateUrl": "templates/embed-login.html"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-user-embedAccess-register": {
+              "url": "/register-embed?redirectTo",
+              "pageTitle": "Video Management",
+              "name": "root.user.embedAccess.register",
+              "views": {
+                "access": {
+                  "templateUrl": "templates/embed-register.html"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-user-embedAccess-forgot": {
+              "url": "/login-embed?redirectTo&loginType&accessRedirect",
+              "pageTitle": "Video Management",
+              "name": "root.user.embedAccess.forgot",
+              "views": {
+                "access": {
+                  "templateUrl": "templates/embed-forgot.html"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-user-register": {
+              "url": "/register?redirectTo",
+              "name": "root.user.register",
+              "layout": "layout.html",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/register.html"
+                }
+              },
+              "dependencies": Array[2][
+                "user/directives/UserRegistrationFormDirective.js",
+                "user/directives/UserPasswordVerifyDirective.js"
+              ]
+            },
+            "root-user-profile": {
+              "name": "root.user.profile",
+              "url": "/user/:fullName/:userId",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/profile.html",
+                  "controller": "UserProfileController"
+                },
+                "sidebar@root": {
+                  "templateUrl": "sidebar.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[17][
+                "user/controllers/UserProfileController.js",
+                "entry/directives/ImageEntryUploadDirective.js",
+                "user/directives/UserInfoDirective.js",
+                "common/filters/DynamicPickerFilter.js",
+                "gallery/directives/GalleryDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "common/directives/PaymentGatewayDirective.js",
+                "user/directives/ImagePickerDirective.js",
+                "user/controllers/UserIndexController.js",
+                "events/services/EventsService.js",
+                "user/filters/EducationFilter.js",
+                "user/filters/RelationshipFilter.js",
+                "user/filters/RelationshipStatusFilter.js",
+                "user/filters/InterestedInGenderFilter.js",
+                "user/filters/WorkFieldFilter.js",
+                "user/filters/GenderFilter.js",
+                "user/js/city.js"
+              ]
+            },
+            "root-user-forgot": {
+              "url": "/forgot?redirectTo",
+              "name": "root.user.forgot",
+              "layout": "layout.html",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/forgot-password.html"
+                }
+              },
+              "dependencies": Array[2][
+                "user/directives/UserPasswordFormDirective.js",
+                "user/directives/UserForgotPasswordDirective.js"
+              ]
+            },
+            "root-user-password": {
+              "url": "/forgot/:token",
+              "name": "root.user.password",
+              "layout": "layout.html",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/reset-password.html"
+                }
+              },
+              "dependencies": Array[2][
+                "user/directives/UserResetPasswordDirective.js",
+                "user/directives/UserPasswordVerifyDirective.js"
+              ]
+            },
+            "root-user-unauthorized": {
+              "name": "root.user.unauthorized",
+              "layout": "layout.html",
+              "views": {
+                "main": {
+                  "templateUrl": "unauthorized.html",
+                  "controller": "UserIndexController",
+                  "module": "common"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-user-accessdenied": {
+              "url": "/accessdenied/:id",
+              "name": "root.user.accessdenied",
+              "layout": "layout.html",
+              "views": {
+                "header@root": {
+                  "templateUrl": "header-empty.html",
+                  "module": "common"
+                },
+                "main": {
+                  "templateUrl": "accessdenied.html",
+                  "module": "common"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            }
+          },
+          "widget": {
+            "root-widget": {
+              "name": "root.widget",
+              "layout": "layout.html",
+              "views": {
+                "header": {
+                  "templateUrl": "header-empty.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[19][
+                "common/directives/PaymentGatewayDirective.js",
+                "channels/services/UiSortableService.js",
+                "favorites/services/UserFavoritesService.js",
+                "favorites/directives/UserFavoritesStarDirective.js",
+                "favorites/directives/FavoritesCarouselDirective.js",
+                "gallery/controllers/GalleryIndexController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/GalleryDirective.js",
+                "gallery/directives/PseudoPlaylistDirective.js",
+                "gallery/directives/PlaylistDirective.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/services/PlayerConfigService.js",
+                "review/services/ReviewService.js",
+                "widget/controllers/WidgetIndexController.js",
+                "widget/services/WidgetService.js",
+                "widget/controllers/WidgetLoaderController.js"
+              ]
+            },
+            "root-widget-config": {
+              "url": "/widget/:id/:domain",
+              "pageTitle": "Online City Live",
+              "name": "root.widget.config",
+              "skipAuth": true,
+              "views": {
+                "main": {
+                  "templateUrl": "templates/loader.html",
+                  "controller": "WidgetLoaderController"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-widget-home": {
+              "url": "/widgetgallery/home",
+              "pageTitle": "Online City Live",
+              "name": "root.widget.home",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/home.html",
+                  "module": "widget",
+                  "controller": "WidgetIndexController"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-widget-play": {
+              "url": "/playwidget/{categoryName}/{name}/{id:[0-9a-zA-Z_]+}",
+              "pageTitle": "Bamboo Play Widget",
+              "name": "root.widget.play",
+              "views": {
+                "header@root": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "main": {
+                  "templateUrl": "templates/play.html",
+                  "module": "gallery",
+                  "controller": "GalleryPlayController"
+                }
+              },
+              "dependencies": Array[17][
+                "channels/directives/ChannelsGuideDirective.js",
+                "common/directives/ResizeDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "gallery/controllers/GalleryPlayController.js",
+                "gallery/directives/GalleryTabsDirective.js",
+                "gallery/directives/PlayGalleriesDirective.js",
+                "gallery/directives/PlayCommentsDirective.js",
+                "gallery/directives/PlayUserFavoritesDirective.js",
+                "gallery/directives/GalleryTabsCarouselDirective.js",
+                "entry/directives/EntryRatingDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/CategoryCarouselDirective.js",
+                "gallery/directives/GalleryCarouselDirective.js",
+                "gallery/directives/PlayPageWidgetsDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js"
+              ]
+            },
+            "root-widget-trial": {
+              "url": "/trialwidget",
+              "pageTitle": "Bamboo Free Trial",
+              "name": "root.widget.freetrial",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/main.html",
+                  "controller": "FreetrialIndexController",
+                  "module": "freetrial"
+                }
+              }
+            }
+          },
+          "faq": {
+            "root-faq": {
+              "name": "root.faq",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "FaqIndexController",
+                  "module": "faq"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                },
+                "sidebar": {
+                  "templateUrl": "sidebar.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[1][
+                "faq/controllers/FaqIndexController.js"
+              ]
+            },
+            "root-faq-view": {
+              "url": "/faq",
+              "pageTitle": "FAQ",
+              "name": "root.faq.view",
+              "views": {
+                "main": {
+                  "templateUrl": "templates/main.html"
+                }
+              },
+              "dependencies": Array[2][
+                "faq/controllers/FaqIndexController.js",
+                "panda/directives/ScrollOnClickDirective.js"
+              ]
+            }
+          },
+          "dashboard": {
+            "root-dashboard": {
+              "url": "/dashboard",
+              "pageTitle": "Analytics Dashboard",
+              "name": "root.dashboard",
+              "requiredRole": "adminRole",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "DashboardIndexController"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[3][
+                "dashboard/controllers/DashboardIndexController.js",
+                "dashboard/services/DashboardService.js",
+                "//www.gstatic.com/charts/loader.js"
+              ]
+            }
+          },
+          "embed": {
+            "root-embed": {
+              "name": "root.embed",
+              "layout": "layout.html",
+              "requiredRole": "contributorRole",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "EmbedIndexController"
+                }
+              },
+              "dependencies": Array[5][
+                "common/filters/PlayersTagsFilter.js",
+                "embed/controllers/EmbedIndexController.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "mymedia/directives/MyMediaHeaderDirective.js",
+                "player/directives/PlayersListDirective.js"
+              ]
+            },
+            "root-embed-players": {
+              "name": "root.embed.players",
+              "url": "/players",
+              "requiredRole": "contributorRole",
+              "views": {
+                "main-section": {
+                  "templateUrl": "main-section/embed-players.html"
+                }
+              },
+              "dependencies": Array[1][
+                "gallery/directives/GalleryThumbnailDirective.js"
+              ]
+            },
+            "root-embed-edit": {
+              "name": "root.embed.edit",
+              "url": "/players/:id",
+              "requiredRole": "contributorRole",
+              "views": {
+                "main-section": {
+                  "templateUrl": "main-section/embed-players.html"
+                },
+                "edit-section": {
+                  "templateUrl": "edit-section/edit-player.html",
+                  "controller": "EmbedPlayerEditController"
+                }
+              },
+              "dependencies": Array[6][
+                "embed/controllers/EmbedPlayerEditController.js",
+                "embed/directives/EmbedThemeDirective.js",
+                "embed/filters/AllowedUiVarsFilter.js",
+                "gallery/services/PlayerConfigService.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js"
+              ]
+            }
+          },
+          "pvpadmin": {
+            "root-pvpadmin": {
+              "requiredRole": "adminRole",
+              "name": "root.pvpadmin",
+              "views": {
+                "header": {
+                  "templateUrl": "header-empty.html",
+                  "module": "common",
+                  "controller": "CommonController"
+                },
+                "header@root": {
+                  "templateUrl": "header-empty.html",
+                  "module": "common",
+                  "controller": "CommonController"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "PvpadminIndexController",
+                  "module": "pvpadmin"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[30][
+                "pvpadmin/controllers/PvpadminIndexController.js",
+                "pvpadmin/services/CustomersService.js",
+                "pvpadmin/services/ConfigsService.js",
+                "pvpadmin/services/SettingsService.js",
+                "pvpadmin/services/DropfoldersService.js",
+                "pvpadmin/controllers/PvpadminConfigsController.js",
+                "pvpadmin/directives/PvpadminJsonEditorDirective.js",
+                "pvpadmin/directives/PvpadminTargetingHostsDirective.js",
+                "pvpadmin/directives/PvpadminHostsDirective.js",
+                "pvpadmin/directives/PvpadminVideoSettingsDirective.js",
+                "pvpadmin/directives/PvpadminBackupsDirective.js",
+                "pvpadmin/directives/PvpadminInfoSettingsDirective.js",
+                "pvpadmin/directives/PvpadminDropfoldersDirective.js",
+                "pvpadmin/directives/PvpadminNewAccountDirective.js",
+                "pvpadmin/directives/PvpadminAccountsDirective.js",
+                "pvpadmin/directives/PvpadminCustomCssDirective.js",
+                "pvpadmin/directives/PvpadminApiKeysDirective.js",
+                "pvpadmin/directives/PvpadminChildrenDirective.js",
+                "pvpadmin/directives/PvpadminEPGSettingsDirective.js",
+                "pvpadmin/directives/PvpadminPackagesDirective.js",
+                "pvpadmin/directives/PvpadminAnalyticsDirective.js",
+                "pvpadmin/filters/ConfigsByCustomerFilter.js",
+                "entry/directives/EntryThumbnailUploadDirective.js",
+                "user/directives/UserPasswordVerifyDirective.js",
+                "entry/directives/ImageEntryUploadDirective.js",
+                "analytics/directives/DashboardWidgetDirective.js",
+                "analytics/directives/DashboardGraphDirective.js",
+                "analytics/services/DashboardService.js",
+                "//www.gstatic.com/charts/loader.js",
+                "user/js/timezones.js"
+              ]
+            },
+            "root-pvpadmin-customers": {
+              "requiredRole": "adminRole",
+              "name": "root.pvpadmin.customers",
+              "url": "/settings/customers",
+              "views": {
+                "main": {
+                  "templateUrl": "customers.html",
+                  "controller": "PvpadminCustomersController"
+                }
+              },
+              "dependencies": Array[3][
+                "pvpadmin/controllers/PvpadminCustomersController.js",
+                "pvpadmin/directives/PvpadminCustomersListDirective.js",
+                "pvpadmin/directives/PvpadminCustomersEditFormDirective.js"
+              ]
+            },
+            "root-pvpadmin-configs": {
+              "requiredRole": "adminRole",
+              "name": "root.pvpadmin.configs",
+              "url": "/settings/:action/:id/:tab",
+              "views": {
+                "main": {
+                  "templateUrl": "configs.html",
+                  "controller": "PvpadminConfigsController"
+                }
+              },
+              "params": {
+                "id": {
+                  "value": null,
+                  "squash": true
+                },
+                "action": {
+                  "value": "select",
+                  "squash": true
+                },
+                "tab": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            }
+          },
+          "mymedia": {
+            "root-mymedia": {
+              "name": "root.mymedia",
+              "requiredRole": "contributorRole",
+              "layout": "layout.html",
+              "loadUglify": true,
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "MymediaIndexController"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                }
+              },
+              "dependencies": Array[49][
+                "entry/directives/CustomFormDirective.js",
+                "categories/directives/categoryFormDirective.js",
+                "entry/directives/ExternalLinkDirective.js",
+                "mymedia/directives/AdCuepointsDirective.js",
+                "mymedia/directives/chaptersDirective.js",
+                "mymedia/directives/AnnotationsDirective.js",
+                "live/directives/LiveKRecordWidgetDirective.js",
+                "upload/directives/UploaderBoxDirective.js",
+                "entry/directives/EntryEditDirective.js",
+                "mymedia/controllers/MymediaIndexController.js",
+                "gallery/services/PlayerConfigService.js",
+                "common/filters/DynamicPickerFilter.js",
+                "mymedia/directives/MediaListDirective.js",
+                "mymedia/components/EntryItemEditButtonReactComponent.js",
+                "mymedia/components/EntryThumbnailReactComponent.js",
+                "mymedia/components/EntryCheckboxReactComponent.js",
+                "mymedia/components/EntryItemReactComponent.js",
+                "mymedia/components/EntryListReactComponent.js",
+                "mymedia/directives/MediaItemDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "channels/services/UiSortableService.js",
+                "review/directives/ReviewEditorDirective.js",
+                "review/directives/DrawOnCanvasDirective.js",
+                "review/services/ReviewService.js",
+                "entry/directives/EntryThumbnailGeneratorDirective.js",
+                "entry/directives/EntryThumbnailUploadDirective.js",
+                "entry/directives/ImageEntryUploadDirective.js",
+                "entry/services/ClippingService.js",
+                "entry/services/ThumbnailService.js",
+                "mymedia/controllers/MymediaEditIndexController.js",
+                "mymedia/controllers/MymediaMediaController.js",
+                "mymedia/directives/MyMediaHeaderDirective.js",
+                "mymedia/directives/MediaInfoDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "review/directives/ClippingDirective.js",
+                "player/directives/PlayersListDirective.js",
+                "player/directives/PlayerEditFormDirective.js",
+                "common/filters/PlayersTagsFilter.js",
+                "categories/directives/ManageCategoriesDirective.js",
+                "mymedia/controllers/MymediaCategoriesController.js",
+                "live/directives/LiveWebmediaWidgetDirective.js",
+                "comments/directives/CommentsDirective.js",
+                "playlist/services/PlaylistService.js",
+                "comments/directives/FacebookCommentsDirective.js",
+                "comments/services/CommentsService.js",
+                "playlist/directives/PlaylistEntriesDirective.js",
+                "playlist/directives/PlaylistAddEntryItemDirective.js",
+                "live/directives/embedSrc.js",
+                "admin/directives/AdminUserEditFormDirective.js"
+              ]
+            },
+            "root-mymedia-media": {
+              "name": "root.mymedia.media",
+              "url": "/my-media/{id:[0-9a-zA-Z_-]+}/:tab",
+              "requiredRole": "contributorRole",
+              "views": {
+                "main-section": {
+                  "templateUrl": "main-section/my-media.html",
+                  "controller": "MymediaMediaController"
+                },
+                "edit-section": {
+                  "templateUrl": "edit-section/edit-media.html",
+                  "controller": "MymediaEditIndexController"
+                }
+              },
+              "params": {
+                "id": {
+                  "value": null,
+                  "squash": true
+                },
+                "tab": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "progressDelay": true,
+              "dependencies": Array[0][
+
+              ]
+            }
+          },
+          "playlist": {
+            "root-myplaylists": {
+              "name": "root.myplaylists",
+              "layout": "layout.html",
+              "requiredRole": "viewerRole",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "MyplaylistsIndexController"
+                }
+              },
+              "dependencies": Array[6][
+                "entry/directives/EntryEditDirective.js",
+                "playlist/controllers/MyplaylistsIndexController.js",
+                "gallery/services/PlayerConfigService.js",
+                "channels/services/UiSortableService.js",
+                "mymedia/directives/MyMediaHeaderDirective.js",
+                "review/services/ReviewService.js"
+              ]
+            },
+            "root-myplaylists-upload": {
+              "name": "root.myplaylists.playlist",
+              "url": "/my-playlists/upload",
+              "requiredRole": "contributorRole",
+              "pageTitle": "Bamboo Playlist Upload",
+              "views": {
+                "content@root": {
+                  "templateUrl": "playlist-upload.html",
+                  "controller": "UploadIndexController",
+                  "module": "upload"
+                }
+              },
+              "dependencies": Array[6][
+                "admin/controllers/AdminIndexController.js",
+                "upload/controllers/UploadIndexController.js",
+                "upload/directives/UploaderBoxDirective.js",
+                "entry/directives/EntryThumbnailUploadDirective.js",
+                "entry/directives/EntryEditDirective.js",
+                "entry/directives/CustomFormDirective.js"
+              ]
+            },
+            "root-myplaylists-main": {
+              "name": "root.myplaylists.main",
+              "url": "/my-playlists/{id:[0-9a-zA-Z_]+}/:tab",
+              "params": {
+                "id": {
+                  "value": null,
+                  "squash": true
+                },
+                "tab": {
+                  "value": null,
+                  "squash": true
+                }
+              },
+              "progressDelay": true,
+              "requiredRole": "viewerRole",
+              "views": {
+                "edit-section": {
+                  "templateUrl": "edit-section/edit-playlist.html",
+                  "controller": "MyplaylistsEditController"
+                },
+                "main-section": {
+                  "templateUrl": "main-section/my-playlists.html",
+                  "controller": "MyplaylistsMainController"
+                }
+              },
+              "dependencies": Array[13][
+                "playlist/controllers/MyplaylistsMainController.js",
+                "playlist/controllers/MyplaylistsEditController.js",
+                "playlist/directives/PlaylistsListDirective.js",
+                "playlist/directives/PlaylistItemDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/directives/GalleryPlayerDirective.js",
+                "playlist/directives/PlaylistEntriesDirective.js",
+                "channels/services/UiSortableService.js",
+                "gallery/services/PlayerConfigService.js",
+                "mymedia/directives/MediaListDirective.js",
+                "mymedia/directives/MediaItemDirective.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "playlist/directives/PlaylistAddEntryItemDirective.js"
+              ]
+            }
+          },
+          "inbox": {
+            "root-inbox": {
+              "pageTitle": "Inbox",
+              "name": "root.inbox",
+              "progressDelay": true,
+              "requiredRole": "viewerRole",
+              "views": {
+                "header": {
+                  "templateUrl": "header.html",
+                  "module": "common"
+                },
+                "content": {
+                  "templateUrl": "index.html",
+                  "controller": "InboxController",
+                  "module": "inbox"
+                },
+                "footer": {
+                  "templateUrl": "footer.html",
+                  "module": "common"
+                },
+                "sidebar": {
+                  "templateUrl": "news-feed-bar.html",
+                  "module": "events"
+                }
+              },
+              "dependencies": Array[9][
+                "events/services/EventsService.js",
+                "inbox/directives/ChatBoxDirective.js",
+                "inbox/directives/InboxDirective.js",
+                "inbox/controllers/InboxController.js",
+                "inbox/services/InboxService.js",
+                "gallery/directives/GalleryThumbnailDirective.js",
+                "gallery/services/GalleryService.js",
+                "inbox/directives/ChatBoxDirective.js",
+                "inbox/directives/ChatUserDirective.js"
+              ]
+            },
+            "root-inbox-view": {
+              "url": "/inbox",
+              "pageTitle": "Inbox",
+              "name": "root.inbox.view",
+              "requiredRole": "viewerRole",
+              "progressDelay": true,
+              "views": {
+                "main": {
+                  "templateUrl": "inbox.html",
+                  "controller": "InboxController",
+                  "module": "inbox"
+                }
+              },
+              "dependencies": Array[0][
+
+              ]
+            },
+            "root-inbox-conversation": {
+              "url": "/inbox/{id:[0-9a-zA-Z_-]+}",
+              "pageTitle": "Inbox",
+              "name": "root.inbox.conversation",
+              "progressDelay": true,
+              "requiredRole": "viewerRole",
+              "views": {
+                "main": {
+                  "templateUrl": "privateConversation.html",
+                  "controller": "InboxController",
+                  "module": "inbox"
+                }
+              },
+              "params": {
+                "userObj": {
+                  "value": null
+                },
+                "message": null
+              },
+              "dependencies": Array[0][
+
+              ]
+            }
+          }
         }
