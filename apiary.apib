@@ -12,531 +12,460 @@ The Bamboo Video API is a RESTful API
 
 ##config (object)
 + config (object)
-+ landingpages {
-          mobileFlavorId: 1,
-          "promotionalCategory": "Promotional",
-          "promotionalPlaylistTag": "promotional",
-          "bannerImage": false
-        },
-        "modules": {
-          "custom": {
-            "highcharts-ng": 1,
-            "ui.sortable.multiselection": 1
-          },
-          "core": {
-            "pvpadmin": 1,
-            "common": 1,
-            "gallery": 1,
-            "entry": 1,
-            "admin": 1,
-            "upload": 1,
-            "user": 1,
-            "live": 0,
-            "faq": 1,
-            "comments": 1,
-            "dashboard": 1,
-            "mymedia": 1,
-            "embed": 1,
-            "player": 1,
-            "playlist": 1,
-            "channels": 0,
-            "freetrial": 1,
-            "categories": 1,
-            "datingil": 0,
-            "events": 0,
-            "adserver": 0,
-            "analytics": 1,
-            "widget": 1,
-            "landingpages": 1,
-            "editor": 1,
-            "football": 0
-          },
-          "thirdParty": {
-            "jkuri.gallery": 1,
-            "angularStats": 0,
-            "ngCropper": 1,
-            "ui.utils": 1,
-            "angular.filter": 1,
-            "ui-select2": 1,
-            "ui.select": 1,
-            "ngSanitize": 1,
-            "ui.bootstrap": 1,
-            "ui.bootstrap.datetimepicker": 1,
-            "ui.scrollfix": 1,
-            "ui.slider": 1,
-            "pascalprecht.translate": 1,
-            "slugifier": 1,
-            "ngTable": 1,
-            "cgPrompt": 1,
-            "hmTouchevents": 1,
-            "angulartics": 1,
-            "angulartics.google.analytics": 1,
-            "angulartics.piwik": 1,
-            "angularResizable": 1,
-            "facebook": 1,
-            "addthis": 1,
-            "ngtimeago": 1,
-            "xeditable": 1,
-            "ui.sortable": 1,
-            "ngCsv": 1,
-            "angularSpectrumColorpicker": 1,
-            "ui.tree": 1,
-            "daterangepicker": 1,
-            "ngProgress": 1,
-            "ngJoyRide": 1,
-            "ngDragDrop": 1,
-            "ngWebSocket": 1,
-            "angular-carousel-3d": 1,
-            "react": 1,
-            "mega-menu": 1
-          }
-        },
-        "dependencies": {
-          "additional": Array[3][
-            "vendor/Highcharts-4.1.7/js/highcharts.min.js",
-            "vendor/highcharts-ng/highcharts-ng.js",
-            "vendor/countUp/countUp.js"
-          ],
-          "global": Array[56][
-            "vendor/detect-mobile-browser-master/detect-browser.js",
-            "vendor/ngGallery/src/js/ngGallery.js",
-            "vendor/angular-animate/angular-animate.min.js",
-            "vendor/angular-touch/angular-touch.min.js",
-            "vendor/angular-sanitize/angular-sanitize.min.js",
-            "vendor/angular-filter/angular-filter.min.js",
-            "vendor/angular-route/angular-route.min.js",
-            "vendor/angular-dragdrop/angular-dragdrop.min.js",
-            "vendor/angular-websocket/angular-websocket.min.js",
-            "vendor/ui-modules/ui-router.min.js",
-            "vendor/ui-modules/ui-bootstrap-tpls-1.3.2.js",
-            "vendor/ui-modules/datetime-picker.js",
-            "vendor/ui-modules/datetime-picker.tpls.js",
-            "vendor/lodash/lodash.min.js",
-            "vendor/restangular/restangular.min.js",
-            "vendor/jsoneditor/asset/jsonlint/jsonlint.min.js",
-            "vendor/chart.js/Chart.min.js",
-            "vendor/csv/ng-csv.min.js",
-            "vendor/hammer.js/hammer.min.js",
-            "vendor/twitter/bootstrap/js/bootstrap.min.js",
-            "vendor/spectrum/spectrum.min.js",
-            "vendor/angular-cropper/ngCropper.all.js",
-            "vendor/angular-addthis/angular-addthis.js",
-            "vendor/angular-slugify/angular-slugify.js",
-            "vendor/angular-prompt/angular-prompt.js",
-            "vendor/angular-daterangepicker/angular-daterangepicker.js",
-            "vendor/angular-daterangepicker/moment-timezone.js",
-            "vendor/angular-resizeable/angular-resizeable.js",
-            "vendor/angular-ui-tree/angular-ui-tree.js",
-            "vendor/angular-hammer/angular-hammer.js",
-            "vendor/angulartics/src/angulartics.js",
-            "vendor/angulartics/src/angulartics-ga.js",
-            "vendor/angulartics/src/angulartics-piwik.js",
-            "vendor/pascalprecht-angular-translate/panda-angular-translate.js",
-            "vendor/select2/select2.min.js",
-            "vendor/ui-modules/ui-utils.js",
-            "vendor/ui-modules/select.js",
-            "vendor/ui-modules/select2.js",
-            "vendor/ui-modules/ui-slider.js",
-            "vendor/ui-modules/ui.sortable.multiselection.js",
-            "vendor/ui-modules/sortable.js",
-            "vendor/angularjs-slider/dist/rzslider.min.js",
-            "vendor/ui-calendar/calendar.js",
-            "vendor/ng-table/ng-table.js",
-            "vendor/facebook-login/angular-facebook.js",
-            "vendor/ngtimeago/ngtimeago.js",
-            "vendor/jquery-hoverdir/jquery.hoverdir.js",
-            "vendor/xeditable/js/xeditable.min.js",
-            "vendor/jsoneditor/jsoneditor.js",
-            "vendor/spectrum/angular-spectrum-colorpicker.js",
-            "vendor/react/react.min.js",
-            "vendor/react/react-dom.min.js",
-            "vendor/react-virtualized/react-virtualized.min.js",
-            "vendor/react-bootstrap/react-bootstrap.min.js",
-            "vendor/ng-react/ng-react.js",
-            "vendor/angular-mega-menu/angular-mega-menu.js"
-          ]
-        },
-        "analytics": {
-          "reportWidget": false,
-          "altEnvironment": true,
-          "altAnnouncment": false,
-          "reports": {
-            "showCorruptedLevel": "partial"
-          },
-          "google": {
-            "trackingId": "UA-36034144-3",
-            "apiTrackingId": "UA-36034144-8"
-          },
-          "panda": {
-            "url": "http://piwik.panda-os.com",
-            "token": "57fa55357816eb87b709f15065808a4e",
-            "cache-expiry": 10,
-            "siteId": 1,
-            "lastMinutes": 1
-          }
-        },
-        "debug": {
-          "logLevel": 7
-        },
-        "general": {
-          "rtl": "false",
-          "defaultLanguage": "en",
-          "timezoneOffset": 0,
-          "timezoneString": "utc",
-          "debugEnabled": "false",
-          "minifyModulesCss": true,
-          "siteDescription": "Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming."
-        },
-        "cache": {
-          "enabled": true,
-          "expiration": 600
-        },
-        "contact": {
-          "uiTitle": "Contact Us",
-          "uiDescription": "Please fill this form and we will get back to you shortly",
-          "uiMessage": "Thank you for contacting us."
-        },
-        "locale": Array[0][
-
-        ],
-        "translation": {
-          "languages": Array[6][
-            {
-              "language": "en",
-              "name": "English",
-              "flag": "us",
-              "orientation": "ltr",
-              "arrayOrder": 0,
-              "arrayId": "__0"
-            },
-            {
-              "language": "pt",
-              "name": "Portuguese",
-              "flag": "pt",
-              "orientation": "ltr",
-              "arrayOrder": 1,
-              "arrayId": "__1"
-            },
-            {
-              "language": "fr",
-              "name": "French",
-              "flag": "fr",
-              "orientation": "ltr",
-              "arrayOrder": 2,
-              "arrayId": "__2"
-            },
-            {
-              "language": "es",
-              "name": "Spanish",
-              "flag": "es",
-              "orientation": "ltr",
-              "arrayOrder": 3,
-              "arrayId": "__3"
-            },
-            {
-              "language": "de",
-              "name": "German",
-              "flag": "de",
-              "orientation": "ltr",
-              "arrayOrder": 4,
-              "arrayId": "__4"
-            },
-            {
-              "language": "he",
-              "name": "Hebrew",
-              "flag": "il",
-              "orientation": "rtl",
-              "arrayOrder": 5,
-              "arrayId": "__5"
-            }
-          ]
-        },
-        "kaltura": {
-          "serviceUrl": "https://video.panda-os.com/",
-          "statsUrl": "https://videostats.panda-os.com/api_v3/index.php",
-          "cdnUrl": "http://static.panda-os.com",
-          "partnerId": "102"
-        },
-        "tags": {
-          "limitTagsToRootCategory": true
-        },
-        "application": {
-          "resourceUrlWhitelist": Array[3][
-            "self",
-            "http://*.bamboo-video.com/**",
-            "http://*.panda-os.com/**"
-          ],
-          "title": "Bamboo - Panda Video Platform",
-          "description": "Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming.",
-          "rootCategory": "Bamboo",
-          "enableDelete": false,
-          "showSplash": true,
-          "relatedCategory": "Featured",
-          "showUserInstances": true,
-          "showDefaultLogin": true,
-          "showInstanceInformationInHeader": false,
-          "showUserboxInstanceInformation": false,
-          "dateFormat": "shortDate",
-          "socialMedia": Array[0][
-
-          ],
-          "userMenuDropdown": {
-            "name": true,
-            "image": true
-          },
-          "jsBaseUrl": "www.bamboo-video.com",
-          "cdnApiUrl": "https://cdnapi.bamboo-video.com",
-          "bambooCdnUrl": "https://cdn.bamboo-video.com",
-          "displayInstanceType": true,
-          "announcement": false,
-          "redirectToHomeWhenLogin": false,
-          "registerPopup": {
-            "enabled": false,
-            "timeout": 60000,
-            "nagTimeout": 60000
-          },
-          "configCustomParams": Array[0][
-
-          ]
-        },
-        "drm": {
-          "enabled": false,
-          "drmServiceUrl": "https://widevine-dash.ezdrm.com/proxy?pX=8C4D80&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
-          "drmServiceUrlPlayready": "https://playready.ezdrm.com/cency/preauth.aspx?pX=4F3EA0&format=playready&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
-          "drmServiceUrlFairplay": "https://fps.ezdrm.com/api/licenses/38fffe9a-5e4c-4e2b-9471-251549ec1eda?format=fairplay&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}&",
-          "drmFairplayCertificatePath": "https://api.bamboo-video.com/api/fps/charlton.cer"
-        },
-        "authentication": {
-          "enabled": true,
-          "demoCredentials": {
-            "email": "demo@panda-os.com",
-            "password": "123456"
-          },
-          "roleNames": {
-            "viewerRole": "Viewer",
-            "contributorRole": "Contributor",
-            "managerRole": "Manager",
-            "adminRole": "Administrator"
-          },
-          "guestUser": "Guest",
-          "smsMethod": false,
-          "passwordExpired": false
-        },
-        "branding": {
-          "logoUrl": "https://s3cdn.panda-os.com/upload/20161227/58625bcf53083.png",
-          "faviconUrl": "/favicon.ico",
-          "poweredBy": {
-            "logoUrl": "img/panda-logo.png",
-            "linkUrl": "http://www.panda-os.com",
-            "linkTitle": "PandaOS Open-Source Solutions",
-            "linkText": "Powered By:"
-          },
-          "customCss": "custom.css",
-          "siteName": "Bamboo - Panda Video Platform",
-          "successPageBgUrl": "/app/modules/panda/img/intro_bg.jpg"
-        },
-        "player": {
-          "customMenuTemplates": Array[1][
-            "default"
-          ],
-          "playerUrl": "//static.panda-os.com/html5/html5lib/v2.55/mwEmbedLoader.php",
-          "beaconUrl": "//api.bamboo-video.com/api/drm/beacon",
-          "uiconfId": "11601700",
-          "debug": false,
-          "autoPlay": true,
-          "flashvars": {
-            "hlsjs": {
-              "options": {
-                "enableWebVTT": true,
-                "maxBufferHole": 8,
-                "maxSeekHole": 8
-              },
-              "plugin": true
-            },
-            "chapters": {
-              "plugin": true
-            },
-            "kAnalony": {
-              "plugin": false
-            },
-            "chaptersEdit": {
-              "plugin": true,
-              "editPropId": "panda-chapterProp",
-              "editTimelineId": "panda-chapterTimeline",
-              "tags": "chaptering",
-              "requiresJQuery": true
-            },
-            "adCuepointsEdit": {
-              "plugin": true,
-              "editPropId": "panda-adCuepointProp",
-              "editTimelineId": "panda-adCuepointTimeline",
-              "tags": "adcuepoints",
-              "requiresJQuery": true
-            },
-            "sourceSelector": {
-              "plugin": "true",
-              "switchOnResize": "false",
-              "simpleFormat": "true",
-              "displayMode": "sizebitrate"
-            },
-            "scrubber": {
-              "plugin": true,
-              "thumbWidth": 100,
-              "thumbSlicesUrl": "/api/entry/{mediaProxy.entry.id}/thumbnail/?width=100&slices=100&sprite=true"
-            },
-            "loadingSpinner": {
-              "color": "rgb(255,255,255)",
-              "lines": "20",
-              "width": "10",
-              "radius": "30",
-              "lineLength": "0",
-              "speed": "1",
-              "shadow": "true",
-              "trail": "50"
-            },
-            "bambooChapters": {
-              "plugin": "true",
-              "iframeHTML5Js": "//www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.js",
-              "iframeHTML5Css": "//www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.css",
-              "enableSearch": "false",
-              "cuePointType": Array[1][
-                {
-                  "main": "annotation.Annotation",
-                  "sub": Array[1][
-                    0
-                  ],
-                  "arrayOrder": 0,
-                  "arrayId": "__0"
-                }
-              ]
-            },
-            "IframeCustomPluginCss1": "/css/panda-player.css",
-            "uiVars": Array[2][
-              {
-                "key": "mediaProxy.preferedFlavorBR",
-                "value": "1600",
-                "overrideFlashvar": true,
-                "arrayOrder": 0,
-                "arrayId": "__0"
-              },
-              {
-                "key": "KalturaSupport_ForceUserAgent",
-                "value": "Bamboo-Player",
-                "overrideFlashvar": true,
-                "arrayOrder": 1,
-                "arrayId": "__1"
-              }
-            ],
-            "LeadWithHLSOnFlash": false,
-            "LeadWithHLSOnJs": true,
-            "video360": {
-              "plugin": "true"
-            },
-            "related": {
-              "parent": "controlsContainer",
-              "align": "right",
-              "displayOnPlaybackDone": true,
-              "sendContextWithPlaylist": true,
-              "entryList": null,
-              "playlistId": "0_fkm10x3k",
-              "clickUrl": "",
-              "autoContinueTime": "10",
-              "autoContinueEnabled": true,
-              "storeSession": true,
-              "order": "200"
-            }
-          },
-          "playerConfig": {
-            "mw": {
-              "KalturaSupport_ForceUserAgent": "Bamboo-Player",
-              "Kaltura.LeadWithHTML5": true,
-              "Kaltura.UseAppleAdaptive": false,
-              "Kaltura.UseManifestUrls": true,
-              "EmbedPlayer.EnableIpadHTMLControls": true,
-              "EmbedPlayer.UseFlashOnAndroid": false,
-              "Kaltura.LoadScriptForVideoTags": true,
-              "Kaltura.AllowIframeRemoteService": false,
-              "Kaltura.EnableEmbedUiConfJs": false,
-              "Mw.XmlProxyUrl": "//video.panda-os.com/html5/html5lib/v2.18.2/simplePhpXMLProxy.php"
-            }
-          },
-          "noPreviewImageUrl": "//via.placeholder.com/350x200?text=No%20Preview%20Available%20:(",
-          "mediaConvertingImageUrl": "//via.placeholder.com/350x200?text=Your%20Media%20Is%20Converting",
-          "uploadErrorImageUrl": "//via.placeholder.com/350x200?text=An%20error%20Occured%20while%20uploading%20:("
-        },
-        "bitmovin": {
-          "enable": false,
-          "playerUrl": "https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7/bitmovinplayer.js",
-          "playerKey": "c2662d78-c43c-4877-82ee-e79fd4b6afa2",
-          "statsPluginUrl": "https://www.bamboo-video.com/app/modules/player/js/bitdashBambooAnalytics.js",
-          "skin": {
-            "screenLogoUrl": "https://www.panda-os.com/",
-            "screenLogoImage": "https://static.panda-os.com/panda-square-logo.png"
-          },
-          "playback": {
-            "autoplay": false
-          }
-        },
-        "navigation": {
-          "showRegisterLink": true,
-          "userMenuPictureSide": false,
-          "enableMyProfile": true,
-          "menuLinks": Array[4][
-            {
-              "title": "Media Management",
-              "icon": "film",
-              "route": "root.mymedia.media",
-              "loggedIn": false,
-              "role": "contributorRole",
-              "arrayOrder": 0,
-              "arrayId": "__0"
-            },
-            {
-              "title": "Manage Users",
-              "icon": "list",
-              "route": "root.admin.users",
-              "loggedIn": true,
-              "role": "adminRole",
-              "arrayOrder": 1,
-              "arrayId": "__1"
-            },
-            {
-              "title": "My Profile",
-              "icon": "user",
-              "route": "root.user.profile",
-              "loggedIn": true,
-              "role": "viewerRole",
-              "arrayOrder": 2,
-              "arrayId": "__2"
-            },
-            {
-              "title": "Settings",
-              "icon": "cog",
-              "route": "root.pvpadmin.configs",
-              "loggedIn": true,
-              "role": "adminRole",
-              "arrayOrder": 3,
-              "arrayId": "__3"
-            }
-          ],
-          "homeRoute": "root.home",
-          "headerItems": {
-            "0": {
-              "title": "Categories",
-              "icon": "th-large",
-              "megamenu": true,
-              "includes": "root.gallery",
-              "parentCategoryId": "10814",
-              "showThumbnail": true,
-              "params": {
-                "categoryName": "Categories"
-              },
-              "side": "left",
-              "arrayOrder": 0,
-              "arrayId": "__0"
-            },
-            "1": {
-              "tplSrc": "search-header-directive-template.html",
+    + landingpages 
+        + mobileFlavorId: 1 (number)
+        + promotionalCategory: Promotional (string)
+        + promotionalPlaylistTag: promotional (string)
+        + bannerImage: false (boolean)
+    + modules
+        + custom
+            + highcharts-ng: 1 (number)
+            + ui.sortable.multiselection: 1 (number)
+        + core
+            + pvpadmin: 1 (number)
+            + common: 1 (number)
+            + gallery: 1 (number)
+            + entry: 1 (number)
+            + admin: 1 (number)
+            + upload: 1 (number)
+            + user: 1 (number)
+            + live: 0 (number)
+            + faq: 1 (number)
+            + comments: 1 (number)
+            + dashboard: 1 (number)
+            + mymedia: 1 (number)
+            + embed: 1 (number)
+            + player: 1 (number)
+            + "playlist: 1 (number)
+            + channels: 0 (number)
+            + freetrial: 1 (number)
+            + categories: 1 (number)
+            + datingil: 0 (number)
+            + events: 0 (number)
+            + adserver: 0 (number)
+            + analytics: 1 (number)
+            + widget: 1 (number)
+            + landingpages: 1 (number)
+            + editor: 1 (number)
+            + football: 0 (number) 
+        + thirdParty
+            + jkuri.gallery: 1 (number)
+            + angularStats: 0 (number)
+            + ngCropper: 1 (number)
+            + ui.utils: 1 (number)
+            + angular.filter: 1 (number)
+            + ui-select2: 1 (number)
+            + ui.select: 1 (number)
+            + ngSanitize: 1 (number)
+            + ui.bootstrap: 1 (number)
+            + ui.bootstrap.datetimepicker: 1 (number)
+            + ui.scrollfix: 1 (number)
+            + ui.slider: 1 (number)
+            + pascalprecht.translate: 1 (number)
+            + slugifier: 1 (number)
+            + ngTable: 1 (number)
+            + cgPrompt: 1 (number)
+            + hmTouchevents: 1 (number)
+            + angulartics: 1 (number)
+            + angulartics.google.analytics: 1 (number)
+            + angulartics.piwik: 1 (number)
+            + angularResizable: 1 (number)
+            + facebook: 1 (number)
+            + addthis: 1 (number)
+            + ngtimeago: 1 (number)
+            + xeditable: 1 (number)
+            + ui.sortable: 1 (number)
+            + ngCsv: 1 (number)
+            + angularSpectrumColorpicker: 1 (number)
+            + ui.tree: 1 (number)
+            + daterangepicker: 1 (number)
+            + ngProgress: 1 (number)
+            + ngJoyRide: 1 (number)
+            + ngDragDrop: 1 (number)
+            + ngWebSocket: 1 (number)
+            + angular-carousel-3d: 1 (number)
+            + react: 1 (number)
+            + mega-menu: 1 (number)
+    + dependencies
+        + additional (array, fixed)
+            + vendor/Highcharts-4.1.7/js/highcharts.min.js
+            + vendor/highcharts-ng/highcharts-ng.js
+            + vendor/countUp/countUp.js
+        + global (array, fixed)
+            + vendor/detect-mobile-browser-master/detect-browser.js
+            + vendor/ngGallery/src/js/ngGallery.js
+            + vendor/angular-animate/angular-animate.min.js
+            + vendor/angular-touch/angular-touch.min.js
+            + vendor/angular-sanitize/angular-sanitize.min.js
+            + vendor/angular-filter/angular-filter.min.js
+            + vendor/angular-route/angular-route.min.js
+            + vendor/angular-dragdrop/angular-dragdrop.min.js
+            + vendor/angular-websocket/angular-websocket.min.js
+            + vendor/ui-modules/ui-router.min.js
+            + vendor/ui-modules/ui-bootstrap-tpls-1.3.2.js
+            + vendor/ui-modules/datetime-picker.js
+            + vendor/ui-modules/datetime-picker.tpls.js
+            + vendor/lodash/lodash.min.js
+            + vendor/restangular/restangular.min.js
+            + vendor/jsoneditor/asset/jsonlint/jsonlint.min.js
+            + vendor/chart.js/Chart.min.js
+            + vendor/csv/ng-csv.min.js
+            + vendor/hammer.js/hammer.min.js
+            + vendor/twitter/bootstrap/js/bootstrap.min.js
+            + vendor/spectrum/spectrum.min.js
+            + vendor/angular-cropper/ngCropper.all.js
+            + vendor/angular-addthis/angular-addthis.js
+            + vendor/angular-slugify/angular-slugify.js
+            + vendor/angular-prompt/angular-prompt.js
+            + vendor/angular-daterangepicker/angular-daterangepicker.js
+            + vendor/angular-daterangepicker/moment-timezone.js
+            + vendor/angular-resizeable/angular-resizeable.js
+            + vendor/angular-ui-tree/angular-ui-tree.js
+            + vendor/angular-hammer/angular-hammer.js
+            + vendor/angulartics/src/angulartics.js
+            + vendor/angulartics/src/angulartics-ga.js
+            + vendor/angulartics/src/angulartics-piwik.js
+            + vendor/pascalprecht-angular-translate/panda-angular-translate.js
+            + vendor/select2/select2.min.js
+            + vendor/ui-modules/ui-utils.js
+            + vendor/ui-modules/select.js
+            + vendor/ui-modules/select2.js
+            + vendor/ui-modules/ui-slider.js
+            + vendor/ui-modules/ui.sortable.multiselection.js
+            + vendor/ui-modules/sortable.js
+            + vendor/angularjs-slider/dist/rzslider.min.js
+            + vendor/ui-calendar/calendar.js
+            + vendor/ng-table/ng-table.js
+            + vendor/facebook-login/angular-facebook.js
+            + vendor/ngtimeago/ngtimeago.js
+            + vendor/jquery-hoverdir/jquery.hoverdir.js
+            + vendor/xeditable/js/xeditable.min.js
+            + vendor/jsoneditor/jsoneditor.js
+            + vendor/spectrum/angular-spectrum-colorpicker.js
+            + vendor/react/react.min.js
+            + vendor/react/react-dom.min.js
+            + vendor/react-virtualized/react-virtualized.min.js
+            + vendor/react-bootstrap/react-bootstrap.min.js
+            + vendor/ng-react/ng-react.js
+            + vendor/angular-mega-menu/angular-mega-menu.js
+    + analytics
+        + reportWidget: false (boolean)
+        + altEnvironment: true (boolean)
+        + altAnnouncment: false (boolean)
+        + reports
+            + showCorruptedLevel: partial (string)
+        + google
+            + trackingId: UA-36034144-3 (string)
+            + apiTrackingId: UA-36034144-8 (string)
+        + panda
+            + url: http://piwik.panda-os.com (string)
+            + token: 57fa55357816eb87b709f15065808a4e (string)
+            + cache-expiry: 10 (number)
+            + siteId: 1 (number)
+            + lastMinutes: 1 (number)
+    + debug 
+          + logLevel: 7 (number)
+    + general
+        + rtl: false (boolean)
+        + defaultLanguage: en (string)
+        + timezoneOffset: 0 (number)
+        + timezoneString: utc (string)
+        + debugEnabled: false (boolean)
+        + minifyModulesCss: true (boolean)
+        + siteDescription: Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming. (string)
+    + cache
+        + enabled: true (boolean)
+        + expiration: 600 (number)
+    + contact
+        + uiTitle: Contact Us (string)
+        + uiDescription: Please fill this form and we will get back to you shortly (string)
+        + uiMessage: Thank you for contacting us. (string)
+    + locale (array, fixed)
+    + translation
+        + languages (array, fixed)
+            + (object)
+                + language: en (string)
+                + name: English (string)
+                + flag: us (string)
+                + orientation: ltr (string)
+                + arrayOrder: 0 (number)
+                + arrayId: __0 (string)
+            + (object)
+                + language: pt (string)
+                + name: Portuguese (string)
+                + flag: pt (string)
+                + orientation: ltr (string)
+                + arrayOrder: 1 (number)
+                + arrayId: __1 (string)
+            + (object)
+                + language: fr (string)
+                + name: French (string)
+                + flag: fr (string)
+                + orientation: ltr (string)
+                + arrayOrder: 2 (number)
+                + arrayId: __2 (string)
+            
+            + (object)
+                + language: es (string)
+                + name: Spanish (string)
+                + flag: es (string)
+                + orientation: ltr (string)
+                + arrayOrder: 3 (number)
+                + arrayId: __3 (string)
+            + (object)
+                + language: de (string)
+                + name: German (string)
+                + flag: de (string)
+                + orientation: ltr (string)
+                + arrayOrder: 4 (number)
+                + arrayId: __4 (string)
+            + (object)
+                + language: he (string)
+                + name: Hebrew (string)
+                + flag: il (string)
+                + orientation: rtl (string)
+                + arrayOrder: 5 (number)
+                + arrayId: __5 (string)
+    + kaltura
+        + serviceUrl: https://video.panda-os.com/ (string)
+        + statsUrl: https://videostats.panda-os.com/api_v3/index.php (string)
+        + cdnUrl: http://static.panda-os.com (string)
+        + partnerId: 102 (number)
+    + tags
+        + limitTagsToRootCategory: true (boolean)
+    + application
+        + resourceUrlWhitelist(array, fixed)
+            + self
+            + http://*.bamboo-video.com/**
+            + http://*.panda-os.com/**
+        + title: Bamboo - Panda Video Platform (string)
+        + description: Online Video Platform solution. Software and services for video publishing, management, distribution, and monetization. Cloud based solution for video hosting and streaming. (string)
+        + rootCategory: Bamboo (string)
+        + enableDelete: false (boolean)
+        + showSplash: true (boolean)
+        + relatedCategory: Featured (string)
+        + showUserInstances: true (boolean)
+        + showDefaultLogin: true (boolean)
+        + showInstanceInformationInHeader: false (boolean)
+        + showUserboxInstanceInformation: false (boolean)
+        + dateFormat: shortDate (string)
+        + socialMedia (array, fixed)
+        + userMenuDropdown
+            + name: true (boolean)
+            + image: true (boolean)
+        + jsBaseUrl: www.bamboo-video.com (string)
+        + cdnApiUrl: https://cdnapi.bamboo-video.com (string)
+        + bambooCdnUrl: https://cdn.bamboo-video.com (string)
+        + displayInstanceType: true (boolean)
+        + announcement: false (boolean)
+        + redirectToHomeWhenLogin: false (boolean)
+        + registerPopup
+            + enabled: false (boolean)
+            + timeout: 60000 (number)
+            + nagTimeout: 60000 (number)
+        + configCustomParams(array, fixed)
+        + drm
+            + enabled: false (boolean)
+            + drmServiceUrl: https://widevine-dash.ezdrm.com/proxy?pX=8C4D80&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}& (string)
+            + drmServiceUrlPlayready: https://playready.ezdrm.com/cency/preauth.aspx?pX=4F3EA0&format=playready&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}& (string)
+            + drmServiceUrlFairplay: https://fps.ezdrm.com/api/licenses/38fffe9a-5e4c-4e2b-9471-251549ec1eda?format=fairplay&bambooToken={token}&iid={instanceId}&entryId={entryId}&country={country}& (string)
+            + drmFairplayCertificatePath: https://api.bamboo-video.com/api/fps/charlton.cer (string)
+        +authentication
+            + enabled: true (boolean)
+            + demoCredentials
+                + email: demo@panda-os.com (string)
+                + password: 123456 (string)
+        + roleNames
+            + viewerRole: Viewer (string)
+            + contributorRole: Contributor (string)
+            + managerRole: Manager (string)
+            + adminRole: Administrator (string)
+          
+        + guestUser: Guest (string)
+        + smsMethod: false (boolean)
+        + passwordExpired: false (boolean)
+    + branding
+        + logoUrl: https://s3cdn.panda-os.com/upload/20161227/58625bcf53083.png (string)
+        + faviconUrl: /favicon.ico (string)
+        + poweredBy
+            + logoUrl: img/panda-logo.png (string)
+            + linkUrl: http://www.panda-os.com (string)
+            + linkTitle: PandaOS Open-Source Solutions (string)
+            + linkText: Powered By: (string)
+          
+        + customCss: custom.css (string)
+        + siteName: Bamboo - Panda Video Platform (string)
+        + successPageBgUrl: /app/modules/panda/img/intro_bg.jpg (string)
+    + player
+        + customMenuTemplates (array,fixed)
+            + default
+        + playerUrl: //static.panda-os.com/html5/html5lib/v2.55/mwEmbedLoader.php (string)
+        + beaconUrl: //api.bamboo-video.com/api/drm/beacon (string)
+        + uiconfId: 11601700 (string)
+        + debug: false (boolean)
+        + autoPlay: true (boolean)
+        + flashvars
+            + hlsjs
+                + options
+                    enableWebVTT: true (boolean)
+                    maxBufferHole: 8 (number)
+                    maxSeekHole: 8 (number)
+                + plugin: true (boolean)
+            + chapters
+                + plugin: true (boolean)
+            + kAnalony
+                + plugin: false (boolean)
+            + chaptersEdit
+                + plugin: true (boolean)
+                + editPropId: panda-chapterProp (string)
+                + editTimelineId: panda-chapterTimeline (string)
+                + tags: chaptering (string)
+                + requiresJQuery: true (boolean)
+            + adCuepointsEdit
+                + plugin: true (boolean)
+                + editPropId: panda-adCuepointProp (string)
+                + editTimelineId: panda-adCuepointTimeline (string)
+                + tags: adcuepoints (string)
+                + requiresJQuery: true (boolean)
+            + sourceSelector
+                + plugin: true (boolean)
+                + switchOnResize: false (boolean)
+                + simpleFormat: true (boolean)
+                + displayMode: sizebitrate (string)
+            + scrubber
+                + plugin: true (boolean)
+                + thumbWidth: 100 (number)
+                + thumbSlicesUrl: /api/entry/{mediaProxy.entry.id}/thumbnail/?width=100&slices=100&sprite=true (string)
+            + loadingSpinner
+                + color: #000000 (string)
+                + lines: 20 (number)
+                + width: 10 (number)
+                + radius: 30 (number)
+                + lineLength: 0 (number)
+                + speed: 1 (number)
+                + shadow: true (boolean)
+                + trail: 50 (number)
+            + bambooChapters
+                + plugin: true (boolean)
+                + iframeHTML5Js: //www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.js (string)
+                + iframeHTML5Css: //www.bamboo-video.com/app/modules/player/plugins/bambooChapters/bambooChapters.css (string)
+                + enableSearch: false (boolean)
+                + cuePointType (array, fixed)
+                    + main: annotation.Annotation (string)
+                    + sub (array,fixed)
+                        + 0
+                    + arrayOrder: 0 (number)
+                    + arrayId: __0 (string)
+            + IframeCustomPluginCss1: /css/panda-player.css (string)
+            + uiVars (array, fixed)
+                + (object)
+                    + key: mediaProxy.preferedFlavorBR (string)
+                    + value: 1600 (number)
+                    + overrideFlashvar: true (boolean)
+                    + arrayOrder: 0 (number)
+                    + arrayId: __0 (string)
+                + (object)
+                    + key: KalturaSupport_ForceUserAgent (string)
+                    + value: Bamboo-Player (string)
+                    + overrideFlashvar: true (boolean)
+                    + arrayOrder: 1 (number)
+                    + arrayId": __1 (string)
+            
+            + LeadWithHLSOnFlash: false (boolean)
+            + LeadWithHLSOnJs: true (boolean)
+            + video360
+                + plugin: true
+            + related
+                + parent: controlsContainer (string)
+                + align: right (string)
+                + displayOnPlaybackDone: true (boolean)
+                + sendContextWithPlaylist: true (boolean)
+                + entryList: null (string)
+                + playlistId: 0_fkm10x3k (string)
+                + clickUrl: "" (string)
+                + autoContinueTime: 10 (number)
+                + autoContinueEnabled: true (boolean)
+                + storeSession: true (boolean)
+                + order: 200 (number)
+        + playerConfig
+            + mw
+                + KalturaSupport_ForceUserAgent: Bamboo-Player (string)
+                + Kaltura.LeadWithHTML5: true (boolean)
+                + Kaltura.UseAppleAdaptive: false (boolean)
+                + Kaltura.UseManifestUrls: true (boolean)
+                + EmbedPlayer.EnableIpadHTMLControls: true (boolean)
+                + EmbedPlayer.UseFlashOnAndroid: false (boolean)
+                + Kaltura.LoadScriptForVideoTags: true (boolean)
+                + Kaltura.AllowIframeRemoteService: false (boolean)
+                + Kaltura.EnableEmbedUiConfJs: false (boolean)
+                + Mw.XmlProxyUrl: //video.panda-os.com/html5/html5lib/v2.18.2/simplePhpXMLProxy.php (string)
+            + noPreviewImageUrl: //via.placeholder.com/350x200?text=No%20Preview%20Available%20:(
+            + mediaConvertingImageUrl: //via.placeholder.com/350x200?text=Your%20Media%20Is%20Converting (string)
+            + uploadErrorImageUrl: //via.placeholder.com/350x200?text=An%20error%20Occured%20while%20uploading%20:(
+        
+        + bitmovin
+            + enable: false (boolean)
+            + playerUrl: https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7/bitmovinplayer.js (string)
+            + playerKey: c2662d78-c43c-4877-82ee-e79fd4b6afa2 (string)
+            + statsPluginUrl: https://www.bamboo-video.com/app/modules/player/js/bitdashBambooAnalytics.js (string)
+            + skin
+                + screenLogoUrl: https://www.panda-os.com/ (string)
+                + screenLogoImage: https://static.panda-os.com/panda-square-logo.png (string)
+            + playback
+                + autoplay: false (boolean)
+        + navigation
+            + showRegisterLink: true (boolean)
+            + userMenuPictureSide: false (boolean)
+            + enableMyProfile: true (boolean)
+            + menuLinks (array, fixed)
+                + (object)
+                    + title: Media Management (string)
+                    + icon: film (string)
+                    + route: root.mymedia.media (string)
+                    + loggedIn: false (boolean)
+                    + role: contributorRole (string)
+                    + arrayOrder: 0 (number)
+                    + arrayId: __0 (string)
+                + (object)
+                    + title: Manage Users (string)
+                    + icon: list (string)
+                    + route: root.admin.users (string)
+                    + loggedIn: true (boolean)
+                    + role: adminRole (string)
+                    + arrayOrder: 1 (number)
+                    + arrayId: __1 (string)
+                + (object)
+                    + title: My Profile (string)
+                    + icon: user (string)
+                    + route: root.user.profile (string)
+                    + loggedIn: true (boolean)
+                    + role: viewerRole (string)
+                    + arrayOrder: 2 (number)
+                    + arrayId: __2 (string)
+                + (object)
+                    + title: Settings (string)
+                    + icon: cog (string)
+                    + route: root.pvpadmin.configs (string)
+                    + loggedIn: true (boolean)
+                    + role: adminRole (string)
+                    + arrayOrder: 3 (number)
+                    + arrayId: __3 (string)
+            + homeRoute: root.home (string)
+            + headerItems
+                + 0
+                    + title: Categories (string)
+                    + icon: th-large (string)
+                    + megamenu: true (boolean)
+                    + includes: root.gallery (string)
+                    + parentCategoryId: 10814 (number)
+                    + showThumbnail: true (boolean)
+                    + params
+                        + categoryName: Categories (string)
+                    + side: left (string)
+                    + arrayOrder: 0 (number)
+                    + arrayId: __0 (string)
+                + 1
+                    + tplSrc: search-header-directive-template.html (string)
               "module": "common",
               "locationPrefix": "views/templates/",
               "class": "hidden-xs",
@@ -2552,7 +2481,7 @@ Retrieves the current instance configuration
 + Request (application/json;charset=UTF-8)
 
 + Response 200 (application/json)
-
++ Attributes(config)
         {
         "config": {
         "landingpages": {
